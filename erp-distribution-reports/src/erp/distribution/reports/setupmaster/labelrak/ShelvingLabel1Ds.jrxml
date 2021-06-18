@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="217" pageHeight="94" columnWidth="217" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="b6b41967-98f6-4e14-8577-f92678c29540">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="double4" class="java.lang.Double">
+		<fieldDescription><![CDATA[double4]]></fieldDescription>
+	</field>
+	<field name="bol2" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[bol2]]></fieldDescription>
+	</field>
+	<field name="double3" class="java.lang.Double">
+		<fieldDescription><![CDATA[double3]]></fieldDescription>
+	</field>
+	<field name="bol1" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[bol1]]></fieldDescription>
+	</field>
+	<field name="double5" class="java.lang.Double">
+		<fieldDescription><![CDATA[double5]]></fieldDescription>
+	</field>
+	<field name="double2" class="java.lang.Double">
+		<fieldDescription><![CDATA[double2]]></fieldDescription>
+	</field>
+	<field name="double1" class="java.lang.Double">
+		<fieldDescription><![CDATA[double1]]></fieldDescription>
+	</field>
+	<field name="date1" class="java.util.Date">
+		<fieldDescription><![CDATA[date1]]></fieldDescription>
+	</field>
+	<field name="date2" class="java.util.Date">
+		<fieldDescription><![CDATA[date2]]></fieldDescription>
+	</field>
+	<field name="int2" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int2]]></fieldDescription>
+	</field>
+	<field name="int1" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int1]]></fieldDescription>
+	</field>
+	<field name="grup1" class="java.lang.String">
+		<fieldDescription><![CDATA[grup1]]></fieldDescription>
+	</field>
+	<field name="grup2" class="java.lang.String">
+		<fieldDescription><![CDATA[grup2]]></fieldDescription>
+	</field>
+	<field name="grup3" class="java.lang.String">
+		<fieldDescription><![CDATA[grup3]]></fieldDescription>
+	</field>
+	<field name="string1" class="java.lang.String">
+		<fieldDescription><![CDATA[string1]]></fieldDescription>
+	</field>
+	<field name="string2" class="java.lang.String">
+		<fieldDescription><![CDATA[string2]]></fieldDescription>
+	</field>
+	<field name="string3" class="java.lang.String">
+		<fieldDescription><![CDATA[string3]]></fieldDescription>
+	</field>
+	<field name="string4" class="java.lang.String">
+		<fieldDescription><![CDATA[string4]]></fieldDescription>
+	</field>
+	<field name="string5" class="java.lang.String">
+		<fieldDescription><![CDATA[string5]]></fieldDescription>
+	</field>
+	<field name="string6" class="java.lang.String">
+		<fieldDescription><![CDATA[string6]]></fieldDescription>
+	</field>
+	<field name="string7" class="java.lang.String">
+		<fieldDescription><![CDATA[string7]]></fieldDescription>
+	</field>
+	<field name="string8" class="java.lang.String">
+		<fieldDescription><![CDATA[string8]]></fieldDescription>
+	</field>
+	<field name="string9" class="java.lang.String">
+		<fieldDescription><![CDATA[string9]]></fieldDescription>
+	</field>
+	<field name="string10" class="java.lang.String">
+		<fieldDescription><![CDATA[string10]]></fieldDescription>
+	</field>
+	<field name="double6" class="java.lang.Double">
+		<fieldDescription><![CDATA[double6]]></fieldDescription>
+	</field>
+	<field name="double7" class="java.lang.Double">
+		<fieldDescription><![CDATA[double7]]></fieldDescription>
+	</field>
+	<field name="double8" class="java.lang.Double">
+		<fieldDescription><![CDATA[double8]]></fieldDescription>
+	</field>
+	<field name="double9" class="java.lang.Double">
+		<fieldDescription><![CDATA[double9]]></fieldDescription>
+	</field>
+	<field name="double10" class="java.lang.Double">
+		<fieldDescription><![CDATA[double10]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="91" splitType="Stretch">
+			<textField>
+				<reportElement x="9" y="6" width="205" height="19" uuid="24bcfbb8-7dfc-432b-93a7-2947e286d1ee"/>
+				<textElement verticalAlignment="Top" rotation="None">
+					<font fontName="Arial Narrow" size="16" isBold="true" pdfFontName="HYGoThic-Medium" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{string2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="9" y="0" width="205" height="10" uuid="3a0bf48c-7458-49f3-91b7-173a7b4173cc"/>
+				<textElement verticalAlignment="Top" rotation="None">
+					<font fontName="Arial Narrow" size="8" pdfFontName="HYGoThic-Medium" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{string1}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement x="30" y="68" width="73" height="19" uuid="4024c372-9eea-42cd-96ed-1f0a4ec2c69b"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" rotation="None">
+					<font fontName="Arial Narrow" size="16" isBold="true" pdfFontName="HYGoThic-Medium" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{double3}>0.0?$F{double3}:null]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement x="30" y="49" width="73" height="19" uuid="3c28b5b5-9656-45eb-a4b5-543c7bce8e56"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" rotation="None">
+					<font fontName="Arial Narrow" size="16" isBold="true" pdfFontName="HYGoThic-Medium" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{double2}>0.0?$F{double2}:null]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0">
+				<reportElement x="30" y="30" width="73" height="19" uuid="201892d5-ada0-497c-b6df-c66c7f8ce0cb"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" rotation="None">
+					<font fontName="Arial Narrow" size="16" isBold="true" pdfFontName="HYGoThic-Medium" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{double1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="5" y="30" width="30" height="57" uuid="767a5466-440c-49c3-810f-6e2e65b47c66"/>
+				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None">
+					<font fontName="Arial Narrow" size="26" isBold="true" pdfFontName="HYGoThic-Medium" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Rp]]></text>
+			</staticText>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement x="109" y="49" width="60" height="19" uuid="65cfac33-cc0f-4fe4-85f4-4d1869721dbe"/>
+				<textElement verticalAlignment="Middle" rotation="None">
+					<font fontName="Arial Narrow" size="14" isBold="true" pdfFontName="HYGoThic-Medium" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{string6}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement x="109" y="68" width="60" height="19" uuid="dca0699a-6349-4b39-b5d8-bf9995308c25"/>
+				<textElement verticalAlignment="Middle" rotation="None">
+					<font fontName="Arial Narrow" size="14" isBold="true" pdfFontName="HYGoThic-Medium" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{string7}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement x="109" y="30" width="60" height="19" uuid="2c051cf8-bea0-4f35-b124-67b13654a7cb"/>
+				<textElement verticalAlignment="Middle" rotation="None">
+					<font fontName="Arial Narrow" size="14" isBold="true" pdfFontName="HYGoThic-Medium" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{string5}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0">
+				<reportElement x="161" y="30" width="53" height="19" uuid="be3c1d77-0ee1-49ee-bb18-e821c8debc64"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" rotation="None">
+					<font fontName="Arial Narrow" size="16" isBold="true" pdfFontName="HYGoThic-Medium" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{double4}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement x="161" y="49" width="53" height="19" uuid="6ad730fa-6690-4b0c-929e-fb002943c860"/>
+				<textElement textAlignment="Right" rotation="None">
+					<font fontName="Arial Narrow" size="16" isBold="true" pdfFontName="HYGoThic-Medium" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{double5}>0?$F{double5}:null]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement x="161" y="68" width="53" height="19" uuid="29ade33d-4a7b-41c3-8ce8-40c2d494b63d"/>
+				<textElement textAlignment="Right" rotation="None">
+					<font fontName="Arial Narrow" size="16" isBold="true" pdfFontName="HYGoThic-Medium" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{double6}>0.0?$F{double6}:null]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

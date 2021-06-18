@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="583" leftMargin="6" rightMargin="6" topMargin="7" bottomMargin="6" uuid="f2aec91a-f985-484c-9143-4148fc76c01e">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="paramNorek" class="java.lang.String"/>
+	<parameter name="paramWarehouse" class="java.lang.String"/>
+	<parameter name="paramTrdate" class="java.util.Date"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="transferInNilaiJual" class="java.lang.Double">
+		<fieldDescription><![CDATA[transferInNilaiJual]]></fieldDescription>
+	</field>
+	<field name="transferOutPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[transferOutPcs]]></fieldDescription>
+	</field>
+	<field name="transferOutBes" class="java.lang.Integer">
+		<fieldDescription><![CDATA[transferOutBes]]></fieldDescription>
+	</field>
+	<field name="transferInPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[transferInPcs]]></fieldDescription>
+	</field>
+	<field name="penambahanSed" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penambahanSed]]></fieldDescription>
+	</field>
+	<field name="penambahanKec" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penambahanKec]]></fieldDescription>
+	</field>
+	<field name="penjualanPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penjualanPcs]]></fieldDescription>
+	</field>
+	<field name="transferOutSed" class="java.lang.Integer">
+		<fieldDescription><![CDATA[transferOutSed]]></fieldDescription>
+	</field>
+	<field name="returPenjualanKec" class="java.lang.Integer">
+		<fieldDescription><![CDATA[returPenjualanKec]]></fieldDescription>
+	</field>
+	<field name="teoriPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[teoriPcs]]></fieldDescription>
+	</field>
+	<field name="penyesuaianPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penyesuaianPcs]]></fieldDescription>
+	</field>
+	<field name="saldoAkhirSed" class="java.lang.Integer">
+		<fieldDescription><![CDATA[saldoAkhirSed]]></fieldDescription>
+	</field>
+	<field name="transferInSed" class="java.lang.Integer">
+		<fieldDescription><![CDATA[transferInSed]]></fieldDescription>
+	</field>
+	<field name="grup1" class="java.lang.String">
+		<fieldDescription><![CDATA[grup1]]></fieldDescription>
+	</field>
+	<field name="saldoAkhirKec" class="java.lang.Integer">
+		<fieldDescription><![CDATA[saldoAkhirKec]]></fieldDescription>
+	</field>
+	<field name="saldoAwalPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[saldoAwalPcs]]></fieldDescription>
+	</field>
+	<field name="penjualanBes" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penjualanBes]]></fieldDescription>
+	</field>
+	<field name="penambahanPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penambahanPcs]]></fieldDescription>
+	</field>
+	<field name="fisikSed" class="java.lang.Integer">
+		<fieldDescription><![CDATA[fisikSed]]></fieldDescription>
+	</field>
+	<field name="saldoAkhirNilaiJual" class="java.lang.Double">
+		<fieldDescription><![CDATA[saldoAkhirNilaiJual]]></fieldDescription>
+	</field>
+	<field name="penyesuaianBes" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penyesuaianBes]]></fieldDescription>
+	</field>
+	<field name="penguranganNilaiBeli" class="java.lang.Double">
+		<fieldDescription><![CDATA[penguranganNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="teoriBes" class="java.lang.Integer">
+		<fieldDescription><![CDATA[teoriBes]]></fieldDescription>
+	</field>
+	<field name="penguranganPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penguranganPcs]]></fieldDescription>
+	</field>
+	<field name="pname" class="java.lang.String">
+		<fieldDescription><![CDATA[pname]]></fieldDescription>
+	</field>
+	<field name="saldoAwalBes" class="java.lang.Integer">
+		<fieldDescription><![CDATA[saldoAwalBes]]></fieldDescription>
+	</field>
+	<field name="stockopnamedate" class="java.util.Date">
+		<fieldDescription><![CDATA[stockopnamedate]]></fieldDescription>
+	</field>
+	<field name="penambahanNilaiBeli" class="java.lang.Double">
+		<fieldDescription><![CDATA[penambahanNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="returPembelianNilaiJual" class="java.lang.Double">
+		<fieldDescription><![CDATA[returPembelianNilaiJual]]></fieldDescription>
+	</field>
+	<field name="id" class="java.lang.Long">
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="returPenjualanPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[returPenjualanPcs]]></fieldDescription>
+	</field>
+	<field name="returPembelianPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[returPembelianPcs]]></fieldDescription>
+	</field>
+	<field name="saldoAkhirPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[saldoAkhirPcs]]></fieldDescription>
+	</field>
+	<field name="saldoAkhirBes" class="java.lang.Integer">
+		<fieldDescription><![CDATA[saldoAkhirBes]]></fieldDescription>
+	</field>
+	<field name="transferInNilaiBeli" class="java.lang.Double">
+		<fieldDescription><![CDATA[transferInNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="returPembelianKec" class="java.lang.Integer">
+		<fieldDescription><![CDATA[returPembelianKec]]></fieldDescription>
+	</field>
+	<field name="grup3" class="java.lang.String">
+		<fieldDescription><![CDATA[grup3]]></fieldDescription>
+	</field>
+	<field name="penyesuaianSed" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penyesuaianSed]]></fieldDescription>
+	</field>
+	<field name="pcode" class="java.lang.String">
+		<fieldDescription><![CDATA[pcode]]></fieldDescription>
+	</field>
+	<field name="penguranganNilaiJual" class="java.lang.Double">
+		<fieldDescription><![CDATA[penguranganNilaiJual]]></fieldDescription>
+	</field>
+	<field name="penyesuaianNilaiJual" class="java.lang.Double">
+		<fieldDescription><![CDATA[penyesuaianNilaiJual]]></fieldDescription>
+	</field>
+	<field name="pembelianNilaiJual" class="java.lang.Double">
+		<fieldDescription><![CDATA[pembelianNilaiJual]]></fieldDescription>
+	</field>
+	<field name="pembelianKec" class="java.lang.Integer">
+		<fieldDescription><![CDATA[pembelianKec]]></fieldDescription>
+	</field>
+	<field name="penguranganKec" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penguranganKec]]></fieldDescription>
+	</field>
+	<field name="fisikKec" class="java.lang.Integer">
+		<fieldDescription><![CDATA[fisikKec]]></fieldDescription>
+	</field>
+	<field name="transferOutNilaiJual" class="java.lang.Double">
+		<fieldDescription><![CDATA[transferOutNilaiJual]]></fieldDescription>
+	</field>
+	<field name="pembelianPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[pembelianPcs]]></fieldDescription>
+	</field>
+	<field name="saldoAwalKec" class="java.lang.Integer">
+		<fieldDescription><![CDATA[saldoAwalKec]]></fieldDescription>
+	</field>
+	<field name="saldoAwalNilaiBeli" class="java.lang.Double">
+		<fieldDescription><![CDATA[saldoAwalNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="penguranganSed" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penguranganSed]]></fieldDescription>
+	</field>
+	<field name="transferOutNilaiBeli" class="java.lang.Double">
+		<fieldDescription><![CDATA[transferOutNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="returPembelianSed" class="java.lang.Integer">
+		<fieldDescription><![CDATA[returPembelianSed]]></fieldDescription>
+	</field>
+	<field name="returPenjualanNilaiBeli" class="java.lang.Double">
+		<fieldDescription><![CDATA[returPenjualanNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="fisikPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[fisikPcs]]></fieldDescription>
+	</field>
+	<field name="returPenjualanNilaiJual" class="java.lang.Double">
+		<fieldDescription><![CDATA[returPenjualanNilaiJual]]></fieldDescription>
+	</field>
+	<field name="saldoAwalSed" class="java.lang.Integer">
+		<fieldDescription><![CDATA[saldoAwalSed]]></fieldDescription>
+	</field>
+	<field name="transferInBes" class="java.lang.Integer">
+		<fieldDescription><![CDATA[transferInBes]]></fieldDescription>
+	</field>
+	<field name="fisikBes" class="java.lang.Integer">
+		<fieldDescription><![CDATA[fisikBes]]></fieldDescription>
+	</field>
+	<field name="penjualanKec" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penjualanKec]]></fieldDescription>
+	</field>
+	<field name="akumulasiNilaiJual" class="java.lang.Double">
+		<fieldDescription><![CDATA[akumulasiNilaiJual]]></fieldDescription>
+	</field>
+	<field name="penjualanNilaiBeli" class="java.lang.Double">
+		<fieldDescription><![CDATA[penjualanNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="grup2" class="java.lang.String">
+		<fieldDescription><![CDATA[grup2]]></fieldDescription>
+	</field>
+	<field name="saldoAkhirNilaiBeli" class="java.lang.Double">
+		<fieldDescription><![CDATA[saldoAkhirNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="returPenjualanSed" class="java.lang.Integer">
+		<fieldDescription><![CDATA[returPenjualanSed]]></fieldDescription>
+	</field>
+	<field name="penguranganBes" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penguranganBes]]></fieldDescription>
+	</field>
+	<field name="pembelianSed" class="java.lang.Integer">
+		<fieldDescription><![CDATA[pembelianSed]]></fieldDescription>
+	</field>
+	<field name="penyesuaianKec" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penyesuaianKec]]></fieldDescription>
+	</field>
+	<field name="penjualanNilaiJual" class="java.lang.Double">
+		<fieldDescription><![CDATA[penjualanNilaiJual]]></fieldDescription>
+	</field>
+	<field name="returPenjualanBes" class="java.lang.Integer">
+		<fieldDescription><![CDATA[returPenjualanBes]]></fieldDescription>
+	</field>
+	<field name="saldoAwalNilaiJual" class="java.lang.Double">
+		<fieldDescription><![CDATA[saldoAwalNilaiJual]]></fieldDescription>
+	</field>
+	<field name="returPembelianBes" class="java.lang.Integer">
+		<fieldDescription><![CDATA[returPembelianBes]]></fieldDescription>
+	</field>
+	<field name="teoriKec" class="java.lang.Integer">
+		<fieldDescription><![CDATA[teoriKec]]></fieldDescription>
+	</field>
+	<field name="transferOutKec" class="java.lang.Integer">
+		<fieldDescription><![CDATA[transferOutKec]]></fieldDescription>
+	</field>
+	<field name="pembelianNilaiBeli" class="java.lang.Double">
+		<fieldDescription><![CDATA[pembelianNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="returPembelianNilaiBeli" class="java.lang.Double">
+		<fieldDescription><![CDATA[returPembelianNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="penambahanNilaiJual" class="java.lang.Double">
+		<fieldDescription><![CDATA[penambahanNilaiJual]]></fieldDescription>
+	</field>
+	<field name="penyesuaianNilaiBeli" class="java.lang.Double">
+		<fieldDescription><![CDATA[penyesuaianNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="teoriSed" class="java.lang.Integer">
+		<fieldDescription><![CDATA[teoriSed]]></fieldDescription>
+	</field>
+	<field name="akumulasiNilaiBeli" class="java.lang.Double">
+		<fieldDescription><![CDATA[akumulasiNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="penjualanSed" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penjualanSed]]></fieldDescription>
+	</field>
+	<field name="pembelianBes" class="java.lang.Integer">
+		<fieldDescription><![CDATA[pembelianBes]]></fieldDescription>
+	</field>
+	<field name="transferInKec" class="java.lang.Integer">
+		<fieldDescription><![CDATA[transferInKec]]></fieldDescription>
+	</field>
+	<field name="penambahanBes" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penambahanBes]]></fieldDescription>
+	</field>
+	<variable name="SUM_PENAMBAHAN_NILAIBELI_DPP" class="java.lang.Double" resetType="Group" resetGroup="GRUP3" calculation="Sum">
+		<variableExpression><![CDATA[$F{penambahanNilaiBeli}]]></variableExpression>
+	</variable>
+	<variable name="SUM_PENAMBAHAN_NILAIJUAL_DPP" class="java.lang.Double" resetType="Group" resetGroup="GRUP3" calculation="Sum">
+		<variableExpression><![CDATA[$F{penambahanNilaiJual}]]></variableExpression>
+	</variable>
+	<variable name="SUM_PENGURANGAN_NILAIBELI_DPP" class="java.lang.Double" resetType="Group" resetGroup="GRUP3" calculation="Sum">
+		<variableExpression><![CDATA[$F{penguranganNilaiBeli}]]></variableExpression>
+	</variable>
+	<variable name="SUM_PENGURANGAN_NILAIJUAL_DPP" class="java.lang.Double" resetType="Group" resetGroup="GRUP3" calculation="Sum">
+		<variableExpression><![CDATA[$F{penguranganNilaiJual}]]></variableExpression>
+	</variable>
+	<variable name="SUM_PENAMBAHAN_NILAIBELI_PPN" class="java.lang.Double">
+		<variableExpression><![CDATA[$V{SUM_PENAMBAHAN_NILAIBELI_DPP} * 0.1]]></variableExpression>
+	</variable>
+	<variable name="SUM_PENAMBAHAN_NILAIJUAL_PPN" class="java.lang.Double">
+		<variableExpression><![CDATA[$V{SUM_PENAMBAHAN_NILAIJUAL_DPP}*0.1]]></variableExpression>
+	</variable>
+	<variable name="SUM_PENGURANGAN_NILAIBELI_PPN" class="java.lang.Double">
+		<variableExpression><![CDATA[$V{SUM_PENGURANGAN_NILAIBELI_DPP}*0.1]]></variableExpression>
+	</variable>
+	<variable name="SUM_PENGURANGAN_NILAIJUAL_PPN" class="java.lang.Double">
+		<variableExpression><![CDATA[$V{SUM_PENGURANGAN_NILAIJUAL_DPP}*0.1]]></variableExpression>
+	</variable>
+	<variable name="SUM_PENAMBAHAN_NILAIBELI_DPP_PPN" class="java.lang.Double">
+		<variableExpression><![CDATA[$V{SUM_PENAMBAHAN_NILAIBELI_DPP}*1.1]]></variableExpression>
+	</variable>
+	<variable name="SUM_PENAMBAHAN_NILAIJUAL_DPP_PPN" class="java.lang.Double">
+		<variableExpression><![CDATA[$V{SUM_PENAMBAHAN_NILAIJUAL_DPP}*1.1]]></variableExpression>
+	</variable>
+	<variable name="SUM_PENGURANGAN_NILAIBELI_DPP_PPN" class="java.lang.Double">
+		<variableExpression><![CDATA[$V{SUM_PENGURANGAN_NILAIBELI_DPP}*1.1]]></variableExpression>
+	</variable>
+	<variable name="SUM_PENGURANGAN_NILAIJUAL_DPP_PPN" class="java.lang.Double">
+		<variableExpression><![CDATA[$V{SUM_PENGURANGAN_NILAIJUAL_DPP}*1.1]]></variableExpression>
+	</variable>
+	<group name="GRUP3">
+		<groupExpression><![CDATA[$F{grup3}]]></groupExpression>
+		<groupHeader>
+			<band height="35">
+				<staticText>
+					<reportElement x="0" y="18" width="42" height="13" uuid="025b6c0e-95d5-4c80-a305-944f107e2135"/>
+					<textElement>
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Kode]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="42" y="18" width="161" height="13" uuid="56719967-b2b2-4750-8b97-2f9e73be6643"/>
+					<textElement>
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Nama Barang]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="327" y="18" width="57" height="13" uuid="306a865e-0c88-47d8-875a-cf5ce8a831d9"/>
+					<textElement textAlignment="Right">
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Penambahan]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="391" y="18" width="55" height="13" uuid="a243f80d-ef10-4bee-834e-4d438a2c3917"/>
+					<textElement textAlignment="Right">
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Pengurangan]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="450" y="18" width="63" height="13" uuid="5efaebb8-0b8f-4376-a2b5-9ca823af0f5a"/>
+					<textElement textAlignment="Right">
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Penambahan]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="509" y="18" width="70" height="13" uuid="8d7fe9f0-1e3c-4415-93d3-ac924fa2e146"/>
+					<textElement textAlignment="Right">
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Pengurangan]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="450" y="5" width="129" height="13" uuid="00bd7150-fdf3-4988-b4a8-c3c097598179"/>
+					<textElement textAlignment="Center">
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[- - - - - - - - NILAI - - - - - - - - ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="207" y="5" width="239" height="13" uuid="da476654-3ffd-4599-9383-e4422f282892"/>
+					<textElement textAlignment="Center">
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[- - - - - - - - QUANTITY - - - - - - - - ]]></text>
+				</staticText>
+				<line>
+					<reportElement x="0" y="32" width="580" height="1" uuid="66d1caa7-7e46-4402-985c-2b8b4289d41a"/>
+					<graphicElement>
+						<pen lineWidth="0.25"/>
+					</graphicElement>
+				</line>
+				<staticText>
+					<reportElement x="203" y="19" width="60" height="13" uuid="6be89bee-a1c7-4583-8ef2-8c6e4f968ee1"/>
+					<textElement textAlignment="Right">
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[FISIK]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="267" y="19" width="55" height="13" uuid="54ab30a9-3e21-4bce-a8f1-bbaef25d8532"/>
+					<textElement textAlignment="Right">
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[KOMPUTER]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="62">
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="450" y="12" width="63" height="13" uuid="7c720068-7787-419d-8e77-e8ccfb7dadb4"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{SUM_PENAMBAHAN_NILAIBELI_DPP}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="450" y="25" width="63" height="13" uuid="4d8d4884-6886-472a-97d4-389c1fd36713"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{SUM_PENAMBAHAN_NILAIBELI_PPN}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="450" y="38" width="63" height="13" uuid="ebb7172f-1a75-48b8-a5bb-cb77d6ea68c8"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{SUM_PENAMBAHAN_NILAIBELI_DPP_PPN}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="289" y="12" width="129" height="13" uuid="792176a1-2786-4236-a5ba-12736c251841"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="9" isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[TOTAL NILAI BELI DPP]]></text>
+				</staticText>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="516" y="12" width="63" height="13" uuid="ef1495b4-12ab-4a91-8880-345cdc42e807"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{SUM_PENGURANGAN_NILAIBELI_DPP}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="516" y="25" width="63" height="13" uuid="691070b5-fd97-4538-9ea4-c75fa5c92435"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{SUM_PENGURANGAN_NILAIBELI_PPN}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="516" y="38" width="63" height="13" uuid="6bf66515-656e-4573-b0d2-2e622552194d"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{SUM_PENGURANGAN_NILAIBELI_DPP_PPN}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="328" y="25" width="90" height="13" uuid="f1cdad53-b244-4cb2-bfa7-193318c16e84"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="9" isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[PPN]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="328" y="38" width="90" height="13" uuid="65888a69-9e0e-4775-a6d5-44d8707e3761"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="9" isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[DPP+PPN]]></text>
+				</staticText>
+				<line>
+					<reportElement x="0" y="0" width="580" height="1" uuid="b9aef09f-66f9-4abe-9093-0543d26e4d71"/>
+					<graphicElement>
+						<pen lineWidth="0.25"/>
+					</graphicElement>
+				</line>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="64" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="20" uuid="bf745a8e-92f3-4213-b385-62637cb9ee43"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN STOCK OPNAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="20" width="90" height="15" uuid="102821f1-95b6-43fa-a887-add98d98cbd3"/>
+				<textElement textAlignment="Left">
+					<font fontName="Ecofont Vera Sans" size="10" isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Nomor Dokumen]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="35" width="90" height="15" uuid="cbede729-225e-495b-a5f2-e397c68613c1"/>
+				<textElement textAlignment="Left">
+					<font fontName="Ecofont Vera Sans" size="10" isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[GUDANG ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="97" y="20" width="10" height="15" uuid="e9fe5e5c-d9e4-453d-97f4-81ae8f6aae10"/>
+				<textElement textAlignment="Left">
+					<font fontName="Ecofont Vera Sans" size="10" isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="97" y="35" width="10" height="15" uuid="0d231e42-7396-4787-82d1-d7eb4c30025b"/>
+				<textElement textAlignment="Left">
+					<font fontName="Ecofont Vera Sans" size="10" isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="49" width="90" height="15" uuid="835148dc-dad8-409e-8345-2456d5bbd790"/>
+				<textElement textAlignment="Left">
+					<font fontName="Ecofont Vera Sans" size="10" isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Tanggal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="97" y="49" width="10" height="15" uuid="20d8e2ae-04f3-4293-80ac-0605d8345556"/>
+				<textElement textAlignment="Left">
+					<font fontName="Ecofont Vera Sans" size="10" isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="455" y="22" width="41" height="13" uuid="5c91c26f-f4f1-4d8c-8391-e9d6868ee5cd"/>
+				<textElement textAlignment="Center">
+					<font size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Printed]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="496" y="22" width="89" height="13" uuid="b9e1664c-87d5-4032-a18a-c44da62119fa"/>
+				<textElement>
+					<font size="8" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="107" y="22" width="180" height="15" uuid="aea138c6-f1c7-46c7-a024-9a8f74e22a81"/>
+				<textElement>
+					<font fontName="Ecofont Vera Sans" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paramNorek}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="107" y="35" width="180" height="15" uuid="8cf75ab5-df17-4365-b949-56904526a05e"/>
+				<textElement>
+					<font fontName="Ecofont Vera Sans" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paramWarehouse}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="107" y="49" width="100" height="15" uuid="79db7920-89bf-4ccd-9b47-51710f61b909"/>
+				<textElement>
+					<font fontName="Ecofont Vera Sans" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paramTrdate}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="13" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="42" height="13" uuid="3d898096-5a78-43d4-a233-afbe95ad6090"/>
+				<textElement>
+					<font fontName="Ecofont Vera Sans" size="9" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pcode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="42" y="0" width="164" height="13" uuid="c1f4165a-8cbc-4afc-b485-9b1e748e8375"/>
+				<textElement>
+					<font fontName="Ecofont Vera Sans" size="9" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pname}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;(#,##0)">
+				<reportElement x="356" y="0" width="15" height="13" uuid="1e135d42-06d0-4d25-8de0-f8595cd0f6a1"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="9" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{penambahanSed}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;(#,##0)">
+				<reportElement x="371" y="0" width="15" height="13" uuid="1081c58e-82c0-427d-8d7c-3899b10eab5f"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="9" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{penambahanKec}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;(#,##0)">
+				<reportElement x="389" y="0" width="29" height="13" uuid="15b11871-82d5-4ce0-ae33-4d995497f741"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="9" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{penguranganBes}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;(#,##0)">
+				<reportElement x="418" y="0" width="15" height="13" uuid="a55c8bca-4fc4-458d-a53f-fa7b81f6e86b"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="9" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{penguranganSed}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;(#,##0)">
+				<reportElement x="433" y="0" width="15" height="13" uuid="e632d6e8-dd63-479c-aa49-da02ba251a7e"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="9" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{penguranganKec}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;(#,##0)">
+				<reportElement x="516" y="0" width="63" height="13" uuid="ad9f53dd-9cb6-4896-89fb-4c1e739bcc03"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="9" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{penguranganNilaiBeli}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;(#,##0)">
+				<reportElement x="450" y="0" width="63" height="13" uuid="bc1ffed7-8c41-4023-bdd4-d32652073937"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="9" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{penambahanNilaiBeli}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;(#,##0)">
+				<reportElement x="327" y="0" width="29" height="13" uuid="26567178-5b38-490f-9d1b-c307ce71177e"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="9" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{penambahanBes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="248" y="0" width="15" height="13" uuid="a2e1f6c6-43d1-40d5-aa45-39e1231dfa63"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="9" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fisikKec}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="265" y="0" width="29" height="13" uuid="539ed468-f76c-4ae4-a94d-cb020d15939f"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="9" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{teoriBes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="294" y="0" width="15" height="13" uuid="9a2f90ac-0707-4bce-9f82-0473c2906517"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="9" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{teoriSed}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="309" y="0" width="15" height="13" uuid="d51014cb-b7d0-4d96-a62d-f17f5a8fcca9"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="9" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{teoriKec}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="233" y="0" width="15" height="13" uuid="1d51e370-f30b-479c-bf03-43a4c0aa99fd"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="9" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fisikSed}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="203" y="0" width="29" height="13" uuid="f70e7eb8-3b7e-4369-9b57-66d51feae950"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="9" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fisikBes}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="39">
+			<staticText>
+				<reportElement x="13" y="2" width="145" height="17" uuid="8bc66a74-16b5-46fd-8844-99a4679b49f2"/>
+				<textElement textAlignment="Center">
+					<font fontName="Ecofont Vera Sans" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[(  . . . . . . . . . )]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="16" width="145" height="14" uuid="2205444c-29e7-4783-b299-9c60a792c1f1"/>
+				<textElement textAlignment="Center">
+					<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Otorisasi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="162" y="16" width="145" height="14" uuid="f6a283e1-339d-4a76-b3d3-1707ccb84d14"/>
+				<textElement textAlignment="Center">
+					<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Petusas/Admin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="162" y="2" width="145" height="17" uuid="b0e228fc-7dd3-4b76-8d40-11cf0c9e09a9"/>
+				<textElement textAlignment="Center">
+					<font fontName="Ecofont Vera Sans" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[(  . . . . . . . . . )]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

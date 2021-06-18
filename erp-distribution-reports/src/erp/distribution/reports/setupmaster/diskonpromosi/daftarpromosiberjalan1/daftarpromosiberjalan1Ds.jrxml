@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="578" leftMargin="10" rightMargin="7" topMargin="7" bottomMargin="7" uuid="a8489a6d-d737-435b-96fb-5709a5d08d71">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="paramString1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="paramString2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="paramLong1" class="java.lang.Long" isForPrompting="false"/>
+	<parameter name="paramLong2" class="java.lang.Long" isForPrompting="false"/>
+	<parameter name="paramDouble1" class="java.lang.Long" isForPrompting="false"/>
+	<parameter name="paramDouble2" class="java.lang.Long" isForPrompting="false"/>
+	<parameter name="paramDate1" class="java.util.Date" isForPrompting="false"/>
+	<parameter name="paramDate2" class="java.util.Date" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="bol1" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[bol1]]></fieldDescription>
+	</field>
+	<field name="bol2" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[bol2]]></fieldDescription>
+	</field>
+	<field name="bol3" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[bol3]]></fieldDescription>
+	</field>
+	<field name="bol4" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[bol4]]></fieldDescription>
+	</field>
+	<field name="bol5" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[bol5]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="date1" class="java.util.Date">
+		<fieldDescription><![CDATA[date1]]></fieldDescription>
+	</field>
+	<field name="date2" class="java.util.Date">
+		<fieldDescription><![CDATA[date2]]></fieldDescription>
+	</field>
+	<field name="date3" class="java.util.Date">
+		<fieldDescription><![CDATA[date3]]></fieldDescription>
+	</field>
+	<field name="date4" class="java.util.Date">
+		<fieldDescription><![CDATA[date4]]></fieldDescription>
+	</field>
+	<field name="date5" class="java.util.Date">
+		<fieldDescription><![CDATA[date5]]></fieldDescription>
+	</field>
+	<field name="double1" class="java.lang.Double">
+		<fieldDescription><![CDATA[double1]]></fieldDescription>
+	</field>
+	<field name="double10" class="java.lang.Double">
+		<fieldDescription><![CDATA[double10]]></fieldDescription>
+	</field>
+	<field name="double2" class="java.lang.Double">
+		<fieldDescription><![CDATA[double2]]></fieldDescription>
+	</field>
+	<field name="double3" class="java.lang.Double">
+		<fieldDescription><![CDATA[double3]]></fieldDescription>
+	</field>
+	<field name="double4" class="java.lang.Double">
+		<fieldDescription><![CDATA[double4]]></fieldDescription>
+	</field>
+	<field name="double5" class="java.lang.Double">
+		<fieldDescription><![CDATA[double5]]></fieldDescription>
+	</field>
+	<field name="double6" class="java.lang.Double">
+		<fieldDescription><![CDATA[double6]]></fieldDescription>
+	</field>
+	<field name="double7" class="java.lang.Double">
+		<fieldDescription><![CDATA[double7]]></fieldDescription>
+	</field>
+	<field name="double8" class="java.lang.Double">
+		<fieldDescription><![CDATA[double8]]></fieldDescription>
+	</field>
+	<field name="double9" class="java.lang.Double">
+		<fieldDescription><![CDATA[double9]]></fieldDescription>
+	</field>
+	<field name="grup1" class="java.lang.String">
+		<fieldDescription><![CDATA[grup1]]></fieldDescription>
+	</field>
+	<field name="grup2" class="java.lang.String">
+		<fieldDescription><![CDATA[grup2]]></fieldDescription>
+	</field>
+	<field name="grup3" class="java.lang.String">
+		<fieldDescription><![CDATA[grup3]]></fieldDescription>
+	</field>
+	<field name="grup4" class="java.lang.String">
+		<fieldDescription><![CDATA[grup4]]></fieldDescription>
+	</field>
+	<field name="grup5" class="java.lang.String">
+		<fieldDescription><![CDATA[grup5]]></fieldDescription>
+	</field>
+	<field name="id" class="java.lang.Long">
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="int1" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int1]]></fieldDescription>
+	</field>
+	<field name="int10" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int10]]></fieldDescription>
+	</field>
+	<field name="int2" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int2]]></fieldDescription>
+	</field>
+	<field name="int3" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int3]]></fieldDescription>
+	</field>
+	<field name="int4" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int4]]></fieldDescription>
+	</field>
+	<field name="int5" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int5]]></fieldDescription>
+	</field>
+	<field name="int6" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int6]]></fieldDescription>
+	</field>
+	<field name="int7" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int7]]></fieldDescription>
+	</field>
+	<field name="int8" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int8]]></fieldDescription>
+	</field>
+	<field name="int9" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int9]]></fieldDescription>
+	</field>
+	<field name="string1" class="java.lang.String">
+		<fieldDescription><![CDATA[string1]]></fieldDescription>
+	</field>
+	<field name="string10" class="java.lang.String">
+		<fieldDescription><![CDATA[string10]]></fieldDescription>
+	</field>
+	<field name="string11" class="java.lang.String">
+		<fieldDescription><![CDATA[string11]]></fieldDescription>
+	</field>
+	<field name="string12" class="java.lang.String">
+		<fieldDescription><![CDATA[string12]]></fieldDescription>
+	</field>
+	<field name="string13" class="java.lang.String">
+		<fieldDescription><![CDATA[string13]]></fieldDescription>
+	</field>
+	<field name="string14" class="java.lang.String">
+		<fieldDescription><![CDATA[string14]]></fieldDescription>
+	</field>
+	<field name="string15" class="java.lang.String">
+		<fieldDescription><![CDATA[string15]]></fieldDescription>
+	</field>
+	<field name="string2" class="java.lang.String">
+		<fieldDescription><![CDATA[string2]]></fieldDescription>
+	</field>
+	<field name="string3" class="java.lang.String">
+		<fieldDescription><![CDATA[string3]]></fieldDescription>
+	</field>
+	<field name="string4" class="java.lang.String">
+		<fieldDescription><![CDATA[string4]]></fieldDescription>
+	</field>
+	<field name="string5" class="java.lang.String">
+		<fieldDescription><![CDATA[string5]]></fieldDescription>
+	</field>
+	<field name="string6" class="java.lang.String">
+		<fieldDescription><![CDATA[string6]]></fieldDescription>
+	</field>
+	<field name="string7" class="java.lang.String">
+		<fieldDescription><![CDATA[string7]]></fieldDescription>
+	</field>
+	<field name="string8" class="java.lang.String">
+		<fieldDescription><![CDATA[string8]]></fieldDescription>
+	</field>
+	<field name="string9" class="java.lang.String">
+		<fieldDescription><![CDATA[string9]]></fieldDescription>
+	</field>
+	<variable name="zlaptemplate1_DOUBLE1_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double1}]]></variableExpression>
+	</variable>
+	<variable name="zlaptemplate1_DOUBLE2_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double2}]]></variableExpression>
+	</variable>
+	<group name="GRUP1">
+		<groupExpression><![CDATA[$F{grup1}]]></groupExpression>
+		<groupHeader>
+			<band height="5"/>
+		</groupHeader>
+		<groupFooter>
+			<band height="16">
+				<line>
+					<reportElement x="1" y="-3" width="575" height="1" uuid="f2d4ae93-81cb-4062-b467-1195f509b2c9"/>
+					<graphicElement>
+						<pen lineWidth="0.5"/>
+					</graphicElement>
+				</line>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="44" splitType="Stretch">
+			<staticText>
+				<reportElement x="162" y="9" width="252" height="20" uuid="25da781d-4f59-4d84-b63a-44ed0881f7b8"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[DAFTAR PROMOSI SEDANG BERJALAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="437" y="1" width="41" height="13" uuid="eb4ce5f2-15da-41d4-a412-472dfc1f3797"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Printed]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="478" y="1" width="100" height="13" uuid="c86796df-0608-44f4-8b85-f6c72a242790"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="8" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="272" y="26" width="125" height="15" uuid="f2dd7fa3-646d-4996-bf33-9a8ed58cba1f"/>
+				<textFieldExpression><![CDATA[$P{paramDate1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="210" y="26" width="62" height="14" uuid="da4b7e32-659c-4d98-8b48-afd140aaa2a1"/>
+				<textElement textAlignment="Right">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Tanggal :]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="234">
+			<staticText>
+				<reportElement x="1" y="6" width="76" height="14" uuid="fff3f6b4-c0c3-4f25-b4fa-ca35b8d37780"/>
+				<text><![CDATA[Nama Promo ]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="90" y="7" width="484" height="14" uuid="11d335d7-cbf6-4292-901d-6c33bbb44310"/>
+				<textFieldExpression><![CDATA[$F{string1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="21" width="76" height="14" uuid="d2be4e5a-5831-4771-af61-3cd369d2f8f3"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Produk]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="91" y="21" width="483" height="14" uuid="8e6e3f59-19c1-4d5e-bc02-5a3509549f8a"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{string2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="91" y="36" width="483" height="14" uuid="999c7ef9-539b-481e-9c27-9cfcee26d1e7"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{string3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="50" width="76" height="14" uuid="85db1fe5-6a99-4345-9a44-bdadb943d2b5"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Target Sales]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="64" width="78" height="14" uuid="adc9b07a-db33-467b-959c-7ca15125ea9f"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Periode berlaku]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="91" y="64" width="64" height="14" uuid="e3f5492c-d2dd-47d2-84ee-7dd7d5c784cc"/>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{date1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="155" y="64" width="21" height="14" uuid="6ab375f0-d2bd-4f21-bcc7-ea11600f9d74"/>
+				<textElement textAlignment="Center">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[S.D]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="176" y="64" width="100" height="14" uuid="748b4f34-fc52-4378-9d63-d84394cede27"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{date2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-1" y="78" width="125" height="14" uuid="537dcb2f-882a-473d-8d8a-8a3e7e484730"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Ketentuan Bonus Barang]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="91" y="50" width="483" height="14" uuid="6b614066-f4fe-48fb-839f-804a4d82ed8b"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{string4}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="14" y="92" width="562" height="14" isRemoveLineWhenBlank="true" uuid="b070f3f9-9693-4bc7-ba86-a2c8f3bbe8e3"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{string5}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="14" y="106" width="562" height="14" isRemoveLineWhenBlank="true" uuid="dcda32bc-3ef5-4918-bc17-4e64678ff611"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{string6}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="14" y="120" width="562" height="14" isRemoveLineWhenBlank="true" uuid="6ed74f91-c461-4274-863c-40832d76700b"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{string7}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="14" y="134" width="562" height="14" isRemoveLineWhenBlank="true" uuid="ed3e0ee9-e8cb-431b-a91c-3f323409111d"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{string8}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="158" width="125" height="14" uuid="965f2907-d712-457f-9e0e-9091983c0bd6"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Ketentuan Diskon]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="16" y="214" width="562" height="14" isRemoveLineWhenBlank="true" uuid="2e0d1c70-2271-411f-95fb-60fa5cf80681"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{string12}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="16" y="186" width="562" height="14" isRemoveLineWhenBlank="true" uuid="972c06b7-c3f4-463e-ba44-cc14b7ba8e2e"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{string10}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="16" y="172" width="562" height="14" isRemoveLineWhenBlank="true" uuid="d7d1a2e2-8577-4ef2-834a-f735e629800e"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{string9}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="16" y="200" width="562" height="14" isRemoveLineWhenBlank="true" uuid="a211203b-c9ad-4765-9f7e-81d1834cf6cf"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{string11}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="36" width="76" height="14" uuid="f2b6735d-3a56-4322-a1f8-d527bcc3fa7f"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Produk Grup]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="77" y="7" width="14" height="14" uuid="26834512-5c09-4671-8f70-7b8c56569b56"/>
+				<textElement textAlignment="Center">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-1" y="-1" width="575" height="1" uuid="aff05413-9cbd-4861-818e-d159249030bc"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="77" y="20" width="14" height="14" uuid="8c239cd1-bbbb-4e61-ad8e-af8d9aa4c6c5"/>
+				<textElement textAlignment="Center">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="77" y="36" width="14" height="14" uuid="e4fc6e9e-b061-4836-bc77-1990e88663e3"/>
+				<textElement textAlignment="Center">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="77" y="50" width="14" height="14" uuid="aba290d8-3f8d-44d2-a5b9-cbd626efe834"/>
+				<textElement textAlignment="Center">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="77" y="64" width="14" height="14" uuid="db3ac380-236a-42b9-a945-c19529e9bfed"/>
+				<textElement textAlignment="Center">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

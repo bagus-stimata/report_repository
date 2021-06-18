@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="591" leftMargin="2" rightMargin="2" topMargin="2" bottomMargin="2" uuid="87752ea3-33f4-42c5-8e46-1ff39785a907">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="paramStockdateFrom" class="java.util.Date"/>
+	<parameter name="paramStockdateTo" class="java.util.Date"/>
+	<parameter name="paramJudulHeader" class="java.lang.String"/>
+	<parameter name="paramJudulHeaderSub1" class="java.lang.String"/>
+	<parameter name="paramJudulHeaderSub2" class="java.lang.String"/>
+	<parameter name="paramPrinted" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="grup1" class="java.lang.String">
+		<fieldDescription><![CDATA[grup1]]></fieldDescription>
+	</field>
+	<field name="grup2" class="java.lang.String">
+		<fieldDescription><![CDATA[grup2]]></fieldDescription>
+	</field>
+	<field name="grup3" class="java.lang.String">
+		<fieldDescription><![CDATA[grup3]]></fieldDescription>
+	</field>
+	<field name="ID" class="java.lang.Long">
+		<fieldDescription><![CDATA[ID]]></fieldDescription>
+	</field>
+	<field name="pcode" class="java.lang.String">
+		<fieldDescription><![CDATA[pcode]]></fieldDescription>
+	</field>
+	<field name="pembelian_uom1" class="java.lang.Integer">
+		<fieldDescription><![CDATA[pembelian_uom1]]></fieldDescription>
+	</field>
+	<field name="pembelian_uom3" class="java.lang.Integer">
+		<fieldDescription><![CDATA[pembelian_uom3]]></fieldDescription>
+	</field>
+	<field name="pembelianNilaiBeli" class="java.lang.Float">
+		<fieldDescription><![CDATA[pembelianNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="pembelianNilaiJual" class="java.lang.Float">
+		<fieldDescription><![CDATA[pembelianNilaiJual]]></fieldDescription>
+	</field>
+	<field name="pembelianPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[pembelianPcs]]></fieldDescription>
+	</field>
+	<field name="pembelian_uom2" class="java.lang.Integer">
+		<fieldDescription><![CDATA[pembelian_uom2]]></fieldDescription>
+	</field>
+	<field name="penjualan_uom1" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penjualan_uom1]]></fieldDescription>
+	</field>
+	<field name="penjualan_uom3" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penjualan_uom3]]></fieldDescription>
+	</field>
+	<field name="penjualanNilaiBeli" class="java.lang.Float">
+		<fieldDescription><![CDATA[penjualanNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="penjualanNilaiJual" class="java.lang.Float">
+		<fieldDescription><![CDATA[penjualanNilaiJual]]></fieldDescription>
+	</field>
+	<field name="penjualanPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penjualanPcs]]></fieldDescription>
+	</field>
+	<field name="penjualan_uom2" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penjualan_uom2]]></fieldDescription>
+	</field>
+	<field name="penyesuaian_uom1" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penyesuaian_uom1]]></fieldDescription>
+	</field>
+	<field name="penyesuaian_uom3" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penyesuaian_uom1]]></fieldDescription>
+	</field>
+	<field name="penyesuaianNilaiBeli" class="java.lang.Float">
+		<fieldDescription><![CDATA[penyesuaianNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="penyesuaianNilaiJual" class="java.lang.Float">
+		<fieldDescription><![CDATA[penyesuaianNilaiJual]]></fieldDescription>
+	</field>
+	<field name="penyesuaianPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penyesuaianPcs]]></fieldDescription>
+	</field>
+	<field name="penyesuaian_uom2" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penyesuaian_uom2]]></fieldDescription>
+	</field>
+	<field name="pname" class="java.lang.String">
+		<fieldDescription><![CDATA[pname]]></fieldDescription>
+	</field>
+	<field name="returPembelian_uom1" class="java.lang.Integer">
+		<fieldDescription><![CDATA[returPembelian_uom1]]></fieldDescription>
+	</field>
+	<field name="returPembelian_uom3" class="java.lang.Integer">
+		<fieldDescription><![CDATA[returPembelian_uom1]]></fieldDescription>
+	</field>
+	<field name="returPembelianNilaiBeli" class="java.lang.Float">
+		<fieldDescription><![CDATA[returPembelianNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="returPembelianNilaiJual" class="java.lang.Float">
+		<fieldDescription><![CDATA[returPembelianNilaiJual]]></fieldDescription>
+	</field>
+	<field name="returPembelianPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[returPembelianPcs]]></fieldDescription>
+	</field>
+	<field name="returPembelian_uom2" class="java.lang.Integer">
+		<fieldDescription><![CDATA[returPembelian_uom2]]></fieldDescription>
+	</field>
+	<field name="returPenjualan_uom1" class="java.lang.Integer">
+		<fieldDescription><![CDATA[returPenjualan_uom1]]></fieldDescription>
+	</field>
+	<field name="returPenjualan_uom3" class="java.lang.Integer">
+		<fieldDescription><![CDATA[returPenjualan_uom3]]></fieldDescription>
+	</field>
+	<field name="returPenjualanNilaiBeli" class="java.lang.Float">
+		<fieldDescription><![CDATA[returPenjualanNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="returPenjualanNilaiJual" class="java.lang.Float">
+		<fieldDescription><![CDATA[returPenjualanNilaiJual]]></fieldDescription>
+	</field>
+	<field name="returPenjualanPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[returPenjualanPcs]]></fieldDescription>
+	</field>
+	<field name="returPenjualan_uom2" class="java.lang.Integer">
+		<fieldDescription><![CDATA[returPenjualan_uom2]]></fieldDescription>
+	</field>
+	<field name="saldoAkhir_uom1" class="java.lang.Integer">
+		<fieldDescription><![CDATA[saldoAkhir_uom1]]></fieldDescription>
+	</field>
+	<field name="saldoAkhir_uom3" class="java.lang.Integer">
+		<fieldDescription><![CDATA[saldoAkhir_uom3]]></fieldDescription>
+	</field>
+	<field name="saldoAkhirNilaiBeli" class="java.lang.Float">
+		<fieldDescription><![CDATA[saldoAkhirNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="saldoAkhirNilaiJual" class="java.lang.Float">
+		<fieldDescription><![CDATA[saldoAkhirNilaiJual]]></fieldDescription>
+	</field>
+	<field name="saldoAkhirPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[saldoAkhirPcs]]></fieldDescription>
+	</field>
+	<field name="saldoAkhir_uom2" class="java.lang.Integer">
+		<fieldDescription><![CDATA[saldoAkhir_uom2]]></fieldDescription>
+	</field>
+	<field name="saldoAwal_uom1" class="java.lang.Integer">
+		<fieldDescription><![CDATA[saldoAwal_uom1]]></fieldDescription>
+	</field>
+	<field name="saldoAwal_uom3" class="java.lang.Integer">
+		<fieldDescription><![CDATA[saldoAwal_uom3]]></fieldDescription>
+	</field>
+	<field name="saldoAwalNilaiBeli" class="java.lang.Float">
+		<fieldDescription><![CDATA[saldoAwalNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="saldoAwalNilaiJual" class="java.lang.Float">
+		<fieldDescription><![CDATA[saldoAwalNilaiJual]]></fieldDescription>
+	</field>
+	<field name="saldoAwalPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[saldoAwalPcs]]></fieldDescription>
+	</field>
+	<field name="saldoAwal_uom2" class="java.lang.Integer">
+		<fieldDescription><![CDATA[saldoAwal_uom2]]></fieldDescription>
+	</field>
+	<field name="stockdate" class="java.util.Date">
+		<fieldDescription><![CDATA[stockdate]]></fieldDescription>
+	</field>
+	<field name="transferIn_uom1" class="java.lang.Integer">
+		<fieldDescription><![CDATA[transferIn_uom1]]></fieldDescription>
+	</field>
+	<field name="transferIn_uom3" class="java.lang.Integer">
+		<fieldDescription><![CDATA[transferIn_uom3]]></fieldDescription>
+	</field>
+	<field name="transferInNilaiBeli" class="java.lang.Float">
+		<fieldDescription><![CDATA[transferInNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="transferInNilaiJual" class="java.lang.Float">
+		<fieldDescription><![CDATA[transferInNilaiJual]]></fieldDescription>
+	</field>
+	<field name="transferInPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[transferInPcs]]></fieldDescription>
+	</field>
+	<field name="transferIn_uom2" class="java.lang.Integer">
+		<fieldDescription><![CDATA[transferIn_uom2]]></fieldDescription>
+	</field>
+	<field name="transferOut_uom1" class="java.lang.Integer">
+		<fieldDescription><![CDATA[transferOut_uom1]]></fieldDescription>
+	</field>
+	<field name="transferOut_uom3" class="java.lang.Integer">
+		<fieldDescription><![CDATA[transferOut_uom3]]></fieldDescription>
+	</field>
+	<field name="transferOutNilaiBeli" class="java.lang.Float">
+		<fieldDescription><![CDATA[transferOutNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="transferOutNilaiJual" class="java.lang.Float">
+		<fieldDescription><![CDATA[transferOutNilaiJual]]></fieldDescription>
+	</field>
+	<field name="transferOutPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[transferOutPcs]]></fieldDescription>
+	</field>
+	<field name="transferOut_uom2" class="java.lang.Integer">
+		<fieldDescription><![CDATA[transferOut_uom2]]></fieldDescription>
+	</field>
+	<field name="pembelian_uom4" class="java.lang.Integer">
+		<fieldDescription><![CDATA[pembelian_uom4]]></fieldDescription>
+	</field>
+	<field name="penjualan_uom4" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penjualan_uom4]]></fieldDescription>
+	</field>
+	<field name="penyesuaian_uom4" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penyesuaian_uom4]]></fieldDescription>
+	</field>
+	<field name="returPembelian_uom4" class="java.lang.Integer">
+		<fieldDescription><![CDATA[returPembelian_uom4]]></fieldDescription>
+	</field>
+	<field name="returPenjualan_uom4" class="java.lang.Integer">
+		<fieldDescription><![CDATA[returPenjualan_uom4]]></fieldDescription>
+	</field>
+	<field name="saldoAkhir_uom4" class="java.lang.Integer">
+		<fieldDescription><![CDATA[saldoAkhir_uom4]]></fieldDescription>
+	</field>
+	<field name="saldoAwal_uom4" class="java.lang.Integer">
+		<fieldDescription><![CDATA[saldoAwal_uom4]]></fieldDescription>
+	</field>
+	<field name="transferIn_uom4" class="java.lang.Integer">
+		<fieldDescription><![CDATA[transferIn_uom4]]></fieldDescription>
+	</field>
+	<field name="transferOut_uom4" class="java.lang.Integer">
+		<fieldDescription><![CDATA[transferOut_uom4]]></fieldDescription>
+	</field>
+	<field name="pembelianString" class="java.lang.String">
+		<fieldDescription><![CDATA[pembelianString]]></fieldDescription>
+	</field>
+	<field name="penjualanString" class="java.lang.String">
+		<fieldDescription><![CDATA[penjualanString]]></fieldDescription>
+	</field>
+	<field name="penyesuaianString" class="java.lang.String">
+		<fieldDescription><![CDATA[penyesuaianString]]></fieldDescription>
+	</field>
+	<field name="returPembelianString" class="java.lang.String">
+		<fieldDescription><![CDATA[returPembelianString]]></fieldDescription>
+	</field>
+	<field name="returPenjualanString" class="java.lang.String">
+		<fieldDescription><![CDATA[returPenjualanString]]></fieldDescription>
+	</field>
+	<field name="saldoAkhirString" class="java.lang.String">
+		<fieldDescription><![CDATA[saldoAkhirString]]></fieldDescription>
+	</field>
+	<field name="saldoAwalString" class="java.lang.String">
+		<fieldDescription><![CDATA[saldoAwalString]]></fieldDescription>
+	</field>
+	<field name="transferInString" class="java.lang.String">
+		<fieldDescription><![CDATA[transferInString]]></fieldDescription>
+	</field>
+	<field name="transferOutString" class="java.lang.String">
+		<fieldDescription><![CDATA[transferOutString]]></fieldDescription>
+	</field>
+	<field name="saldoAkhirString_uom1" class="java.lang.String"/>
+	<field name="saldoAkhirString_uom2" class="java.lang.String"/>
+	<field name="saldoAkhirString_uom3" class="java.lang.String"/>
+	<field name="saldoAkhirString_uom4" class="java.lang.String"/>
+	<field name="convfactString" class="java.lang.String"/>
+	<field name="string1" class="java.lang.String"/>
+	<field name="string2" class="java.lang.String"/>
+	<field name="string3" class="java.lang.String"/>
+	<field name="string4" class="java.lang.String"/>
+	<field name="string5" class="java.lang.String"/>
+	<field name="saldoAwalString_uom1" class="java.lang.String"/>
+	<field name="saldoAwalString_uom2" class="java.lang.String"/>
+	<field name="saldoAwalString_uom3" class="java.lang.String"/>
+	<field name="saldoAwalString_uom4" class="java.lang.String"/>
+	<variable name="grup1_sum_SaldoAkhirNilaiBeli" class="java.lang.Integer" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{saldoAkhirNilaiBeli}]]></variableExpression>
+	</variable>
+	<variable name="grup1_sum_SaldoAkhirNilaiJual" class="java.lang.Integer" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{saldoAkhirNilaiJual}]]></variableExpression>
+	</variable>
+	<group name="GRUP3">
+		<groupExpression><![CDATA[$F{grup3}]]></groupExpression>
+	</group>
+	<group name="GRUP2">
+		<groupExpression><![CDATA[$F{grup2}]]></groupExpression>
+	</group>
+	<group name="GRUP1">
+		<groupExpression><![CDATA[$F{grup1}]]></groupExpression>
+		<groupHeader>
+			<band height="137">
+				<staticText>
+					<reportElement positionType="Float" x="305" y="121" width="74" height="13" uuid="dde7a792-cd81-4681-af62-d54147a6148d"/>
+					<textElement textAlignment="Center" markup="none">
+						<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[KONVERSI/ISI KRT]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="379" y="121" width="151" height="13" uuid="ce05d51b-0fce-47ef-b6a4-dfe1b4fc83a6"/>
+					<textElement textAlignment="Center" markup="none">
+						<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[KUANTUM]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="532" y="121" width="50" height="13" uuid="f9ee85e8-7aeb-4754-b372-d2c1f123cf75"/>
+					<textElement textAlignment="Center" markup="none">
+						<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[PCS]]></text>
+				</staticText>
+				<textField>
+					<reportElement positionType="Float" x="10" y="107" width="570" height="14" uuid="ceabe97f-9cda-4bfc-bbb6-c240d0204053"/>
+					<textElement>
+						<font fontName="Ecofont Vera Sans" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{grup1}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="12" y="47" width="60" height="13" uuid="7d7e5903-3ff0-46a8-a359-caa956b76b72"/>
+					<textElement markup="none">
+						<font fontName="Ecofont Vera Sans" size="9" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Nomor SJ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="245" y="48" width="60" height="13" uuid="8f61e8b1-fcd8-421f-8a66-6137955d0974"/>
+					<textElement markup="none">
+						<font fontName="Ecofont Vera Sans" size="9" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Tanggal]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="12" y="61" width="60" height="13" uuid="8ad381fc-8b17-4402-8f86-dd50bfd7e3c8"/>
+					<textElement markup="none">
+						<font fontName="Ecofont Vera Sans" size="9" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Driver]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="12" y="77" width="60" height="13" uuid="c1c88f69-f322-424f-81b3-147e58699851"/>
+					<textElement markup="none">
+						<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Salesman]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="12" y="90" width="60" height="13" uuid="ad80fde1-b213-439e-b6b1-b8ae0d22d2bd"/>
+					<textElement markup="none">
+						<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Daftar Invoice]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="89" y="90" width="446" height="13" uuid="137c9bd9-9e49-4067-b5a0-4924df2e7c81"/>
+					<textElement>
+						<font fontName="Ecofont Vera Sans" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{string4}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="89" y="77" width="446" height="13" uuid="fa7580fd-d445-4d29-80b1-a1b8beffd941"/>
+					<textElement>
+						<font fontName="Ecofont Vera Sans" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{string3}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="317" y="48" width="150" height="13" uuid="41c6e34f-4185-47da-ba6b-8db1a97d8d3e"/>
+					<textElement>
+						<font fontName="Ecofont Vera Sans" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{string1}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="89" y="48" width="150" height="14" uuid="699453ca-69bf-44c7-b74c-e5291035c65b"/>
+					<textElement>
+						<font fontName="Ecofont Vera Sans" size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{grup2}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="72" y="47" width="15" height="13" uuid="7f0ba54c-9d54-48c2-9535-caba273bc0ad"/>
+					<textElement textAlignment="Center" markup="none">
+						<font fontName="Ecofont Vera Sans" size="9" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="305" y="48" width="15" height="13" uuid="5611266c-70ff-4318-a9bf-134799a045a6"/>
+					<textElement textAlignment="Center" markup="none">
+						<font fontName="Ecofont Vera Sans" size="9" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="72" y="61" width="15" height="13" uuid="49541f62-d4f0-43e7-bccf-f7b1b4f31989"/>
+					<textElement textAlignment="Center" markup="none">
+						<font fontName="Ecofont Vera Sans" size="9" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="89" y="62" width="378" height="13" uuid="c023d5ce-9466-4606-8a5f-1e8a015868f8"/>
+					<textElement>
+						<font fontName="Ecofont Vera Sans" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{string2}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="72" y="77" width="15" height="13" uuid="79d01c8e-3052-4027-b16d-6a1860437c23"/>
+					<textElement textAlignment="Center" markup="none">
+						<font fontName="Ecofont Vera Sans" size="9" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="72" y="90" width="15" height="13" uuid="2bb7d058-84cb-4de7-b742-60861d3572cc"/>
+					<textElement textAlignment="Center" markup="none">
+						<font fontName="Ecofont Vera Sans" size="9" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="72" y="121" width="242" height="13" uuid="60efa5b1-205c-494b-9137-48312d26b30b"/>
+					<textElement markup="none">
+						<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Nama Material]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="10" y="121" width="60" height="13" uuid="d2e775d0-e4e3-4475-a632-d5d7bc66c7d8"/>
+					<textElement textAlignment="Center" markup="none">
+						<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[KODE]]></text>
+				</staticText>
+				<line>
+					<reportElement positionType="Float" x="2" y="134" width="580" height="1" uuid="a363ef42-00df-4b48-94f0-72d3fa930296"/>
+					<graphicElement>
+						<pen lineWidth="0.25" lineStyle="Dashed"/>
+					</graphicElement>
+				</line>
+				<textField>
+					<reportElement x="149" y="3" width="291" height="20" uuid="3e350743-5c49-4d54-ab0a-7428778bbb4b"/>
+					<textElement textAlignment="Center">
+						<font size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{paramJudulHeader}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="149" y="21" width="291" height="25" uuid="d4da3a71-b609-4644-9a53-6d629116a7c9"/>
+					<textElement textAlignment="Center">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{paramJudulHeaderSub2}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="470" y="3" width="115" height="9" uuid="d2062353-f070-4738-aa63-7cf2b5ebd082"/>
+					<textElement textAlignment="Right">
+						<font size="5"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{paramPrinted}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="100">
+				<line>
+					<reportElement x="1" y="2" width="580" height="1" uuid="bc2a4521-6a44-446a-8574-5c69455fed60"/>
+					<graphicElement>
+						<pen lineWidth="0.25" lineStyle="Dashed"/>
+					</graphicElement>
+				</line>
+				<staticText>
+					<reportElement x="413" y="9" width="60" height="13" uuid="f6273a85-b19d-4acf-a5b1-aadbcdbf5aa4"/>
+					<textElement markup="none">
+						<font fontName="Ecofont Vera Sans" size="9" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Total In PCS]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="413" y="24" width="60" height="13" uuid="3e51bd18-0ce6-4476-bfcc-b73603033789"/>
+					<textElement markup="none">
+						<font fontName="Ecofont Vera Sans" size="9" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Total Netto]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="20" y="9" width="67" height="13" uuid="e76af875-fe20-4d94-bff5-91df3a003f46"/>
+					<textElement markup="none">
+						<font fontName="Ecofont Vera Sans" size="9" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Kubikasi]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="20" y="24" width="67" height="13" uuid="6043e960-6053-4eb8-b1a7-87ea91cb7c4b"/>
+					<textElement markup="none">
+						<font fontName="Ecofont Vera Sans" size="9" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Tonase]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="34" y="46" width="110" height="13" uuid="14862a02-bdda-472d-8a48-22f577f6e1e0"/>
+					<textElement textAlignment="Center" markup="none">
+						<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Driver]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="183" y="46" width="110" height="13" uuid="5cd52419-7c3f-4a48-b71b-0319f4bfa5b4"/>
+					<textElement textAlignment="Center" markup="none">
+						<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Gudang]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="34" y="79" width="110" height="13" uuid="940bcbca-47e3-4d06-bd3f-42c085a98d62"/>
+					<textElement textAlignment="Center" markup="none">
+						<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[( . . . . . . . . . . . . .  )]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="183" y="79" width="110" height="13" uuid="e5324228-4f42-42ec-9f44-a61c40ac6024"/>
+					<textElement textAlignment="Center" markup="none">
+						<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[( . . . . . . . . . . . . .  )]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="328" y="46" width="110" height="13" uuid="160402ea-365b-415f-bc6e-3fd573455276"/>
+					<textElement markup="none">
+						<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Keterangan :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="473" y="9" width="15" height="13" uuid="85186be8-c315-4855-9615-93bd63a216c9"/>
+					<textElement textAlignment="Center" markup="none">
+						<font fontName="Ecofont Vera Sans" size="9" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="473" y="24" width="15" height="13" uuid="938c4525-319d-4fbc-85d8-afa94038a540"/>
+					<textElement textAlignment="Center" markup="none">
+						<font fontName="Ecofont Vera Sans" size="9" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="88" y="9" width="15" height="13" uuid="8c13cc9c-ee55-4f3b-ad8b-6e0d34ffd7fa"/>
+					<textElement textAlignment="Center" markup="none">
+						<font fontName="Ecofont Vera Sans" size="9" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="88" y="24" width="15" height="13" uuid="3cc7c439-d21c-4a66-9fcc-c915ad223a3e"/>
+					<textElement textAlignment="Center" markup="none">
+						<font fontName="Ecofont Vera Sans" size="9" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="488" y="24" width="92" height="13" uuid="84136367-fc77-4dc2-9f6a-5e735a48613f"/>
+					<textElement>
+						<font fontName="Ecofont Vera Sans" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{saldoAwalString_uom4}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="488" y="9" width="92" height="13" uuid="edd25540-aee0-42d5-9134-5c0716bc131b"/>
+					<textElement>
+						<font fontName="Ecofont Vera Sans" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{saldoAwalString_uom3}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="103" y="9" width="119" height="13" uuid="bee057dd-c429-45e7-a9a4-2027f6c0cc6d"/>
+					<textElement>
+						<font fontName="Ecofont Vera Sans" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{saldoAwalString_uom1}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="103" y="23" width="119" height="13" uuid="74a02756-9a1e-4d41-91fa-058835017816"/>
+					<textElement>
+						<font fontName="Ecofont Vera Sans" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{saldoAwalString_uom2}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="20"/>
+	</pageHeader>
+	<detail>
+		<band height="15" splitType="Stretch">
+			<textField>
+				<reportElement x="10" y="0" width="60" height="13" uuid="7d406f24-fbcb-4bd4-a964-04eda3ee4253"/>
+				<textElement>
+					<font fontName="Ecofont Vera Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pcode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="0" width="244" height="13" uuid="8b7d9ea7-7b9c-4c8b-a35f-439cbb3a0232"/>
+				<textElement>
+					<font fontName="Ecofont Vera Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="485" y="0" width="45" height="13" uuid="5310d480-d9a5-4e7e-b636-e91f8f9038a0"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{saldoAkhirString_uom4}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0">
+				<reportElement x="532" y="0" width="50" height="13" uuid="63c0cd2b-0fc3-48d2-8a54-a43b7527c39c"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{saldoAkhirPcs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="0" width="45" height="13" uuid="b3b51525-8445-49c4-9fb5-feb5f36ccb1f"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{saldoAkhirString_uom2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="379" y="0" width="60" height="13" uuid="1ff5b1e7-8680-49f9-b5b4-704a32dcffca"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{saldoAkhirString_uom1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="314" y="0" width="65" height="13" uuid="ad513a39-1955-4a57-b233-c24b7b684f15"/>
+				<textElement>
+					<font fontName="Ecofont Vera Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{convfactString}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="20"/>
+	</pageFooter>
+</jasperReport>

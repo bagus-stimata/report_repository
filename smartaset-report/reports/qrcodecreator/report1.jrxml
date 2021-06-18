@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9096da32-74b1-4da3-8695-6c5c767692e6">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT
+     ftaset.`ID` AS ftaset_ID,
+     ftaset.`DTYPE` AS ftaset_DTYPE,
+     ftaset.`ASAL_USUL` AS ftaset_ASAL_USUL,
+     ftaset.`HARGA_SATUAN` AS ftaset_HARGA_SATUAN,
+     ftaset.`JUMLAH_SATUAN` AS ftaset_JUMLAH_SATUAN,
+     ftaset.`KEPEMILIKAN` AS ftaset_KEPEMILIKAN,
+     ftaset.`KODE1` AS ftaset_KODE1,
+     ftaset.`KODE2` AS ftaset_KODE2,
+     ftaset.`KONDISI_BARANG` AS ftaset_KONDISI_BARANG,
+     ftaset.`NAMA_ASET` AS ftaset_NAMA_ASET,
+     ftaset.`NILAI_PEROLEHAN` AS ftaset_NILAI_PEROLEHAN,
+     ftaset.`NOMOR_REF` AS ftaset_NOMOR_REF,
+     ftaset.`NOMOR_REG` AS ftaset_NOMOR_REG,
+     ftaset.`NOTES` AS ftaset_NOTES,
+     ftaset.`TANGGAL_PEROLEHAN` AS ftaset_TANGGAL_PEROLEHAN,
+     ftaset.`fasetGroupBean` AS ftaset_fasetGroupBean,
+     ftaset.`fupbBean` AS ftaset_fupbBean,
+     ftaset.`HAK_TANAH` AS ftaset_HAK_TANAH,
+     ftaset.`LETAK_TANAH` AS ftaset_LETAK_TANAH,
+     ftaset.`LUAS_TANAH` AS ftaset_LUAS_TANAH,
+     ftaset.`NOMOR_SERTIFIKAT` AS ftaset_NOMOR_SERTIFIKAT,
+     ftaset.`PENGGUNAAN` AS ftaset_PENGGUNAAN,
+     ftaset.`STATUS_SERTIFIKAT` AS ftaset_STATUS_SERTIFIKAT,
+     ftaset.`TANGGAL_SERTIFIKAT` AS ftaset_TANGGAL_SERTIFIKAT,
+     ftaset.`BAHAN` AS ftaset_BAHAN,
+     ftaset.`MERK` AS ftaset_MERK,
+     ftaset.`NOMOR_BPKB` AS ftaset_NOMOR_BPKB,
+     ftaset.`NOMOR_MESIN` AS ftaset_NOMOR_MESIN,
+     ftaset.`NOMOR_PABRIK` AS ftaset_NOMOR_PABRIK,
+     ftaset.`NOMOR_POLISI` AS ftaset_NOMOR_POLISI,
+     ftaset.`NOMOR_RANGKA` AS ftaset_NOMOR_RANGKA,
+     ftaset.`RUANGAN` AS ftaset_RUANGAN,
+     ftaset.`TIPE` AS ftaset_TIPE,
+     ftaset.`UKURAN_CC` AS ftaset_UKURAN_CC,
+     ftaset.`UMUR_EKONOMIS` AS ftaset_UMUR_EKONOMIS,
+     ftaset.`ALAMAT1` AS ftaset_ALAMAT1,
+     ftaset.`KODE_TANAH` AS ftaset_KODE_TANAH,
+     ftaset.`KONSTRUKSI_BERTINGKAT` AS ftaset_KONSTRUKSI_BERTINGKAT,
+     ftaset.`KONSTRUKSI_BETON` AS ftaset_KONSTRUKSI_BETON,
+     ftaset.`LUAS_LANTAI` AS ftaset_LUAS_LANTAI,
+     ftaset.`NOMOR_DOKUMENT` AS ftaset_NOMOR_DOKUMENT,
+     ftaset.`STATUS_TANAH` AS ftaset_STATUS_TANAH,
+     ftaset.`TANGGAL_DOKUMEN` AS ftaset_TANGGAL_DOKUMEN,
+     ftaset.`KONSTRUKSI` AS ftaset_KONSTRUKSI,
+     ftaset.`LEBAR` AS ftaset_LEBAR,
+     ftaset.`LOKASI` AS ftaset_LOKASI,
+     ftaset.`LUAS` AS ftaset_LUAS,
+     ftaset.`NOMOR_DOKUMEN` AS ftaset_NOMOR_DOKUMEN,
+     ftaset.`PANJANG` AS ftaset_PANJANG,
+     ftaset.`JUDUL_PENCIPTA` AS ftaset_JUDUL_PENCIPTA,
+     ftaset.`SPESIFIKASI` AS ftaset_SPESIFIKASI,
+     ftaset.`TAHUN_CETAK` AS ftaset_TAHUN_CETAK
+FROM
+     `ftaset` ftaset]]>
+	</queryString>
+	<field name="ftaset_ID" class="java.lang.Long"/>
+	<field name="ftaset_DTYPE" class="java.lang.String"/>
+	<field name="ftaset_ASAL_USUL" class="java.lang.String"/>
+	<field name="ftaset_HARGA_SATUAN" class="java.lang.Double"/>
+	<field name="ftaset_JUMLAH_SATUAN" class="java.lang.Integer"/>
+	<field name="ftaset_KEPEMILIKAN" class="java.lang.String"/>
+	<field name="ftaset_KODE1" class="java.lang.String"/>
+	<field name="ftaset_KODE2" class="java.lang.String"/>
+	<field name="ftaset_KONDISI_BARANG" class="java.lang.String"/>
+	<field name="ftaset_NAMA_ASET" class="java.lang.String"/>
+	<field name="ftaset_NILAI_PEROLEHAN" class="java.lang.Double"/>
+	<field name="ftaset_NOMOR_REF" class="java.lang.String"/>
+	<field name="ftaset_NOMOR_REG" class="java.lang.String"/>
+	<field name="ftaset_NOTES" class="java.lang.String"/>
+	<field name="ftaset_TANGGAL_PEROLEHAN" class="java.sql.Date"/>
+	<field name="ftaset_fasetGroupBean" class="java.lang.Long"/>
+	<field name="ftaset_fupbBean" class="java.lang.Long"/>
+	<field name="ftaset_HAK_TANAH" class="java.lang.String"/>
+	<field name="ftaset_LETAK_TANAH" class="java.lang.String"/>
+	<field name="ftaset_LUAS_TANAH" class="java.lang.Double"/>
+	<field name="ftaset_NOMOR_SERTIFIKAT" class="java.lang.String"/>
+	<field name="ftaset_PENGGUNAAN" class="java.lang.String"/>
+	<field name="ftaset_STATUS_SERTIFIKAT" class="java.lang.String"/>
+	<field name="ftaset_TANGGAL_SERTIFIKAT" class="java.sql.Date"/>
+	<field name="ftaset_BAHAN" class="java.lang.String"/>
+	<field name="ftaset_MERK" class="java.lang.String"/>
+	<field name="ftaset_NOMOR_BPKB" class="java.lang.String"/>
+	<field name="ftaset_NOMOR_MESIN" class="java.lang.String"/>
+	<field name="ftaset_NOMOR_PABRIK" class="java.lang.String"/>
+	<field name="ftaset_NOMOR_POLISI" class="java.lang.String"/>
+	<field name="ftaset_NOMOR_RANGKA" class="java.lang.String"/>
+	<field name="ftaset_RUANGAN" class="java.lang.String"/>
+	<field name="ftaset_TIPE" class="java.lang.String"/>
+	<field name="ftaset_UKURAN_CC" class="java.lang.Integer"/>
+	<field name="ftaset_UMUR_EKONOMIS" class="java.lang.Integer"/>
+	<field name="ftaset_ALAMAT1" class="java.lang.String"/>
+	<field name="ftaset_KODE_TANAH" class="java.lang.String"/>
+	<field name="ftaset_KONSTRUKSI_BERTINGKAT" class="java.lang.Boolean"/>
+	<field name="ftaset_KONSTRUKSI_BETON" class="java.lang.Boolean"/>
+	<field name="ftaset_LUAS_LANTAI" class="java.lang.Double"/>
+	<field name="ftaset_NOMOR_DOKUMENT" class="java.lang.String"/>
+	<field name="ftaset_STATUS_TANAH" class="java.lang.String"/>
+	<field name="ftaset_TANGGAL_DOKUMEN" class="java.sql.Date"/>
+	<field name="ftaset_KONSTRUKSI" class="java.lang.String"/>
+	<field name="ftaset_LEBAR" class="java.lang.Double"/>
+	<field name="ftaset_LOKASI" class="java.lang.String"/>
+	<field name="ftaset_LUAS" class="java.lang.Double"/>
+	<field name="ftaset_NOMOR_DOKUMEN" class="java.lang.String"/>
+	<field name="ftaset_PANJANG" class="java.lang.Double"/>
+	<field name="ftaset_JUDUL_PENCIPTA" class="java.lang.String"/>
+	<field name="ftaset_SPESIFIKASI" class="java.lang.String"/>
+	<field name="ftaset_TAHUN_CETAK" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="4" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="63" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="6" width="149" height="20" uuid="f5549c37-53a3-4069-b36f-61c21cc34633"/>
+				<textFieldExpression><![CDATA[$F{ftaset_NOMOR_REF}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="154" y="6" width="180" height="20" uuid="8604b049-242e-4a0d-9332-40a75f108029"/>
+				<textFieldExpression><![CDATA[$F{ftaset_NAMA_ASET}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="342" y="5" width="100" height="50" uuid="82f4a7b3-5b12-42da-8a4f-06d9cbb2a518"/>
+				<imageExpression><![CDATA[com.google.zxing.client.j2se.MatrixToImageWriter.toBufferedImage(
+     new com.google.zxing.qrcode.QRCodeWriter().encode(
+         $F{ftaset_NOMOR_REF},
+         com.google.zxing.BarcodeFormat.QR_CODE, 300, 300))
+]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="5" splitType="Stretch"/>
+	</columnFooter>
+</jasperReport>

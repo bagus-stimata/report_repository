@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="212" pageHeight="396" columnWidth="212" leftMargin="0" rightMargin="0" topMargin="4" bottomMargin="1" uuid="2b844478-2ace-4161-8ed3-9deb424e3f60">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="string1" class="java.lang.String">
+		<fieldDescription><![CDATA[string1]]></fieldDescription>
+	</field>
+	<field name="string10" class="java.lang.String">
+		<fieldDescription><![CDATA[string10]]></fieldDescription>
+	</field>
+	<field name="grup5" class="java.lang.String">
+		<fieldDescription><![CDATA[grup5]]></fieldDescription>
+	</field>
+	<field name="bol3" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[bol3]]></fieldDescription>
+	</field>
+	<field name="string3" class="java.lang.String">
+		<fieldDescription><![CDATA[string3]]></fieldDescription>
+	</field>
+	<field name="string9" class="java.lang.String">
+		<fieldDescription><![CDATA[string9]]></fieldDescription>
+	</field>
+	<field name="double10" class="java.lang.Double">
+		<fieldDescription><![CDATA[double10]]></fieldDescription>
+	</field>
+	<field name="int6" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int6]]></fieldDescription>
+	</field>
+	<field name="double11" class="java.lang.Double">
+		<fieldDescription><![CDATA[double11]]></fieldDescription>
+	</field>
+	<field name="string13" class="java.lang.String">
+		<fieldDescription><![CDATA[string13]]></fieldDescription>
+	</field>
+	<field name="bol4" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[bol4]]></fieldDescription>
+	</field>
+	<field name="grup1" class="java.lang.String">
+		<fieldDescription><![CDATA[grup1]]></fieldDescription>
+	</field>
+	<field name="bol1" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[bol1]]></fieldDescription>
+	</field>
+	<field name="string7" class="java.lang.String">
+		<fieldDescription><![CDATA[string7]]></fieldDescription>
+	</field>
+	<field name="string18" class="java.lang.String">
+		<fieldDescription><![CDATA[string18]]></fieldDescription>
+	</field>
+	<field name="int7" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int7]]></fieldDescription>
+	</field>
+	<field name="grup4" class="java.lang.String">
+		<fieldDescription><![CDATA[grup4]]></fieldDescription>
+	</field>
+	<field name="int4" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int4]]></fieldDescription>
+	</field>
+	<field name="double19" class="java.lang.Double">
+		<fieldDescription><![CDATA[double19]]></fieldDescription>
+	</field>
+	<field name="double2" class="java.lang.Double">
+		<fieldDescription><![CDATA[double2]]></fieldDescription>
+	</field>
+	<field name="double12" class="java.lang.Double">
+		<fieldDescription><![CDATA[double12]]></fieldDescription>
+	</field>
+	<field name="date4" class="java.util.Date">
+		<fieldDescription><![CDATA[date4]]></fieldDescription>
+	</field>
+	<field name="string6" class="java.lang.String">
+		<fieldDescription><![CDATA[string6]]></fieldDescription>
+	</field>
+	<field name="string16" class="java.lang.String">
+		<fieldDescription><![CDATA[string16]]></fieldDescription>
+	</field>
+	<field name="int8" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int8]]></fieldDescription>
+	</field>
+	<field name="double7" class="java.lang.Double">
+		<fieldDescription><![CDATA[double7]]></fieldDescription>
+	</field>
+	<field name="double14" class="java.lang.Double">
+		<fieldDescription><![CDATA[double14]]></fieldDescription>
+	</field>
+	<field name="string2" class="java.lang.String">
+		<fieldDescription><![CDATA[string2]]></fieldDescription>
+	</field>
+	<field name="string11" class="java.lang.String">
+		<fieldDescription><![CDATA[string11]]></fieldDescription>
+	</field>
+	<field name="id" class="java.lang.Long">
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="grup3" class="java.lang.String">
+		<fieldDescription><![CDATA[grup3]]></fieldDescription>
+	</field>
+	<field name="double13" class="java.lang.Double">
+		<fieldDescription><![CDATA[double13]]></fieldDescription>
+	</field>
+	<field name="string17" class="java.lang.String">
+		<fieldDescription><![CDATA[string17]]></fieldDescription>
+	</field>
+	<field name="string15" class="java.lang.String">
+		<fieldDescription><![CDATA[string15]]></fieldDescription>
+	</field>
+	<field name="date1" class="java.util.Date">
+		<fieldDescription><![CDATA[date1]]></fieldDescription>
+	</field>
+	<field name="int5" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int5]]></fieldDescription>
+	</field>
+	<field name="grup2" class="java.lang.String">
+		<fieldDescription><![CDATA[grup2]]></fieldDescription>
+	</field>
+	<field name="string20" class="java.lang.String">
+		<fieldDescription><![CDATA[string20]]></fieldDescription>
+	</field>
+	<field name="double8" class="java.lang.Double">
+		<fieldDescription><![CDATA[double8]]></fieldDescription>
+	</field>
+	<field name="date3" class="java.util.Date">
+		<fieldDescription><![CDATA[date3]]></fieldDescription>
+	</field>
+	<field name="double16" class="java.lang.Double">
+		<fieldDescription><![CDATA[double16]]></fieldDescription>
+	</field>
+	<field name="int9" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int9]]></fieldDescription>
+	</field>
+	<field name="bol2" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[bol2]]></fieldDescription>
+	</field>
+	<field name="double9" class="java.lang.Double">
+		<fieldDescription><![CDATA[double9]]></fieldDescription>
+	</field>
+	<field name="double6" class="java.lang.Double">
+		<fieldDescription><![CDATA[double6]]></fieldDescription>
+	</field>
+	<field name="double15" class="java.lang.Double">
+		<fieldDescription><![CDATA[double15]]></fieldDescription>
+	</field>
+	<field name="int2" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int2]]></fieldDescription>
+	</field>
+	<field name="date2" class="java.util.Date">
+		<fieldDescription><![CDATA[date2]]></fieldDescription>
+	</field>
+	<field name="double17" class="java.lang.Double">
+		<fieldDescription><![CDATA[double17]]></fieldDescription>
+	</field>
+	<field name="int10" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int10]]></fieldDescription>
+	</field>
+	<field name="double3" class="java.lang.Double">
+		<fieldDescription><![CDATA[double3]]></fieldDescription>
+	</field>
+	<field name="date5" class="java.util.Date">
+		<fieldDescription><![CDATA[date5]]></fieldDescription>
+	</field>
+	<field name="int1" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int1]]></fieldDescription>
+	</field>
+	<field name="double20" class="java.lang.Double">
+		<fieldDescription><![CDATA[double20]]></fieldDescription>
+	</field>
+	<field name="double1" class="java.lang.Double">
+		<fieldDescription><![CDATA[double1]]></fieldDescription>
+	</field>
+	<field name="string4" class="java.lang.String">
+		<fieldDescription><![CDATA[string4]]></fieldDescription>
+	</field>
+	<field name="int3" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int3]]></fieldDescription>
+	</field>
+	<field name="double5" class="java.lang.Double">
+		<fieldDescription><![CDATA[double5]]></fieldDescription>
+	</field>
+	<field name="string8" class="java.lang.String">
+		<fieldDescription><![CDATA[string8]]></fieldDescription>
+	</field>
+	<field name="string14" class="java.lang.String">
+		<fieldDescription><![CDATA[string14]]></fieldDescription>
+	</field>
+	<field name="bol5" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[bol5]]></fieldDescription>
+	</field>
+	<field name="double4" class="java.lang.Double">
+		<fieldDescription><![CDATA[double4]]></fieldDescription>
+	</field>
+	<field name="double18" class="java.lang.Double">
+		<fieldDescription><![CDATA[double18]]></fieldDescription>
+	</field>
+	<field name="string19" class="java.lang.String">
+		<fieldDescription><![CDATA[string19]]></fieldDescription>
+	</field>
+	<field name="string5" class="java.lang.String">
+		<fieldDescription><![CDATA[string5]]></fieldDescription>
+	</field>
+	<field name="string12" class="java.lang.String">
+		<fieldDescription><![CDATA[string12]]></fieldDescription>
+	</field>
+	<variable name="double2_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double2}]]></variableExpression>
+	</variable>
+	<variable name="double4_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double4}]]></variableExpression>
+	</variable>
+	<variable name="double6_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double6}]]></variableExpression>
+	</variable>
+	<variable name="double7_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double7}]]></variableExpression>
+	</variable>
+	<variable name="double9_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double9}]]></variableExpression>
+	</variable>
+	<variable name="double11_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double11}]]></variableExpression>
+	</variable>
+	<variable name="double12_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double12}]]></variableExpression>
+	</variable>
+	<variable name="double13_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double13}]]></variableExpression>
+	</variable>
+	<variable name="string13_1" class="java.lang.Integer" resetType="Group" resetGroup="GRUP1" calculation="Count">
+		<variableExpression><![CDATA[$F{string13}]]></variableExpression>
+	</variable>
+	<group name="GRUP1">
+		<groupExpression><![CDATA[$F{grup1}]]></groupExpression>
+		<groupHeader>
+			<band height="109">
+				<break>
+					<reportElement x="0" y="0" width="100" height="1" uuid="75efde1c-32b1-4bbf-bde0-35664f053673"/>
+				</break>
+				<line>
+					<reportElement x="9" y="107" width="200" height="1" uuid="b0123498-5cb0-43fc-ba44-b9c149c24369"/>
+					<graphicElement>
+						<pen lineWidth="0.2" lineStyle="Dotted"/>
+					</graphicElement>
+				</line>
+				<staticText>
+					<reportElement x="43" y="35" width="5" height="13" uuid="c2fe53a2-2678-4deb-a85c-fc11701dc763"/>
+					<textElement>
+						<font fontName="Dot-Matrix" size="8" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="12" y="35" width="30" height="13" uuid="bdec9cc0-45e9-455d-8715-27aa02ea9f82"/>
+					<textElement>
+						<font fontName="Dot-Matrix" size="8" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Tgl]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="43" y="47" width="5" height="13" uuid="bc2f6c3b-3232-47b2-8a86-ac34e71f45e4"/>
+					<textElement>
+						<font fontName="Dot-Matrix" size="8" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="43" y="19" width="5" height="13" uuid="32985059-c1e8-4845-ba42-0383cf424086"/>
+					<textElement>
+						<font fontName="Dot-Matrix" size="8" isBold="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="43" y="59" width="5" height="13" uuid="18628abf-67e8-4656-9938-27849f98c07a"/>
+					<textElement>
+						<font fontName="Dot-Matrix" size="8" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="12" y="59" width="30" height="13" uuid="11b89c99-ed22-4b0f-8b3f-4f59b5d66472"/>
+					<textElement>
+						<font fontName="Dot-Matrix" size="8" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[No.Ord]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="12" y="19" width="30" height="13" uuid="10f7da60-a027-4de1-a205-1918043f027e"/>
+					<textElement>
+						<font fontName="Dot-Matrix" size="8" isBold="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[No.Inv]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="12" y="47" width="30" height="13" uuid="10bd2122-5c55-471f-bbb3-b330254df8c4"/>
+					<textElement>
+						<font fontName="Dot-Matrix" size="8" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[SLS]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="5" y="1" width="201" height="13" uuid="3367d052-53d5-4e50-9086-47ed68fbfb4e"/>
+					<textElement textAlignment="Center" markup="none">
+						<font fontName="8Pin Matrix" size="9" isBold="true"/>
+					</textElement>
+					<text><![CDATA[SURAT JALAN RINGKAS]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="13" y="77" width="184" height="14" uuid="0f13d153-a8c6-45b8-8701-9532540a8a4a"/>
+					<textElement>
+						<font fontName="8Pin Matrix" size="10" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{string6}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="13" y="91" width="184" height="14" uuid="3529889d-232c-44c8-b6a1-6806bff6b09d"/>
+					<textElement>
+						<font fontName="8Pin Matrix" size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{string7}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="50" y="18" width="147" height="14" uuid="9b06e53f-a7f4-44b8-8bf5-0537ce54cdfc"/>
+					<textElement>
+						<font fontName="Advanced Dot Digital-7" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{string9}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="50" y="47" width="147" height="13" uuid="bf561b01-34cb-4965-ad98-cf951e61d16c"/>
+					<textElement>
+						<font fontName="Dot-Matrix" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{string10}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="50" y="59" width="147" height="13" uuid="1f3b0fff-fe09-4ef4-a984-96b4df0c195b"/>
+					<textElement>
+						<font fontName="Dot-Matrix" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{string11}]]></textFieldExpression>
+				</textField>
+				<textField pattern="dd/MM/yyyy">
+					<reportElement x="50" y="35" width="147" height="13" uuid="6d3f12ad-b197-4fc7-a679-60b923f9b172"/>
+					<textElement>
+						<font fontName="Dot-Matrix" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{date1}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="123">
+				<line>
+					<reportElement x="9" y="1" width="200" height="1" uuid="9e8f48a5-c115-4519-a920-7e01f87a0f80"/>
+					<graphicElement>
+						<pen lineWidth="0.2" lineStyle="Dotted"/>
+					</graphicElement>
+				</line>
+				<staticText>
+					<reportElement x="17" y="37" width="90" height="14" uuid="336f4072-f2d9-4453-9d35-ca157b2e7daf"/>
+					<textElement textAlignment="Center">
+						<font fontName="8Pin Matrix" size="8" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Oto1]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="12" y="91" width="185" height="11" uuid="9ec900b3-65c8-4b2a-8578-d399d3f2fc45"/>
+					<textElement textAlignment="Center">
+						<font fontName="8Pin Matrix" size="8" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Terima Kasih]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="111" y="23" width="90" height="17" uuid="5342d21d-0244-4440-be67-7e9baca8b5a4"/>
+					<textElement textAlignment="Center">
+						<font fontName="8Pin Matrix" size="7" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[(  . . . . . . . . )]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="20" y="2" width="30" height="13" uuid="d1779733-f161-4100-97a9-b4cd89e95a27"/>
+					<textElement>
+						<font fontName="8Pin Matrix" size="8" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Item :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="9" y="111" width="60" height="11" uuid="ed7ae30a-ff06-4f8f-b519-95edc1f1cd25"/>
+					<textElement textAlignment="Right">
+						<font fontName="8Pin Matrix" size="7" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[*Cetakan ke-]]></text>
+				</staticText>
+				<textField pattern="dd/MM/yyyy HH.mm.ss">
+					<reportElement x="89" y="111" width="100" height="11" uuid="abe1b9d7-7e9c-4828-93e5-8a9291a235f2"/>
+					<textElement>
+						<font fontName="8Pin Matrix" size="7" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="17" y="23" width="90" height="17" uuid="6233dc25-8b73-4525-90f5-63197b24ad20"/>
+					<textElement textAlignment="Center">
+						<font fontName="8Pin Matrix" size="7" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[(  . . . . . . . . )]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="111" y="37" width="90" height="14" uuid="f44f75d9-95b8-4bca-8b4a-2e2cec227b1e"/>
+					<textElement textAlignment="Center">
+						<font fontName="8Pin Matrix" size="8" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Oto2]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="69" y="111" width="20" height="11" uuid="d00d18a2-1ae6-480e-a16e-0b58e8552c7e"/>
+					<textElement>
+						<font fontName="8Pin Matrix" size="7"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{int2}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="50" y="3" width="79" height="13" uuid="1f198d45-2e35-4a23-887b-353692b8c9a5"/>
+					<textElement>
+						<font fontName="8Pin Matrix" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{string13_1}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="12" y="63" width="185" height="13" uuid="dcff1e0e-e27f-4ddf-a9a4-9c8fb0f7c822"/>
+					<textElement textAlignment="Center">
+						<font fontName="8Pin Matrix" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{string2}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="12" y="75" width="185" height="13" uuid="5f4f8b97-4690-4848-8efc-cfc16ee61930"/>
+					<textElement textAlignment="Center">
+						<font fontName="8Pin Matrix" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{string3}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<detail>
+		<band height="14" splitType="Stretch">
+			<textField isStretchWithOverflow="true">
+				<reportElement x="15" y="0" width="125" height="13" uuid="fd14e8c9-db9f-4e57-9fd0-9361fb9f2741"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Advanced Dot Digital-7" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{string13}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="141" y="0" width="65" height="13" uuid="91a703d2-50fd-4bba-84b4-5799dac6fc03"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Advanced Dot Digital-7" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{string14}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2" y="0" width="13" height="13" uuid="419972c0-c753-4304-a42d-12eefd70d8f5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Advanced Dot Digital-7" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{GRUP1_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="139" y="0" width="65" height="13" uuid="f0a39d4f-0f50-4113-99e6-9db0db617729"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Advanced Dot Digital-7" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{string15}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

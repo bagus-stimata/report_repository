@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a8489a6d-d737-435b-96fb-5709a5d08d71">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="paramSuratJalanList" class="java.lang.String"/>
+	<parameter name="paramInvoiceList" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="convfact1" class="java.lang.Integer">
+		<fieldDescription><![CDATA[convfact1]]></fieldDescription>
+	</field>
+	<field name="convfact2" class="java.lang.Integer">
+		<fieldDescription><![CDATA[convfact2]]></fieldDescription>
+	</field>
+	<field name="grup1" class="java.lang.String">
+		<fieldDescription><![CDATA[grup1]]></fieldDescription>
+	</field>
+	<field name="grup2" class="java.lang.String">
+		<fieldDescription><![CDATA[grup2]]></fieldDescription>
+	</field>
+	<field name="grup3" class="java.lang.String">
+		<fieldDescription><![CDATA[grup3]]></fieldDescription>
+	</field>
+	<field name="id" class="java.lang.Long">
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="pcode" class="java.lang.String">
+		<fieldDescription><![CDATA[pcode]]></fieldDescription>
+	</field>
+	<field name="pname" class="java.lang.String">
+		<fieldDescription><![CDATA[pname]]></fieldDescription>
+	</field>
+	<field name="qtyBes" class="java.lang.Integer">
+		<fieldDescription><![CDATA[qtyBes]]></fieldDescription>
+	</field>
+	<field name="qtyKec" class="java.lang.Integer">
+		<fieldDescription><![CDATA[qtyKec]]></fieldDescription>
+	</field>
+	<field name="qtyPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[qtyPcs]]></fieldDescription>
+	</field>
+	<field name="qtySed" class="java.lang.Integer">
+		<fieldDescription><![CDATA[qtySed]]></fieldDescription>
+	</field>
+	<field name="sjdate" class="java.util.Date">
+		<fieldDescription><![CDATA[sjdate]]></fieldDescription>
+	</field>
+	<field name="uom1" class="java.lang.String">
+		<fieldDescription><![CDATA[uom1]]></fieldDescription>
+	</field>
+	<field name="uom2" class="java.lang.String">
+		<fieldDescription><![CDATA[uom2]]></fieldDescription>
+	</field>
+	<field name="uom3" class="java.lang.String">
+		<fieldDescription><![CDATA[uom3]]></fieldDescription>
+	</field>
+	<variable name="qtyPcs" class="java.lang.Integer" resetType="Group" resetGroup="PCODE" calculation="Sum">
+		<variableExpression><![CDATA[$F{qtyPcs}]]></variableExpression>
+	</variable>
+	<variable name="qtyBes" class="java.lang.Integer" resetType="None">
+		<variableExpression><![CDATA[$V{qtyPcs}/$F{convfact1}]]></variableExpression>
+	</variable>
+	<variable name="qtySed" class="java.lang.Integer">
+		<variableExpression><![CDATA[($V{qtyPcs}%$F{convfact1})/$F{convfact2}]]></variableExpression>
+	</variable>
+	<variable name="qtyKec" class="java.lang.Integer">
+		<variableExpression><![CDATA[(($V{qtyPcs}%$F{convfact1})%$F{convfact2})]]></variableExpression>
+	</variable>
+	<variable name="nomor" class="java.lang.Integer" resetType="None" incrementType="Group" incrementGroup="PCODE">
+		<variableExpression><![CDATA[$V{nomor}+1]]></variableExpression>
+		<initialValueExpression><![CDATA[1]]></initialValueExpression>
+	</variable>
+	<group name="GRUP3">
+		<groupExpression><![CDATA[$F{grup3}]]></groupExpression>
+		<groupHeader>
+			<band height="1"/>
+		</groupHeader>
+		<groupFooter>
+			<band height="105">
+				<line>
+					<reportElement x="1" y="2" width="551" height="1" uuid="aff05413-9cbd-4861-818e-d159249030bc"/>
+					<graphicElement>
+						<pen lineWidth="0.25"/>
+					</graphicElement>
+				</line>
+				<staticText>
+					<reportElement x="0" y="3" width="103" height="13" uuid="3ae0b7d4-94ec-4283-a1dc-74c48aa770ab"/>
+					<textElement>
+						<font fontName="Ecofont Vera Sans" isBold="true" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Daftar Invoice :]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="0" y="14" width="553" height="40" uuid="eab59841-aff1-402f-9622-26a375e27d1c"/>
+					<textElement>
+						<font fontName="Ecofont Vera Sans" size="9" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{paramInvoiceList}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="123" y="59" width="54" height="15" uuid="e26e583c-6568-4e93-9d52-8a548a19304f"/>
+					<textElement textAlignment="Center">
+						<font fontName="Ecofont Vera Sans" size="9" isBold="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Driver]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="346" y="59" width="54" height="15" uuid="86100603-f1ce-4f0a-83a9-1c146cc92688"/>
+					<textElement textAlignment="Center">
+						<font fontName="Ecofont Vera Sans" size="9" isBold="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Gudang]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="58" y="86" width="177" height="15" uuid="1cfe647c-3218-4c9d-a2c2-24da749211fc"/>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="Ecofont Vera Sans" size="8" isBold="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[( . . . . . . . . . . . . )]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="290" y="86" width="177" height="15" uuid="45b4ac04-17bb-4dea-bcef-8fac81947479"/>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="Ecofont Vera Sans" size="8" isBold="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[( . . . . . . . . . . . . )]]></text>
+				</staticText>
+			</band>
+		</groupFooter>
+	</group>
+	<group name="PCODE">
+		<groupExpression><![CDATA[$F{pcode}]]></groupExpression>
+		<groupFooter>
+			<band height="15">
+				<textField isStretchWithOverflow="true">
+					<reportElement x="2" y="0" width="101" height="15" uuid="478aeb4c-5ff0-4f3d-a333-1a28f6bec8fa"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Ecofont Vera Sans" size="11" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{pcode}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="85" y="0" width="262" height="15" uuid="c2935e06-2458-4741-9391-c4be3c5df118"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Ecofont Vera Sans" size="11" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{pname}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="504" y="0" width="50" height="15" uuid="4fffadb2-41db-41cd-8e2e-b5981f9f9880"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="Ecofont Vera Sans" size="11" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{qtyPcs}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="349" y="0" width="40" height="15" uuid="ed5ad9bd-6a91-4164-a478-d82fbffb3f81"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="Ecofont Vera Sans" size="11" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{qtyBes}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="410" y="0" width="26" height="15" uuid="99c1cffe-74cf-4ca3-8d02-cb31a7372c26"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="Ecofont Vera Sans" size="11" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{qtySed}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="457" y="0" width="27" height="15" uuid="ad15babe-b83c-4906-b73c-1708651e208d"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="Ecofont Vera Sans" size="11" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{qtyKec}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="390" y="0" width="17" height="13" uuid="f6b74c53-593e-4d71-a77f-46a72f44ba39"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Ecofont Vera Sans" size="7" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{uom1}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="438" y="0" width="17" height="13" uuid="4c19d010-276c-4a6b-816c-0febcf5a5ea1"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Ecofont Vera Sans" size="7" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{uom2}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="486" y="0" width="17" height="13" uuid="ebf349d9-b9c4-4411-bf2d-1ec23ed35b5e"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Ecofont Vera Sans" size="7" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{uom3}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="0" y="13" width="551" height="1" uuid="2114fa9f-1ba5-4808-b195-c4f5aa47bd52"/>
+					<graphicElement>
+						<pen lineWidth="0.1"/>
+					</graphicElement>
+				</line>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="53" splitType="Stretch">
+			<staticText>
+				<reportElement x="166" y="1" width="252" height="20" uuid="25da781d-4f59-4d84-b63a-44ed0881f7b8"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Packing/Delivery List Per Surat Jalan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="27" width="103" height="15" uuid="32c75e27-4aa6-473d-85de-97ad858f3adb"/>
+				<textElement>
+					<font size="9" isBold="true" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[NO SURAT JALAN :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="-15" width="41" height="13" uuid="eb4ce5f2-15da-41d4-a412-472dfc1f3797"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Printed]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="455" y="-15" width="100" height="13" uuid="c86796df-0608-44f4-8b85-f6c72a242790"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="8" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="103" y="27" width="202" height="26" uuid="0e06365d-2bb0-4fac-9c1a-f1c9ec582ff0"/>
+				<textElement>
+					<font size="9" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paramSuratJalanList}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="17" splitType="Stretch">
+			<staticText>
+				<reportElement x="2" y="1" width="83" height="13" uuid="8a2b0b56-d67d-4a89-a5b6-d95871893d65"/>
+				<textElement>
+					<font fontName="Ecofont Vera Sans" size="9" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[KODE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="85" y="1" width="262" height="13" uuid="0d6a5a14-d9c5-4988-98ac-8922b2651ada"/>
+				<textElement>
+					<font fontName="Ecofont Vera Sans" size="9" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[NAMA BARANG]]></text>
+			</staticText>
+			<line>
+				<reportElement x="2" y="15" width="551" height="1" uuid="f6ac6491-d90e-4387-a72a-a16844d3e64d"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="349" y="1" width="154" height="13" uuid="94395e53-d95c-499d-80ec-b71380cb3135"/>
+				<textElement textAlignment="Center">
+					<font fontName="Ecofont Vera Sans" size="9" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[- - - - JUMLAH - - - - ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="504" y="1" width="50" height="13" uuid="d9c4fe80-db2b-4d89-b5c3-e04694300a78"/>
+				<textElement textAlignment="Center">
+					<font fontName="Ecofont Vera Sans" size="9" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[- - PCS - - ]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+</jasperReport>

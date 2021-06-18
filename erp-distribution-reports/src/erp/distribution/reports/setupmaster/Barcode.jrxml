@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="197" pageHeight="40" columnWidth="197" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="b6b41967-98f6-4e14-8577-f92678c29540">
+	<property name="ireport.zoom" value="3.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT
+     fproduct.`BARCODE` AS fproduct_BARCODE,
+     fproduct.`PNAME` AS fproduct_PNAME,
+     fproduct.`PCODE` AS fproduct_PCODE,
+     fproduct.`SPRICEALT_RETAIL_KEC` AS fproduct_SPRICEALT_RETAIL_KEC
+FROM
+     `fproduct` fproduct]]>
+	</queryString>
+	<field name="fproduct_BARCODE" class="java.lang.String"/>
+	<field name="fproduct_PNAME" class="java.lang.String"/>
+	<field name="fproduct_PCODE" class="java.lang.String"/>
+	<field name="fproduct_SPRICEALT_RETAIL_KEC" class="java.lang.Double"/>
+	<detail>
+		<band height="40" splitType="Stretch">
+			<textField>
+				<reportElement x="12" y="0" width="80" height="10" uuid="da6d8beb-0575-46fb-9943-95129860d0a5"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fproduct_PNAME}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;(#,##0)">
+				<reportElement x="52" y="29" width="40" height="11" uuid="3df72538-d6f9-4753-b7e2-7f1027b5987b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fproduct_SPRICEALT_RETAIL_KEC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="0" width="80" height="10" uuid="18120228-a4fe-4617-94b8-a39ec14ec0d3"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fproduct_PNAME}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="38" y="29" width="13" height="11" uuid="ad190d6e-a37f-4245-8d30-d2d89bed7064"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[Rp]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="6" y="29" width="32" height="11" uuid="1da8641c-4a7e-4c2e-b265-5d08e81bfdcd"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fproduct_PCODE}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;(#,##0)">
+				<reportElement x="157" y="29" width="40" height="11" uuid="4a5d0abb-fa98-4161-9139-6d3229993e9e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fproduct_SPRICEALT_RETAIL_KEC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="29" width="32" height="11" uuid="e8091bde-f342-4721-a729-f93a6d014535"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fproduct_PCODE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="143" y="29" width="13" height="11" uuid="b3fdf5b3-c70b-4a23-b008-54ffa3e02d02"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="8"/>
+				</textElement>
+				<text><![CDATA[Rp]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="2" y="8" width="90" height="22" uuid="2fe05bd2-eaf9-4af9-be75-c0ac4c6e7578"/>
+				<jr:Code128 xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" textPosition="none">
+					<jr:codeExpression><![CDATA[$F{fproduct_BARCODE}.isEmpty()?"123":$F{fproduct_BARCODE}]]></jr:codeExpression>
+				</jr:Code128>
+			</componentElement>
+			<componentElement>
+				<reportElement x="107" y="8" width="90" height="22" uuid="2a4989c3-0875-4f3b-8b7b-261c72b5f5bd"/>
+				<jr:Code128 xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" textPosition="none">
+					<jr:codeExpression><![CDATA[$F{fproduct_BARCODE}.isEmpty()?"123":$F{fproduct_BARCODE}]]></jr:codeExpression>
+				</jr:Code128>
+			</componentElement>
+		</band>
+	</detail>
+</jasperReport>

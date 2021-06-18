@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="591" leftMargin="2" rightMargin="2" topMargin="2" bottomMargin="2" uuid="87752ea3-33f4-42c5-8e46-1ff39785a907">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="paramStockdateFrom" class="java.util.Date"/>
+	<parameter name="paramStockdateTo" class="java.util.Date"/>
+	<parameter name="paramGudang" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="grup1" class="java.lang.String">
+		<fieldDescription><![CDATA[grup1]]></fieldDescription>
+	</field>
+	<field name="grup2" class="java.lang.String">
+		<fieldDescription><![CDATA[grup2]]></fieldDescription>
+	</field>
+	<field name="grup3" class="java.lang.String">
+		<fieldDescription><![CDATA[grup3]]></fieldDescription>
+	</field>
+	<field name="id" class="java.lang.Long">
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="pcode" class="java.lang.String">
+		<fieldDescription><![CDATA[pcode]]></fieldDescription>
+	</field>
+	<field name="pembelianBes" class="java.lang.Integer">
+		<fieldDescription><![CDATA[pembelianBes]]></fieldDescription>
+	</field>
+	<field name="pembelianKec" class="java.lang.Integer">
+		<fieldDescription><![CDATA[pembelianKec]]></fieldDescription>
+	</field>
+	<field name="pembelianNilaiBeli" class="java.lang.Double">
+		<fieldDescription><![CDATA[pembelianNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="pembelianNilaiJual" class="java.lang.Double">
+		<fieldDescription><![CDATA[pembelianNilaiJual]]></fieldDescription>
+	</field>
+	<field name="pembelianPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[pembelianPcs]]></fieldDescription>
+	</field>
+	<field name="pembelianSed" class="java.lang.Integer">
+		<fieldDescription><![CDATA[pembelianSed]]></fieldDescription>
+	</field>
+	<field name="penjualanBes" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penjualanBes]]></fieldDescription>
+	</field>
+	<field name="penjualanKec" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penjualanKec]]></fieldDescription>
+	</field>
+	<field name="penjualanNilaiBeli" class="java.lang.Double">
+		<fieldDescription><![CDATA[penjualanNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="penjualanNilaiJual" class="java.lang.Double">
+		<fieldDescription><![CDATA[penjualanNilaiJual]]></fieldDescription>
+	</field>
+	<field name="penjualanPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penjualanPcs]]></fieldDescription>
+	</field>
+	<field name="penjualanSed" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penjualanSed]]></fieldDescription>
+	</field>
+	<field name="penyesuaianBes" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penyesuaianBes]]></fieldDescription>
+	</field>
+	<field name="penyesuaianKec" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penyesuaianKec]]></fieldDescription>
+	</field>
+	<field name="penyesuaianNilaiBeli" class="java.lang.Double">
+		<fieldDescription><![CDATA[penyesuaianNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="penyesuaianNilaiJual" class="java.lang.Double">
+		<fieldDescription><![CDATA[penyesuaianNilaiJual]]></fieldDescription>
+	</field>
+	<field name="penyesuaianPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penyesuaianPcs]]></fieldDescription>
+	</field>
+	<field name="penyesuaianSed" class="java.lang.Integer">
+		<fieldDescription><![CDATA[penyesuaianSed]]></fieldDescription>
+	</field>
+	<field name="pname" class="java.lang.String">
+		<fieldDescription><![CDATA[pname]]></fieldDescription>
+	</field>
+	<field name="returPembelianBes" class="java.lang.Integer">
+		<fieldDescription><![CDATA[returPembelianBes]]></fieldDescription>
+	</field>
+	<field name="returPembelianKec" class="java.lang.Integer">
+		<fieldDescription><![CDATA[returPembelianKec]]></fieldDescription>
+	</field>
+	<field name="returPembelianNilaiBeli" class="java.lang.Double">
+		<fieldDescription><![CDATA[returPembelianNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="returPembelianNilaiJual" class="java.lang.Double">
+		<fieldDescription><![CDATA[returPembelianNilaiJual]]></fieldDescription>
+	</field>
+	<field name="returPembelianPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[returPembelianPcs]]></fieldDescription>
+	</field>
+	<field name="returPembelianSed" class="java.lang.Integer">
+		<fieldDescription><![CDATA[returPembelianSed]]></fieldDescription>
+	</field>
+	<field name="returPenjualanBes" class="java.lang.Integer">
+		<fieldDescription><![CDATA[returPenjualanBes]]></fieldDescription>
+	</field>
+	<field name="returPenjualanKec" class="java.lang.Integer">
+		<fieldDescription><![CDATA[returPenjualanKec]]></fieldDescription>
+	</field>
+	<field name="returPenjualanNilaiBeli" class="java.lang.Double">
+		<fieldDescription><![CDATA[returPenjualanNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="returPenjualanNilaiJual" class="java.lang.Double">
+		<fieldDescription><![CDATA[returPenjualanNilaiJual]]></fieldDescription>
+	</field>
+	<field name="returPenjualanPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[returPenjualanPcs]]></fieldDescription>
+	</field>
+	<field name="returPenjualanSed" class="java.lang.Integer">
+		<fieldDescription><![CDATA[returPenjualanSed]]></fieldDescription>
+	</field>
+	<field name="saldoAkhirBes" class="java.lang.Integer">
+		<fieldDescription><![CDATA[saldoAkhirBes]]></fieldDescription>
+	</field>
+	<field name="saldoAkhirKec" class="java.lang.Integer">
+		<fieldDescription><![CDATA[saldoAkhirKec]]></fieldDescription>
+	</field>
+	<field name="saldoAkhirNilaiBeli" class="java.lang.Double">
+		<fieldDescription><![CDATA[saldoAkhirNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="saldoAkhirNilaiJual" class="java.lang.Double">
+		<fieldDescription><![CDATA[saldoAkhirNilaiJual]]></fieldDescription>
+	</field>
+	<field name="saldoAkhirPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[saldoAkhirPcs]]></fieldDescription>
+	</field>
+	<field name="saldoAkhirSed" class="java.lang.Integer">
+		<fieldDescription><![CDATA[saldoAkhirSed]]></fieldDescription>
+	</field>
+	<field name="saldoAwalBes" class="java.lang.Integer">
+		<fieldDescription><![CDATA[saldoAwalBes]]></fieldDescription>
+	</field>
+	<field name="saldoAwalKec" class="java.lang.Integer">
+		<fieldDescription><![CDATA[saldoAwalKec]]></fieldDescription>
+	</field>
+	<field name="saldoAwalNilaiBeli" class="java.lang.Double">
+		<fieldDescription><![CDATA[saldoAwalNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="saldoAwalNilaiJual" class="java.lang.Double">
+		<fieldDescription><![CDATA[saldoAwalNilaiJual]]></fieldDescription>
+	</field>
+	<field name="saldoAwalPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[saldoAwalPcs]]></fieldDescription>
+	</field>
+	<field name="saldoAwalSed" class="java.lang.Integer">
+		<fieldDescription><![CDATA[saldoAwalSed]]></fieldDescription>
+	</field>
+	<field name="stockdate" class="java.util.Date">
+		<fieldDescription><![CDATA[stockdate]]></fieldDescription>
+	</field>
+	<field name="transferInBes" class="java.lang.Integer">
+		<fieldDescription><![CDATA[transferInBes]]></fieldDescription>
+	</field>
+	<field name="transferInKec" class="java.lang.Integer">
+		<fieldDescription><![CDATA[transferInKec]]></fieldDescription>
+	</field>
+	<field name="transferInNilaiBeli" class="java.lang.Double">
+		<fieldDescription><![CDATA[transferInNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="transferInNilaiJual" class="java.lang.Double">
+		<fieldDescription><![CDATA[transferInNilaiJual]]></fieldDescription>
+	</field>
+	<field name="transferInPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[transferInPcs]]></fieldDescription>
+	</field>
+	<field name="transferInSed" class="java.lang.Integer">
+		<fieldDescription><![CDATA[transferInSed]]></fieldDescription>
+	</field>
+	<field name="transferOutBes" class="java.lang.Integer">
+		<fieldDescription><![CDATA[transferOutBes]]></fieldDescription>
+	</field>
+	<field name="transferOutKec" class="java.lang.Integer">
+		<fieldDescription><![CDATA[transferOutKec]]></fieldDescription>
+	</field>
+	<field name="transferOutNilaiBeli" class="java.lang.Double">
+		<fieldDescription><![CDATA[transferOutNilaiBeli]]></fieldDescription>
+	</field>
+	<field name="transferOutNilaiJual" class="java.lang.Double">
+		<fieldDescription><![CDATA[transferOutNilaiJual]]></fieldDescription>
+	</field>
+	<field name="transferOutPcs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[transferOutPcs]]></fieldDescription>
+	</field>
+	<field name="transferOutSed" class="java.lang.Integer">
+		<fieldDescription><![CDATA[transferOutSed]]></fieldDescription>
+	</field>
+	<group name="GRUP1">
+		<groupExpression><![CDATA[$F{grup1}]]></groupExpression>
+		<groupHeader>
+			<band height="23">
+				<line>
+					<reportElement x="0" y="21" width="580" height="1" uuid="a958bd55-fd7d-4bba-aede-f55d289cbc75"/>
+					<graphicElement>
+						<pen lineWidth="0.25"/>
+					</graphicElement>
+				</line>
+				<staticText>
+					<reportElement x="31" y="7" width="47" height="13" uuid="8247d931-cc12-4d93-916a-24a6075d60c5"/>
+					<textElement markup="none">
+						<font fontName="Ecofont Vera Sans" size="9" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Grup]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="78" y="7" width="69" height="13" uuid="acb5a052-d50a-44a5-88cb-b3582c6c220b"/>
+					<textElement markup="none">
+						<font fontName="Ecofont Vera Sans" size="9" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Kode]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="147" y="7" width="190" height="13" uuid="49efa4d4-3aa7-47c7-af20-a4fc26a1e9e1"/>
+					<textElement markup="none">
+						<font fontName="Ecofont Vera Sans" size="9" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Nama Barang]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="417" y="7" width="161" height="13" uuid="dde7a792-cd81-4681-af62-d54147a6148d"/>
+					<textElement textAlignment="Center" markup="none">
+						<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[----- STOK FISIK -----]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="337" y="7" width="80" height="13" uuid="ce05d51b-0fce-47ef-b6a4-dfe1b4fc83a6"/>
+					<textElement textAlignment="Center" markup="none">
+						<font fontName="Ecofont Vera Sans" size="9" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[SATUAN]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="7" y="7" width="20" height="13" uuid="7cf8a5f6-09cc-42d3-b51f-9c4e6f5c0882"/>
+					<textElement markup="none">
+						<font fontName="Ecofont Vera Sans" size="9" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[NO]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="49" splitType="Stretch">
+			<staticText>
+				<reportElement x="2" y="11" width="557" height="20" uuid="8fbebb16-e2c7-453a-a6ae-73d3847bb8e5"/>
+				<textElement textAlignment="Center">
+					<font fontName="Ecofont Vera Sans" size="14" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[FORM STOK OPNAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="456" y="0" width="41" height="13" uuid="00622e14-0bef-4740-8cf2-4dd1547c412a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Ecofont Vera Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Printed]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="497" y="0" width="89" height="13" uuid="6f54776c-0564-417c-bd9a-020a1e606379"/>
+				<textElement>
+					<font fontName="Ecofont Vera Sans" size="8" isItalic="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="34" width="196" height="15" uuid="bdb4c0c5-ca5a-40e8-b554-f009f17a9c9a"/>
+				<textElement textAlignment="Left">
+					<font fontName="Ecofont Vera Sans" size="12" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[GUDANG : . . . . . . . . . . . . . . . . . . . . . . . .]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="17" splitType="Stretch">
+			<textField>
+				<reportElement x="78" y="0" width="69" height="16" uuid="34c72d04-031f-4288-846d-cf994592c0bc"/>
+				<textElement>
+					<font fontName="Ecofont Vera Sans" size="10" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pcode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="147" y="0" width="190" height="16" uuid="b6a2e8fc-4e69-4f32-a5f5-5561b8638e8c"/>
+				<textElement>
+					<font fontName="Ecofont Vera Sans" size="10" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="31" y="0" width="47" height="16" uuid="22bcd2b3-9c42-4f61-b531-c0fff4e430b3"/>
+				<textElement>
+					<font fontName="Ecofont Vera Sans" size="10" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{grup2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="5" y="0" width="25" height="16" uuid="bdbaf54b-12db-46be-8981-c53286ae93f2"/>
+				<textElement>
+					<font fontName="Ecofont Vera Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-2" y="16" width="580" height="1" uuid="a4dc5118-4fc1-4d59-81a7-e5e162cbcc3e"/>
+				<graphicElement>
+					<pen lineWidth="0.05"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="337" y="0" width="80" height="16" uuid="43310da8-7281-413f-bd25-655ed6b074b7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Ecofont Vera Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{grup3}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="71" splitType="Stretch">
+			<staticText>
+				<reportElement x="118" y="51" width="145" height="14" uuid="3668de9e-b543-48c9-856b-1dacfd22d9ad"/>
+				<textElement textAlignment="Center">
+					<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Otorisasi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="118" y="37" width="145" height="17" uuid="5e51cfba-ace2-4a04-b041-d4d63a924a9f"/>
+				<textElement textAlignment="Center">
+					<font fontName="Ecofont Vera Sans" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[(  . . . . . . . . . )]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="267" y="37" width="145" height="17" uuid="70127282-f53f-4279-9bc4-8872f9a0b6db"/>
+				<textElement textAlignment="Center">
+					<font fontName="Ecofont Vera Sans" size="9" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[(  . . . . . . . . . )]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="267" y="51" width="145" height="14" uuid="3a432f26-ea83-4ef8-a757-6724143d61b6"/>
+				<textElement textAlignment="Center">
+					<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Petugas/Admin]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="4" width="580" height="1" uuid="bc2a4521-6a44-446a-8574-5c69455fed60"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+		</band>
+	</summary>
+</jasperReport>
