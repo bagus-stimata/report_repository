@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="612" pageHeight="396" columnWidth="612" leftMargin="0" rightMargin="0" topMargin="4" bottomMargin="1" uuid="2b844478-2ace-4161-8ed3-9deb424e3f60">
 	<property name="ireport.zoom" value="1.5"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="46"/>
+	<property name="ireport.y" value="0"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -211,6 +211,12 @@
 	<field name="string24" class="java.lang.String"/>
 	<field name="string25" class="java.lang.String"/>
 	<field name="int11" class="java.lang.Integer"/>
+	<field name="int26" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int26]]></fieldDescription>
+	</field>
+	<field name="string27" class="java.lang.String">
+		<fieldDescription><![CDATA[string27]]></fieldDescription>
+	</field>
 	<variable name="double2_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
 		<variableExpression><![CDATA[$F{double2}]]></variableExpression>
 	</variable>
@@ -577,7 +583,7 @@
 					<textElement verticalAlignment="Middle">
 						<font fontName="Helvetica" size="9" isPdfEmbedded="true"/>
 					</textElement>
-					<text><![CDATA[PPN 10.00%]]></text>
+					<text><![CDATA[PPN]]></text>
 				</staticText>
 				<staticText>
 					<reportElement x="402" y="13" width="12" height="13" uuid="eae75374-d774-429f-b2ce-84edc4d7b74b"/>
@@ -716,6 +722,13 @@
 						<font fontName="Helvetica" size="7"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{string20}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="10" y="106" width="122" height="12" uuid="d33a1e6f-76f7-42ba-9967-c579592f8cf0"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Helvetica" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{string27}]]></textFieldExpression>
 				</textField>
 			</band>
 		</groupFooter>

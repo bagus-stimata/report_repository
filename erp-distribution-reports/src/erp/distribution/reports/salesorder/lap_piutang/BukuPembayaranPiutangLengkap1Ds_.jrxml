@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="832" leftMargin="5" rightMargin="5" topMargin="7" bottomMargin="7" uuid="87752ea3-33f4-42c5-8e46-1ff39785a907">
 	<property name="ireport.zoom" value="1.5"/>
-	<property name="ireport.x" value="288"/>
-	<property name="ireport.y" value="20"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
 	<parameter name="paramStockdateFrom" class="java.util.Date"/>
 	<parameter name="paramStockdateTo" class="java.util.Date"/>
 	<parameter name="paramJudulHeader" class="java.lang.String"/>
@@ -257,111 +257,118 @@
 	<group name="GROUP_GRUP2" isReprintHeaderOnEachPage="true">
 		<groupExpression><![CDATA[$F{grup2}]]></groupExpression>
 		<groupHeader>
-			<band height="25">
+			<band height="27">
 				<staticText>
-					<reportElement x="157" y="9" width="128" height="13" uuid="44c4df9e-3dbd-49f8-9624-817d680d0ca8"/>
+					<reportElement x="157" y="12" width="128" height="13" uuid="44c4df9e-3dbd-49f8-9624-817d680d0ca8"/>
 					<textElement>
 						<font fontName="Ecofont Vera Sans" size="8" isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
 					</textElement>
 					<text><![CDATA[Customer]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="285" y="9" width="75" height="13" uuid="97eb2a45-396a-472b-b845-947b7683ca66"/>
+					<reportElement x="285" y="12" width="75" height="13" uuid="97eb2a45-396a-472b-b845-947b7683ca66"/>
 					<textElement>
 						<font fontName="Ecofont Vera Sans" size="8" isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
 					</textElement>
 					<text><![CDATA[NO.INV]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="358" y="9" width="45" height="13" uuid="85e9bc50-33b8-41b1-84b1-f48c9017ae29"/>
+					<reportElement x="358" y="12" width="45" height="13" uuid="85e9bc50-33b8-41b1-84b1-f48c9017ae29"/>
 					<textElement>
 						<font fontName="Ecofont Vera Sans" size="8" isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
 					</textElement>
 					<text><![CDATA[INV.Date]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="123" y="9" width="34" height="13" uuid="6a3533af-3778-4ea3-9d6a-aa6955a8c0e3"/>
+					<reportElement x="123" y="12" width="34" height="13" uuid="6a3533af-3778-4ea3-9d6a-aa6955a8c0e3"/>
 					<textElement>
 						<font fontName="Ecofont Vera Sans" size="8" isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
 					</textElement>
 					<text><![CDATA[SLS]]></text>
 				</staticText>
 				<line>
-					<reportElement x="1" y="23" width="825" height="1" uuid="a958bd55-fd7d-4bba-aede-f55d289cbc75"/>
+					<reportElement x="1" y="25" width="825" height="1" uuid="a958bd55-fd7d-4bba-aede-f55d289cbc75"/>
 					<graphicElement>
 						<pen lineWidth="0.25"/>
 					</graphicElement>
 				</line>
 				<staticText>
-					<reportElement x="15" y="9" width="65" height="13" uuid="89b10ceb-7ad4-459b-a354-eefdfe940ea4"/>
+					<reportElement x="15" y="12" width="65" height="13" uuid="89b10ceb-7ad4-459b-a354-eefdfe940ea4"/>
 					<textElement>
 						<font fontName="Ecofont Vera Sans" size="8" isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
 					</textElement>
 					<text><![CDATA[Payment]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="583" y="9" width="65" height="13" uuid="274761d6-6720-4d2e-bfed-ab4495a3dade"/>
+					<reportElement x="583" y="12" width="65" height="13" uuid="274761d6-6720-4d2e-bfed-ab4495a3dade"/>
 					<textElement textAlignment="Right">
 						<font fontName="Ecofont Vera Sans" size="8" isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
 					</textElement>
 					<text><![CDATA[Retur]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="649" y="9" width="65" height="13" uuid="0387a70f-9b36-48e7-a17b-bb10157a7353"/>
+					<reportElement x="649" y="12" width="65" height="13" uuid="0387a70f-9b36-48e7-a17b-bb10157a7353"/>
 					<textElement textAlignment="Right">
 						<font fontName="Ecofont Vera Sans" size="8" isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
 					</textElement>
 					<text><![CDATA[Tranfer]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="714" y="9" width="65" height="13" uuid="25787779-3b66-45bd-90c3-5d932e9c7e31"/>
+					<reportElement x="714" y="12" width="65" height="13" uuid="25787779-3b66-45bd-90c3-5d932e9c7e31"/>
 					<textElement textAlignment="Right">
 						<font fontName="Ecofont Vera Sans" size="8" isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
 					</textElement>
 					<text><![CDATA[Giro]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="779" y="9" width="50" height="13" uuid="19d62328-b1c9-425a-b2a0-89e77de90be4"/>
+					<reportElement x="779" y="12" width="50" height="13" uuid="19d62328-b1c9-425a-b2a0-89e77de90be4"/>
 					<textElement textAlignment="Right">
 						<font fontName="Ecofont Vera Sans" size="8" isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
 					</textElement>
 					<text><![CDATA[POT & UM]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="405" y="9" width="45" height="13" uuid="6d9342e7-8979-4561-85ec-e6ef16248714"/>
+					<reportElement x="405" y="12" width="45" height="13" uuid="6d9342e7-8979-4561-85ec-e6ef16248714"/>
 					<textElement>
 						<font fontName="Ecofont Vera Sans" size="8" isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
 					</textElement>
 					<text><![CDATA[Jth.Tempo]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="517" y="10" width="65" height="13" uuid="a7984db2-b3bb-4440-a907-d2b8ecea33e7"/>
+					<reportElement x="517" y="13" width="65" height="13" uuid="a7984db2-b3bb-4440-a907-d2b8ecea33e7"/>
 					<textElement textAlignment="Right">
 						<font fontName="Ecofont Vera Sans" size="8" isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
 					</textElement>
 					<text><![CDATA[CASH]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="451" y="9" width="65" height="13" uuid="c47e1809-4c0e-4513-9dae-179baeb126cd"/>
+					<reportElement x="451" y="12" width="65" height="13" uuid="c47e1809-4c0e-4513-9dae-179baeb126cd"/>
 					<textElement textAlignment="Right">
 						<font fontName="Ecofont Vera Sans" size="8" isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
 					</textElement>
 					<text><![CDATA[INV+PPN]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="0" y="9" width="16" height="13" uuid="9ffc43a5-4f37-47c7-8784-b548de00a3ab"/>
+					<reportElement x="0" y="12" width="16" height="13" uuid="9ffc43a5-4f37-47c7-8784-b548de00a3ab"/>
 					<textElement>
 						<font fontName="Ecofont Vera Sans" size="8" isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
 					</textElement>
 					<text><![CDATA[No]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="79" y="9" width="45" height="13" uuid="6de47235-93c2-4e35-bc05-c54da8f1208c"/>
+					<reportElement x="79" y="12" width="45" height="13" uuid="6de47235-93c2-4e35-bc05-c54da8f1208c"/>
 					<textElement>
 						<font fontName="Ecofont Vera Sans" size="8" isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
 					</textElement>
 					<text><![CDATA[Pay Date]]></text>
 				</staticText>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="6" y="0" width="203" height="13" uuid="016f0d72-6d37-45bc-a49c-f2276edaee69"/>
+					<textElement>
+						<font fontName="Ecofont Vera Sans" size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{grup1}]]></textFieldExpression>
+				</textField>
 			</band>
 		</groupHeader>
 		<groupFooter>

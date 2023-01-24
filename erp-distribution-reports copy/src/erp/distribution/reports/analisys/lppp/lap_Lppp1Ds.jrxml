@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="926" pageHeight="595" orientation="Landscape" columnWidth="922" leftMargin="2" rightMargin="2" topMargin="2" bottomMargin="2" uuid="87752ea3-33f4-42c5-8e46-1ff39785a907">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="80"/>
+	<parameter name="paramStockdateFrom" class="java.util.Date"/>
+	<parameter name="paramStockdateTo" class="java.util.Date"/>
+	<parameter name="paramJudulHeader" class="java.lang.String"/>
+	<parameter name="paramJudulHeaderSub1" class="java.lang.String"/>
+	<parameter name="paramJudulHeaderSub2" class="java.lang.String"/>
+	<parameter name="paramPrinted" class="java.lang.String"/>
+	<parameter name="paramString1" class="java.lang.String"/>
+	<parameter name="paramString2" class="java.lang.String"/>
+	<parameter name="paramString3" class="java.lang.String"/>
+	<parameter name="paramString4" class="java.lang.String"/>
+	<parameter name="paramString5" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="bol1" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[bol1]]></fieldDescription>
+	</field>
+	<field name="bol2" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[bol2]]></fieldDescription>
+	</field>
+	<field name="bol3" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[bol3]]></fieldDescription>
+	</field>
+	<field name="bol4" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[bol4]]></fieldDescription>
+	</field>
+	<field name="bol5" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[bol5]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="date1" class="java.util.Date">
+		<fieldDescription><![CDATA[date1]]></fieldDescription>
+	</field>
+	<field name="date2" class="java.util.Date">
+		<fieldDescription><![CDATA[date2]]></fieldDescription>
+	</field>
+	<field name="date3" class="java.util.Date">
+		<fieldDescription><![CDATA[date3]]></fieldDescription>
+	</field>
+	<field name="double1" class="java.lang.Double">
+		<fieldDescription><![CDATA[double1]]></fieldDescription>
+	</field>
+	<field name="double10" class="java.lang.Double">
+		<fieldDescription><![CDATA[double10]]></fieldDescription>
+	</field>
+	<field name="double2" class="java.lang.Double">
+		<fieldDescription><![CDATA[double2]]></fieldDescription>
+	</field>
+	<field name="double3" class="java.lang.Double">
+		<fieldDescription><![CDATA[double3]]></fieldDescription>
+	</field>
+	<field name="double4" class="java.lang.Double">
+		<fieldDescription><![CDATA[double4]]></fieldDescription>
+	</field>
+	<field name="double5" class="java.lang.Double">
+		<fieldDescription><![CDATA[double5]]></fieldDescription>
+	</field>
+	<field name="double6" class="java.lang.Double">
+		<fieldDescription><![CDATA[double6]]></fieldDescription>
+	</field>
+	<field name="double7" class="java.lang.Double">
+		<fieldDescription><![CDATA[double7]]></fieldDescription>
+	</field>
+	<field name="double8" class="java.lang.Double">
+		<fieldDescription><![CDATA[double8]]></fieldDescription>
+	</field>
+	<field name="double9" class="java.lang.Double">
+		<fieldDescription><![CDATA[double9]]></fieldDescription>
+	</field>
+	<field name="grup1" class="java.lang.String">
+		<fieldDescription><![CDATA[grup1]]></fieldDescription>
+	</field>
+	<field name="grup2" class="java.lang.String">
+		<fieldDescription><![CDATA[grup2]]></fieldDescription>
+	</field>
+	<field name="grup3" class="java.lang.String">
+		<fieldDescription><![CDATA[grup3]]></fieldDescription>
+	</field>
+	<field name="id" class="java.lang.Long">
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="int1" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int1]]></fieldDescription>
+	</field>
+	<field name="int10" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int10]]></fieldDescription>
+	</field>
+	<field name="int2" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int2]]></fieldDescription>
+	</field>
+	<field name="int3" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int3]]></fieldDescription>
+	</field>
+	<field name="int4" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int4]]></fieldDescription>
+	</field>
+	<field name="int5" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int5]]></fieldDescription>
+	</field>
+	<field name="int6" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int6]]></fieldDescription>
+	</field>
+	<field name="int7" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int7]]></fieldDescription>
+	</field>
+	<field name="int8" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int8]]></fieldDescription>
+	</field>
+	<field name="int9" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int9]]></fieldDescription>
+	</field>
+	<field name="string1" class="java.lang.String">
+		<fieldDescription><![CDATA[string1]]></fieldDescription>
+	</field>
+	<field name="string10" class="java.lang.String">
+		<fieldDescription><![CDATA[string10]]></fieldDescription>
+	</field>
+	<field name="string11" class="java.lang.String">
+		<fieldDescription><![CDATA[string11]]></fieldDescription>
+	</field>
+	<field name="string12" class="java.lang.String">
+		<fieldDescription><![CDATA[string12]]></fieldDescription>
+	</field>
+	<field name="string13" class="java.lang.String">
+		<fieldDescription><![CDATA[string13]]></fieldDescription>
+	</field>
+	<field name="string14" class="java.lang.String">
+		<fieldDescription><![CDATA[string14]]></fieldDescription>
+	</field>
+	<field name="string15" class="java.lang.String">
+		<fieldDescription><![CDATA[string15]]></fieldDescription>
+	</field>
+	<field name="string2" class="java.lang.String">
+		<fieldDescription><![CDATA[string2]]></fieldDescription>
+	</field>
+	<field name="string3" class="java.lang.String">
+		<fieldDescription><![CDATA[string3]]></fieldDescription>
+	</field>
+	<field name="string4" class="java.lang.String">
+		<fieldDescription><![CDATA[string4]]></fieldDescription>
+	</field>
+	<field name="string5" class="java.lang.String">
+		<fieldDescription><![CDATA[string5]]></fieldDescription>
+	</field>
+	<field name="string6" class="java.lang.String">
+		<fieldDescription><![CDATA[string6]]></fieldDescription>
+	</field>
+	<field name="string7" class="java.lang.String">
+		<fieldDescription><![CDATA[string7]]></fieldDescription>
+	</field>
+	<field name="string8" class="java.lang.String">
+		<fieldDescription><![CDATA[string8]]></fieldDescription>
+	</field>
+	<field name="string9" class="java.lang.String">
+		<fieldDescription><![CDATA[string9]]></fieldDescription>
+	</field>
+	<field name="double11" class="java.lang.Double"/>
+	<field name="double12" class="java.lang.Double"/>
+	<field name="double13" class="java.lang.Double"/>
+	<field name="double14" class="java.lang.Double"/>
+	<field name="double15" class="java.lang.Double"/>
+	<field name="int11" class="java.lang.Integer"/>
+	<field name="int12" class="java.lang.Integer"/>
+	<field name="int13" class="java.lang.Integer"/>
+	<field name="int14" class="java.lang.Integer"/>
+	<field name="int15" class="java.lang.Integer"/>
+	<field name="double31" class="java.lang.Double">
+		<fieldDescription><![CDATA[double31]]></fieldDescription>
+	</field>
+	<field name="double32" class="java.lang.Double">
+		<fieldDescription><![CDATA[double32]]></fieldDescription>
+	</field>
+	<field name="double33" class="java.lang.Double">
+		<fieldDescription><![CDATA[double33]]></fieldDescription>
+	</field>
+	<field name="double34" class="java.lang.Double">
+		<fieldDescription><![CDATA[double34]]></fieldDescription>
+	</field>
+	<field name="double35" class="java.lang.Double">
+		<fieldDescription><![CDATA[double35]]></fieldDescription>
+	</field>
+	<field name="double36" class="java.lang.Double">
+		<fieldDescription><![CDATA[double36]]></fieldDescription>
+	</field>
+	<field name="double37" class="java.lang.Double">
+		<fieldDescription><![CDATA[double37]]></fieldDescription>
+	</field>
+	<field name="double38" class="java.lang.Double">
+		<fieldDescription><![CDATA[double38]]></fieldDescription>
+	</field>
+	<field name="double39" class="java.lang.Double">
+		<fieldDescription><![CDATA[double39]]></fieldDescription>
+	</field>
+	<field name="double40" class="java.lang.Double">
+		<fieldDescription><![CDATA[double40]]></fieldDescription>
+	</field>
+	<field name="double41" class="java.lang.Double">
+		<fieldDescription><![CDATA[double41]]></fieldDescription>
+	</field>
+	<field name="double42" class="java.lang.Double">
+		<fieldDescription><![CDATA[double42]]></fieldDescription>
+	</field>
+	<field name="double43" class="java.lang.Double">
+		<fieldDescription><![CDATA[double43]]></fieldDescription>
+	</field>
+	<field name="double44" class="java.lang.Double">
+		<fieldDescription><![CDATA[double44]]></fieldDescription>
+	</field>
+	<field name="double45" class="java.lang.Double">
+		<fieldDescription><![CDATA[double45]]></fieldDescription>
+	</field>
+	<field name="double46" class="java.lang.Double">
+		<fieldDescription><![CDATA[double46]]></fieldDescription>
+	</field>
+	<field name="double47" class="java.lang.Double">
+		<fieldDescription><![CDATA[double47]]></fieldDescription>
+	</field>
+	<field name="double48" class="java.lang.Double">
+		<fieldDescription><![CDATA[double48]]></fieldDescription>
+	</field>
+	<variable name="double1_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double1}]]></variableExpression>
+	</variable>
+	<variable name="double1_2" class="java.lang.Double" resetType="Group" resetGroup="GRUP2" calculation="Sum">
+		<variableExpression><![CDATA[$F{double1}]]></variableExpression>
+	</variable>
+	<variable name="double8_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double8}]]></variableExpression>
+	</variable>
+	<variable name="double8_2" class="java.lang.Double" resetType="Group" resetGroup="GRUP2" calculation="Sum">
+		<variableExpression><![CDATA[$F{double8}]]></variableExpression>
+	</variable>
+	<variable name="double10_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double10}]]></variableExpression>
+	</variable>
+	<variable name="double10_2" class="java.lang.Double" resetType="Group" resetGroup="GRUP2" calculation="Sum">
+		<variableExpression><![CDATA[$F{double10}]]></variableExpression>
+	</variable>
+	<variable name="double5_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double5}]]></variableExpression>
+	</variable>
+	<variable name="double5_2" class="java.lang.Double" resetType="Group" resetGroup="GRUP2" calculation="Sum">
+		<variableExpression><![CDATA[$F{double5}]]></variableExpression>
+	</variable>
+	<variable name="double2_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double2}]]></variableExpression>
+	</variable>
+	<variable name="double2_2" class="java.lang.Double" resetType="Group" resetGroup="GRUP2" calculation="Sum">
+		<variableExpression><![CDATA[$F{double2}]]></variableExpression>
+	</variable>
+	<variable name="double3_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double3}]]></variableExpression>
+	</variable>
+	<variable name="double3_2" class="java.lang.Double" resetType="Group" resetGroup="GRUP2" calculation="Sum">
+		<variableExpression><![CDATA[$F{double3}]]></variableExpression>
+	</variable>
+	<variable name="double4_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double4}]]></variableExpression>
+	</variable>
+	<variable name="double5_3" class="java.lang.Double" resetType="Group" resetGroup="GRUP2" calculation="Sum">
+		<variableExpression><![CDATA[$F{double5}]]></variableExpression>
+	</variable>
+	<variable name="double4_2" class="java.lang.Double" resetType="Group" resetGroup="GRUP2" calculation="Sum">
+		<variableExpression><![CDATA[$F{double4}]]></variableExpression>
+	</variable>
+	<variable name="double6_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double6}]]></variableExpression>
+	</variable>
+	<variable name="double6_2" class="java.lang.Double" resetType="Group" resetGroup="GRUP2" calculation="Sum">
+		<variableExpression><![CDATA[$F{double6}]]></variableExpression>
+	</variable>
+	<variable name="double7_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double7}]]></variableExpression>
+	</variable>
+	<variable name="double7_2" class="java.lang.Double" resetType="Group" resetGroup="GRUP2" calculation="Sum">
+		<variableExpression><![CDATA[$F{double7}]]></variableExpression>
+	</variable>
+	<variable name="double9_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double9}]]></variableExpression>
+	</variable>
+	<variable name="double9_2" class="java.lang.Double" resetType="Group" resetGroup="GRUP2" calculation="Sum">
+		<variableExpression><![CDATA[$F{double9}]]></variableExpression>
+	</variable>
+	<variable name="double15_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Average">
+		<variableExpression><![CDATA[$F{double15}]]></variableExpression>
+	</variable>
+	<variable name="double15_2" class="java.lang.Double" resetType="Group" resetGroup="GRUP2" calculation="Average">
+		<variableExpression><![CDATA[$F{double15}]]></variableExpression>
+	</variable>
+	<variable name="double11_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double11}]]></variableExpression>
+	</variable>
+	<variable name="double11_2" class="java.lang.Double" resetType="Group" resetGroup="GRUP2" calculation="Sum">
+		<variableExpression><![CDATA[$F{double11}]]></variableExpression>
+	</variable>
+	<variable name="double12_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double12}]]></variableExpression>
+	</variable>
+	<variable name="double12_2" class="java.lang.Double" resetType="Group" resetGroup="GRUP2" calculation="Sum">
+		<variableExpression><![CDATA[$F{double12}]]></variableExpression>
+	</variable>
+	<variable name="double13_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double13}]]></variableExpression>
+	</variable>
+	<variable name="double13_2" class="java.lang.Double" resetType="Group" resetGroup="GRUP2" calculation="Sum">
+		<variableExpression><![CDATA[$F{double13}]]></variableExpression>
+	</variable>
+	<variable name="double14_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double14}]]></variableExpression>
+	</variable>
+	<variable name="double14_2" class="java.lang.Double" resetType="Group" resetGroup="GRUP2" calculation="Sum">
+		<variableExpression><![CDATA[$F{double14}]]></variableExpression>
+	</variable>
+	<group name="GRUP3">
+		<groupExpression><![CDATA[$F{grup3}]]></groupExpression>
+	</group>
+	<group name="GRUP2">
+		<groupExpression><![CDATA[$F{grup2}]]></groupExpression>
+		<groupHeader>
+			<band height="2"/>
+		</groupHeader>
+		<groupFooter>
+			<band height="37">
+				<textField isStretchWithOverflow="true" pattern="#,##0">
+					<reportElement x="361" y="4" width="65" height="13" uuid="9c9f2a94-3668-43ec-88be-b108fe4ce094"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{double6_2}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0">
+					<reportElement x="428" y="4" width="70" height="13" uuid="4b1c470f-a59a-4fa7-bd6c-b146efb13dd9"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{double4_2}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0">
+					<reportElement x="500" y="4" width="70" height="13" uuid="5b355087-173e-47c2-9546-7207cde6398f"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{double5_2}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="135" y="1" width="770" height="1" uuid="301317a2-76bf-43e6-a6d5-011c8cfa984f"/>
+					<graphicElement>
+						<pen lineWidth="0.5"/>
+					</graphicElement>
+				</line>
+				<textField isStretchWithOverflow="true" pattern="#,##0">
+					<reportElement x="285" y="4" width="75" height="13" uuid="9679f9f5-4215-4d40-9987-3d50a91d4ce0"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{double3_2}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0">
+					<reportElement x="133" y="4" width="76" height="13" uuid="7b0f21c2-e685-4fc5-8692-3050a18d5b53"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{double1_2}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0">
+					<reportElement x="787" y="4" width="60" height="13" uuid="159b910c-f290-4d25-95ae-f77dbaa6a32e"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{double13_2}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0">
+					<reportElement x="211" y="4" width="73" height="13" uuid="1fc24fdc-1e21-447c-92aa-7325f9cc4db1"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{double2_2}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0">
+					<reportElement x="570" y="4" width="69" height="13" uuid="e04973d6-8352-471d-b4e0-5958ed8b1548"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{double8_2}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0" isBlankWhenNull="true">
+					<reportElement x="712" y="4" width="75" height="13" uuid="756ffb03-a3f8-4027-8eaf-adb659a19009"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{double10_2}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0">
+					<reportElement x="641" y="4" width="69" height="13" uuid="f13bced1-1063-4669-85cb-c2ea13697ac5"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{double9_2}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0.00">
+					<reportElement x="848" y="4" width="35" height="13" uuid="fbf5327c-81f1-46d6-9e59-ae3861ccc8a3"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{double10_2} / $V{double13_2}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<group name="GRUP1">
+		<groupExpression><![CDATA[$F{grup1}]]></groupExpression>
+		<groupHeader>
+			<band height="2"/>
+		</groupHeader>
+		<groupFooter>
+			<band height="22">
+				<line>
+					<reportElement x="1" y="2" width="910" height="1" uuid="bc2a4521-6a44-446a-8574-5c69455fed60"/>
+					<graphicElement>
+						<pen lineWidth="0.5"/>
+					</graphicElement>
+				</line>
+				<textField isStretchWithOverflow="true" pattern="#,##0">
+					<reportElement x="361" y="4" width="65" height="13" uuid="1e09eeeb-bf4a-4305-9195-01105af7c149"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{double6_1}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0">
+					<reportElement x="500" y="4" width="69" height="13" uuid="13b48b93-3362-4772-ad78-c6c5cfdeeda2"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{double5_1}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0">
+					<reportElement x="428" y="4" width="70" height="13" uuid="bee9494f-c34c-46e8-b4bf-004068b12abe"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{double4_1}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0">
+					<reportElement x="210" y="4" width="74" height="13" uuid="46bc58bb-dc04-4af6-81d4-62107b118252"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{double2_1}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0">
+					<reportElement x="285" y="4" width="75" height="13" uuid="24fef99b-4ee7-425a-84e6-264e4d449f01"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{double3_1}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0">
+					<reportElement x="134" y="4" width="75" height="13" uuid="8f0df819-5be8-47c6-a371-8ddce6e1d238"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{double1_1}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0" isBlankWhenNull="true">
+					<reportElement x="712" y="4" width="75" height="13" uuid="a3c3e40a-e2ab-4976-a52f-d1d8dc0ba8f8"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{double10_1}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0">
+					<reportElement x="787" y="4" width="60" height="13" uuid="184e4d5c-269b-4f74-b050-3844d4b48f09"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{double13_1}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0">
+					<reportElement x="570" y="4" width="70" height="13" uuid="bfa4caca-d017-4dd7-8e56-27e4da4f6d11"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{double8_1}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0">
+					<reportElement x="641" y="4" width="69" height="13" uuid="38e05a2d-c37d-4023-bb4f-b92ed707407c"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{double9_1}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0.00">
+					<reportElement x="848" y="4" width="35" height="13" uuid="f45a5aeb-7a26-4d03-a8e8-3d67e152a4a6"/>
+					<textElement textAlignment="Right">
+						<font fontName="Ecofont Vera Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{double10_1} / $V{double13_1}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="101" splitType="Stretch">
+			<textField>
+				<reportElement x="298" y="9" width="300" height="20" uuid="3e350743-5c49-4d54-ab0a-7428778bbb4b"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paramJudulHeader}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="791" y="2" width="115" height="9" uuid="d2062353-f070-4738-aa63-7cf2b5ebd082"/>
+				<textElement textAlignment="Right">
+					<font size="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paramPrinted}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="298" y="25" width="300" height="15" uuid="6e3ed671-7856-4185-9f7e-3493376d928b"/>
+				<textElement textAlignment="Center">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paramJudulHeaderSub1}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="298" y="40" width="300" height="15" uuid="d4da3a71-b609-4644-9a53-6d629116a7c9"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paramJudulHeaderSub2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="4" y="60" width="40" height="13" uuid="c3d25114-f2d0-431e-8ac2-fad56083076d"/>
+				<textElement markup="none">
+					<font fontName="Ecofont Vera Sans" size="7" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Salesman]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="71" width="40" height="13" uuid="bbdc89b9-0571-4f95-b0d4-2c8983fb26a2"/>
+				<textElement markup="none">
+					<font fontName="Ecofont Vera Sans" size="7" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Supplier]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="85" width="137" height="13" uuid="d9f6c9fd-0abf-4844-ae12-c8d08eec55a8"/>
+				<textElement markup="none">
+					<font fontName="Ecofont Vera Sans" size="7" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Sub Area & Material Grup Level 3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="43" y="60" width="10" height="13" uuid="6ec64f22-68a7-478b-a96c-b62177f92193"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Ecofont Vera Sans" size="7" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="43" y="71" width="10" height="13" uuid="eadba311-4985-4be8-87ca-ac7c93b3cfc9"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Ecofont Vera Sans" size="7" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="135" y="85" width="10" height="13" uuid="86446e07-13bf-46d2-9071-d59ce5b89962"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Ecofont Vera Sans" size="7" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="54" y="60" width="249" height="13" uuid="e1531e3f-4cf9-4660-ba4a-b1b17786d23e"/>
+				<textElement>
+					<font fontName="Ecofont Vera Sans" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paramString1}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="54" y="71" width="249" height="13" uuid="0cc26339-931c-46ff-8d02-2663710a30f3"/>
+				<textElement>
+					<font fontName="Ecofont Vera Sans" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paramString2}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="146" y="85" width="412" height="13" uuid="fb917467-925c-4a49-9303-50928b247ea0"/>
+				<textElement>
+					<font fontName="Ecofont Vera Sans" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paramString3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="738" y="82" width="140" height="14" uuid="dcd08f13-9735-404c-9b33-d5cb217b788f"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Section 1]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="40">
+			<staticText>
+				<reportElement x="784" y="11" width="60" height="29" uuid="7c56c5fc-8c08-4363-8d3f-5d6d7ced7e21"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[RPP 13 PKN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="638" y="16" width="69" height="22" uuid="be8a417f-67b6-4271-822b-fcd06e00b592"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[*Opname / Penyesuaian]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="358" y="11" width="65" height="27" uuid="7ecf2343-6d27-42b9-b93d-01982ed66f2e"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Stok Akhir Van]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="845" y="25" width="35" height="13" uuid="22cb48ed-1836-4aa0-840d-2fdd09c5f540"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Ecofont Vera Sans" size="7" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Wk Covr]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="26" width="130" height="13" uuid="49efa4d4-3aa7-47c7-af20-a4fc26a1e9e1"/>
+				<textElement markup="none">
+					<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Product or Supplier]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="566" y="16" width="70" height="22" uuid="9b3563df-c014-422f-aa29-bc5e8d83b5d5"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[*Stok Akhir BS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="425" y="11" width="70" height="27" uuid="e7fafbd8-8681-4ca8-8034-b33d17416e62"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Retur Jual Good]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="566" y="5" width="217" height="11" uuid="1fc8f04c-030b-4448-8ea2-b7ae75af2a6f"/>
+				<textElement verticalAlignment="Bottom" markup="none">
+					<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[        *) Stok Akhir Distributor - - - -]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="131" y="11" width="75" height="27" uuid="ce05d51b-0fce-47ef-b6a4-dfe1b4fc83a6"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Stok Awal Good,Van,Aloc]]></text>
+			</staticText>
+			<line>
+				<reportElement x="3" y="39" width="910" height="1" uuid="a958bd55-fd7d-4bba-aede-f55d289cbc75"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="282" y="11" width="75" height="27" uuid="d9d2b2ab-ca2d-4385-be33-677d9f447f18"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Retur Barang ke Supp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="845" y="5" width="35" height="21" uuid="e6598352-4fa6-4b13-9515-5646b8e3d627"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Ecofont Vera Sans" size="7" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Stok/
+Rpp13]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="709" y="16" width="75" height="22" uuid="ceb0e8d3-2409-4fcf-86fb-1ef062cc4f6a"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[*Stok Akhir
+Good, Van, Aloc]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="207" y="11" width="75" height="27" uuid="7d4c0dc2-5a61-48a0-a4f1-cc3ad835f0cc"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Terima Barang dr Supp]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="11" width="130" height="14" uuid="ceabe97f-9cda-4bfc-bbb6-c240d0204053"/>
+				<textElement>
+					<font fontName="Ecofont Vera Sans" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{grup1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="496" y="11" width="70" height="27" uuid="a3963076-30f8-41f5-a8e9-43d95258a095"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="none">
+					<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Return BS]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="32" splitType="Stretch">
+			<textField isStretchWithOverflow="true">
+				<reportElement x="3" y="1" width="130" height="13" uuid="b3cf100d-8d76-4f44-aa59-2da31063f6b3"/>
+				<textElement>
+					<font fontName="Ecofont Vera Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{string1}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="3" y="15" width="130" height="13" uuid="628fef82-2434-4476-9c49-4f48d04dc9ab"/>
+				<textElement>
+					<font fontName="Ecofont Vera Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{string2}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0">
+				<reportElement x="210" y="1" width="75" height="13" uuid="e4417de3-b5a3-4f22-9cf4-4bafd5894ae2"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{double2}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0">
+				<reportElement x="285" y="1" width="76" height="13" uuid="e0ffcb88-1c0e-4d92-97ec-cb77c1dadb09"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{double3}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0">
+				<reportElement x="428" y="1" width="71" height="13" uuid="4759cf0d-dd08-48d6-a143-e70a603940a5"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{double4}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0">
+				<reportElement x="134" y="1" width="75" height="13" uuid="1567f504-7204-4291-9a1c-9914e88d1ce0"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{double1}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0">
+				<reportElement x="500" y="1" width="69" height="13" uuid="03556deb-95db-4149-9db2-376b89dc87e8"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{double5}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0">
+				<reportElement x="361" y="1" width="65" height="13" uuid="0586333c-fd08-4515-aab4-e8052b611e75"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{double6}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0" isBlankWhenNull="true">
+				<reportElement x="569" y="1" width="71" height="13" uuid="18724f69-d310-4aa1-89dd-93bb3d42a007"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{double8}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0" isBlankWhenNull="true">
+				<reportElement x="712" y="1" width="75" height="13" uuid="e1a19c49-3039-42ee-b1d8-7892a7d7c68f"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{double10}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0">
+				<reportElement x="787" y="1" width="60" height="13" uuid="9a239510-0752-411b-8ad2-40da56fd735a"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{double13}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00">
+				<reportElement x="848" y="1" width="35" height="27" uuid="8da6a303-595f-4c12-8221-c852da1ad4ea"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{double15}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0">
+				<reportElement x="134" y="15" width="75" height="13" uuid="bd115414-2799-4eed-9441-e5558ffb0b3b"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{double31}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0">
+				<reportElement x="209" y="15" width="75" height="13" uuid="18b8462d-1e0a-4cc8-92ba-5f136bd53092"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{double32}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0">
+				<reportElement x="285" y="15" width="75" height="13" uuid="a96188a1-a419-45ff-9361-2075e5837008"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{double33}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0">
+				<reportElement x="428" y="15" width="71" height="13" uuid="7aa33eed-c39c-4ccb-8ac6-aa765dd2b9fb"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{double34}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0">
+				<reportElement x="500" y="15" width="69" height="13" uuid="d531b1a7-25f2-4281-a8c3-d807a4276798"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{double35}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0">
+				<reportElement x="361" y="15" width="65" height="13" uuid="363457a8-780d-49c7-8734-fac4545e1455"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{double36}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0" isBlankWhenNull="true">
+				<reportElement x="569" y="15" width="70" height="13" uuid="47203bb0-53f2-463a-bbbe-3dba76203fe9"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{double38}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0" isBlankWhenNull="true">
+				<reportElement x="712" y="15" width="75" height="13" uuid="089f5c75-ddfd-4a96-8829-0b6af49fb242"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{double40}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0">
+				<reportElement x="787" y="15" width="60" height="13" uuid="85bf0274-8f9e-4aac-8e61-1d116c3f76fe"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{double43}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0" isBlankWhenNull="true">
+				<reportElement x="641" y="1" width="69" height="13" uuid="ecb72a0d-1e7a-4139-bb90-fff4e77623d3"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{double9}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0" isBlankWhenNull="true">
+				<reportElement x="641" y="15" width="69" height="13" uuid="df400545-41d9-4c35-b9f0-4c8607d2f573"/>
+				<textElement textAlignment="Right">
+					<font fontName="Ecofont Vera Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{double39}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="20"/>
+	</pageFooter>
+</jasperReport>

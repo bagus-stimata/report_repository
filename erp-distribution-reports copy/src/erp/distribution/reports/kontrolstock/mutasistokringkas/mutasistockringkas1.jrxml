@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="571" leftMargin="12" rightMargin="12" topMargin="12" bottomMargin="12" uuid="a8489a6d-d737-435b-96fb-5709a5d08d71">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="64"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="paramStockdateFrom" class="java.util.Date">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="paramProductgroup" class="java.lang.String">
+		<defaultValueExpression><![CDATA["%"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="paramWarehouseId" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="paramStockdateTo" class="java.util.Date">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="paramSumQtyinQtyout" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT DISTINCT
+     fstock.`REFNO` AS fstock_REFNO,
+     fstock.`QTYHOLD` AS fstock_QTYHOLD,
+     fstock.`QTYIN` AS fstock_QTYIN,
+     fstock.`QTYOUT` AS fstock_QTYOUT,
+     fstock.`SALDOAKHIR` AS fstock_SALDOAKHIR,
+     fstock.`SALDOAWAL` AS fstock_SALDOAWAL,
+     fstock.`STOCKDATE` AS fstock_STOCKDATE,
+     fstock.`TIPESTOK` AS fstock_TIPESTOK,
+     fstock.`WEEK` AS fstock_WEEK,
+     fstock.`fproductBean` AS fstock_fproductBean,
+     fstock.`fsalesmanBean` AS fstock_fsalesmanBean,
+     fstock.`fwarehouseBean` AS fstock_fwarehouseBean,
+     fproduct.`ID` AS fproduct_ID,
+     fproduct.`BARCODE` AS fproduct_BARCODE,
+     fproduct.`CONVFACT1` AS fproduct_CONVFACT1,
+     fproduct.`CONVFACT2` AS fproduct_CONVFACT2,
+     fproduct.`DISTCODE` AS fproduct_DISTCODE,
+     fproduct.`PACKAGING` AS fproduct_PACKAGING,
+     fproduct.`PCODE` AS fproduct_PCODE,
+     fproduct.`PNAME` AS fproduct_PNAME,
+     fproduct.`PPRICE` AS fproduct_PPRICE,
+     fproduct.`PPRICE2` AS fproduct_PPRICE2,
+     fproduct.`PRODCLASS` AS fproduct_PRODCLASS,
+     fproduct.`SHORTCODE` AS fproduct_SHORTCODE,
+     fproduct.`SHORTNAME` AS fproduct_SHORTNAME,
+     fproduct.`SHORTPACKAGING` AS fproduct_SHORTPACKAGING,
+     fproduct.`SPRICE` AS fproduct_SPRICE,
+     fproduct.`SPRICE2` AS fproduct_SPRICE2,
+     fproduct.`STATUSACTIVE` AS fproduct_STATUSACTIVE,
+     fproduct.`UOM1` AS fproduct_UOM1,
+     fproduct.`UOM2` AS fproduct_UOM2,
+     fproduct.`UOM3` AS fproduct_UOM3,
+     fproduct.`WEIGHT` AS fproduct_WEIGHT,
+     fproduct.`fproductgroupBean` AS fproduct_fproductgroupBean,
+     fwarehouse.`ID` AS fwarehouse_ID,
+     fwarehouse.`ADDRESS1` AS fwarehouse_ADDRESS1,
+     fwarehouse.`CITY1` AS fwarehouse_CITY1,
+     fwarehouse.`DESCRIPTION` AS fwarehouse_DESCRIPTION,
+     fwarehouse.`GUDANGUTAMA` AS fwarehouse_GUDANGUTAMA,
+     fwarehouse.`NUMBERPRIORITY` AS fwarehouse_NUMBERPRIORITY,
+     fwarehouse.`PHONE` AS fwarehouse_PHONE,
+     fwarehouse.`STATE1` AS fwarehouse_STATE1,
+     fwarehouse.`STATUSACTIVE` AS fwarehouse_STATUSACTIVE,
+     fproduct.`PPRICE2AFTERPPN` AS fproduct_PPRICE2AFTERPPN,
+     fproduct.`PPRICEAFTERPPN` AS fproduct_PPRICEAFTERPPN,
+     fproduct.`SPRICE2AFTERPPN` AS fproduct_SPRICE2AFTERPPN,
+     fproduct.`SPRICEAFTERPPN` AS fproduct_SPRICEAFTERPPN
+FROM
+     `fproduct` fproduct RIGHT OUTER JOIN `fstock` fstock ON fproduct.`ID` = fstock.`fproductBean`
+     LEFT OUTER JOIN `fwarehouse` fwarehouse ON fstock.`fwarehouseBean` = fwarehouse.`ID`
+WHERE
+     fstock.`STOCKDATE` BETWEEN $P{paramStockdateFrom} AND $P{paramStockdateTo}
+ AND fproduct.`fproductgroupBean` LIKE $P{paramProductgroup}
+ AND fwarehouse.`ID` LIKE $P{paramWarehouseId}
+ AND (fstock.`QTYIN` > $P{paramSumQtyinQtyout}
+  OR fstock.`QTYIN` > $P{paramSumQtyinQtyout})
+ORDER BY
+     fstock.`fwarehouseBean` ASC,
+     fproduct.`fproductgroupBean` ASC,
+     fproduct.`PCODE` ASC,
+     fstock.`REFNO` ASC]]>
+	</queryString>
+	<field name="fstock_REFNO" class="java.lang.Long"/>
+	<field name="fstock_QTYHOLD" class="java.lang.Integer"/>
+	<field name="fstock_QTYIN" class="java.lang.Integer"/>
+	<field name="fstock_QTYOUT" class="java.lang.Integer"/>
+	<field name="fstock_SALDOAKHIR" class="java.lang.Integer"/>
+	<field name="fstock_SALDOAWAL" class="java.lang.Integer"/>
+	<field name="fstock_STOCKDATE" class="java.sql.Date"/>
+	<field name="fstock_TIPESTOK" class="java.lang.String"/>
+	<field name="fstock_WEEK" class="java.lang.Integer"/>
+	<field name="fstock_fproductBean" class="java.lang.Long"/>
+	<field name="fstock_fsalesmanBean" class="java.lang.Long"/>
+	<field name="fstock_fwarehouseBean" class="java.lang.String"/>
+	<field name="fproduct_ID" class="java.lang.Long"/>
+	<field name="fproduct_BARCODE" class="java.lang.String"/>
+	<field name="fproduct_CONVFACT1" class="java.lang.Integer"/>
+	<field name="fproduct_CONVFACT2" class="java.lang.Integer"/>
+	<field name="fproduct_DISTCODE" class="java.lang.String"/>
+	<field name="fproduct_PACKAGING" class="java.lang.String"/>
+	<field name="fproduct_PCODE" class="java.lang.String"/>
+	<field name="fproduct_PNAME" class="java.lang.String"/>
+	<field name="fproduct_PPRICE" class="java.lang.Double"/>
+	<field name="fproduct_PPRICE2" class="java.lang.Double"/>
+	<field name="fproduct_PRODCLASS" class="java.lang.Integer"/>
+	<field name="fproduct_SHORTCODE" class="java.lang.String"/>
+	<field name="fproduct_SHORTNAME" class="java.lang.String"/>
+	<field name="fproduct_SHORTPACKAGING" class="java.lang.String"/>
+	<field name="fproduct_SPRICE" class="java.lang.Double"/>
+	<field name="fproduct_SPRICE2" class="java.lang.Double"/>
+	<field name="fproduct_STATUSACTIVE" class="java.lang.Boolean"/>
+	<field name="fproduct_UOM1" class="java.lang.String"/>
+	<field name="fproduct_UOM2" class="java.lang.String"/>
+	<field name="fproduct_UOM3" class="java.lang.String"/>
+	<field name="fproduct_WEIGHT" class="java.lang.Double"/>
+	<field name="fproduct_fproductgroupBean" class="java.lang.String"/>
+	<field name="fwarehouse_ID" class="java.lang.String"/>
+	<field name="fwarehouse_ADDRESS1" class="java.lang.String"/>
+	<field name="fwarehouse_CITY1" class="java.lang.String"/>
+	<field name="fwarehouse_DESCRIPTION" class="java.lang.String"/>
+	<field name="fwarehouse_GUDANGUTAMA" class="java.lang.Boolean"/>
+	<field name="fwarehouse_NUMBERPRIORITY" class="java.lang.Integer"/>
+	<field name="fwarehouse_PHONE" class="java.lang.String"/>
+	<field name="fwarehouse_STATE1" class="java.lang.String"/>
+	<field name="fwarehouse_STATUSACTIVE" class="java.lang.Boolean"/>
+	<field name="fproduct_PPRICE2AFTERPPN" class="java.lang.Double"/>
+	<field name="fproduct_PPRICEAFTERPPN" class="java.lang.Double"/>
+	<field name="fproduct_SPRICE2AFTERPPN" class="java.lang.Double"/>
+	<field name="fproduct_SPRICEAFTERPPN" class="java.lang.Double"/>
+	<variable name="stoct_bes" class="java.lang.Integer">
+		<variableExpression><![CDATA[$F{fstock_SALDOAKHIR}/$F{fproduct_CONVFACT1}]]></variableExpression>
+	</variable>
+	<variable name="stock_sed" class="java.lang.Integer">
+		<variableExpression><![CDATA[($F{fstock_SALDOAKHIR}%$F{fproduct_CONVFACT1})/$F{fproduct_CONVFACT2}]]></variableExpression>
+	</variable>
+	<variable name="stock_kec" class="java.lang.Integer">
+		<variableExpression><![CDATA[(($F{fstock_SALDOAKHIR}%$F{fproduct_CONVFACT1})%$F{fproduct_CONVFACT2})]]></variableExpression>
+	</variable>
+	<variable name="pprice" class="java.lang.Double">
+		<variableExpression><![CDATA[($F{fproduct_PPRICE}/$F{fproduct_CONVFACT1})*$F{fstock_SALDOAKHIR}]]></variableExpression>
+	</variable>
+	<variable name="ppriceppn" class="java.lang.Double"/>
+	<variable name="sprice" class="java.lang.Double">
+		<variableExpression><![CDATA[($F{fproduct_SPRICE}/$F{fproduct_CONVFACT1})*$F{fstock_SALDOAKHIR}]]></variableExpression>
+	</variable>
+	<variable name="spriceppn" class="java.lang.Double"/>
+	<variable name="pprice_total" class="java.lang.Double" resetType="Group" resetGroup="WAREHOUSE" calculation="Sum">
+		<variableExpression><![CDATA[($F{fproduct_PPRICE}/$F{fproduct_CONVFACT1})*$F{fstock_SALDOAKHIR}]]></variableExpression>
+	</variable>
+	<variable name="sprice_total" class="java.lang.Double" resetType="Group" resetGroup="WAREHOUSE" calculation="Sum">
+		<variableExpression><![CDATA[($F{fproduct_SPRICE}/$F{fproduct_CONVFACT1})*$F{fstock_SALDOAKHIR}]]></variableExpression>
+	</variable>
+	<variable name="spriceppn_total" class="java.lang.Double" resetType="Group" resetGroup="WAREHOUSE" calculation="Sum">
+		<variableExpression><![CDATA[(($F{fproduct_SPRICE}/$F{fproduct_CONVFACT1})*$F{fstock_SALDOAKHIR}) + (($F{fproduct_SPRICE}/$F{fproduct_CONVFACT1})*$F{fstock_SALDOAKHIR}*0.1)]]></variableExpression>
+	</variable>
+	<variable name="ppriceppn_total" class="java.lang.Double" resetType="Group" resetGroup="WAREHOUSE" calculation="Sum">
+		<variableExpression><![CDATA[(($F{fproduct_PPRICE}/$F{fproduct_CONVFACT1})*$F{fstock_SALDOAKHIR}) + (($F{fproduct_PPRICE}/$F{fproduct_CONVFACT1})*$F{fstock_SALDOAKHIR}*0.1)]]></variableExpression>
+	</variable>
+	<variable name="saldoawal1" class="java.lang.Integer" resetType="Group" resetGroup="grup_product" calculation="Sum">
+		<variableExpression><![CDATA[$F{fstock_SALDOAWAL}.intValue()/$F{fproduct_CONVFACT1}]]></variableExpression>
+	</variable>
+	<variable name="saldoawal2" class="java.lang.Integer" resetType="Group" resetGroup="grup_product" calculation="Sum">
+		<variableExpression><![CDATA[($F{fstock_SALDOAWAL}.intValue()%$F{fproduct_CONVFACT1})/$F{fproduct_CONVFACT2}]]></variableExpression>
+	</variable>
+	<variable name="saldoawal3" class="java.lang.Integer" resetType="Group" resetGroup="grup_product" calculation="Sum">
+		<variableExpression><![CDATA[(($F{fstock_SALDOAWAL}.intValue()%$F{fproduct_CONVFACT1})%$F{fproduct_CONVFACT2})]]></variableExpression>
+	</variable>
+	<variable name="penerimaan1" class="java.lang.Integer" resetType="Group" resetGroup="grup_product" calculation="Sum">
+		<variableExpression><![CDATA[$F{fstock_QTYIN}.intValue()/$F{fproduct_CONVFACT1}]]></variableExpression>
+	</variable>
+	<variable name="penerimaan2" class="java.lang.Integer" resetType="Group" resetGroup="grup_product" calculation="Sum">
+		<variableExpression><![CDATA[($F{fstock_QTYIN}.intValue()%$F{fproduct_CONVFACT1})/$F{fproduct_CONVFACT2}]]></variableExpression>
+	</variable>
+	<variable name="penerimaan3" class="java.lang.Integer" resetType="Group" resetGroup="grup_product" calculation="Sum">
+		<variableExpression><![CDATA[(($F{fstock_QTYIN}.intValue()%$F{fproduct_CONVFACT1})%$F{fproduct_CONVFACT2})]]></variableExpression>
+	</variable>
+	<variable name="pengeluaran1" class="java.lang.Integer" resetType="Group" resetGroup="grup_product" calculation="Sum">
+		<variableExpression><![CDATA[$F{fstock_QTYOUT}.intValue()/$F{fproduct_CONVFACT1}]]></variableExpression>
+	</variable>
+	<variable name="pengeluaran2" class="java.lang.Integer" resetType="Group" resetGroup="grup_product" calculation="Sum">
+		<variableExpression><![CDATA[($F{fstock_QTYOUT}.intValue()%$F{fproduct_CONVFACT1})/$F{fproduct_CONVFACT2}]]></variableExpression>
+	</variable>
+	<variable name="pengeluaran3" class="java.lang.Integer" resetType="Group" resetGroup="grup_product" calculation="Sum">
+		<variableExpression><![CDATA[(($F{fstock_QTYOUT}.intValue()%$F{fproduct_CONVFACT1})%$F{fproduct_CONVFACT2})]]></variableExpression>
+	</variable>
+	<variable name="saldoakhir1" class="java.lang.Integer" resetType="Group" resetGroup="grup_product" calculation="Sum">
+		<variableExpression><![CDATA[$F{fstock_SALDOAKHIR}.intValue()/$F{fproduct_CONVFACT1}]]></variableExpression>
+	</variable>
+	<variable name="saldoakhir2" class="java.lang.Integer" resetType="Group" resetGroup="grup_product" calculation="Sum">
+		<variableExpression><![CDATA[($F{fstock_SALDOAKHIR}.intValue()%$F{fproduct_CONVFACT1})/$F{fproduct_CONVFACT2}]]></variableExpression>
+	</variable>
+	<variable name="saldoakhir3" class="java.lang.Integer" resetType="Group" resetGroup="grup_product" calculation="Sum">
+		<variableExpression><![CDATA[(($F{fstock_SALDOAKHIR}.intValue()%$F{fproduct_CONVFACT1})%$F{fproduct_CONVFACT2})]]></variableExpression>
+	</variable>
+	<variable name="totaljual_saldoawal" class="java.lang.Double" resetType="Group" resetGroup="WAREHOUSE" calculation="Sum">
+		<variableExpression><![CDATA[($F{fproduct_SPRICE}/$F{fproduct_CONVFACT1})*$F{fstock_SALDOAWAL}.intValue()]]></variableExpression>
+	</variable>
+	<variable name="totalppn_saldoawal" class="java.lang.Double" resetType="Group" resetGroup="WAREHOUSE" calculation="Sum">
+		<variableExpression><![CDATA[(($F{fproduct_PPRICE}/$F{fproduct_CONVFACT1})*$F{fstock_SALDOAWAL}*0.1)]]></variableExpression>
+	</variable>
+	<variable name="totaljualppn_saldoawal" class="java.lang.Double" resetType="Group" resetGroup="WAREHOUSE" calculation="Sum">
+		<variableExpression><![CDATA[(($F{fproduct_PPRICE}/$F{fproduct_CONVFACT1})*$F{fstock_SALDOAWAL}) + (($F{fproduct_PPRICE}/$F{fproduct_CONVFACT1})*$F{fstock_SALDOAWAL}*0.1)]]></variableExpression>
+	</variable>
+	<variable name="totaljual_penerimaan" class="java.lang.Double" resetType="Group" resetGroup="WAREHOUSE" calculation="Sum">
+		<variableExpression><![CDATA[($F{fproduct_SPRICE}/$F{fproduct_CONVFACT1})*$F{fstock_QTYIN}.intValue()]]></variableExpression>
+	</variable>
+	<variable name="totalppn_penerimaan" class="java.lang.Double" resetType="Group" resetGroup="WAREHOUSE" calculation="Sum">
+		<variableExpression><![CDATA[(($F{fproduct_SPRICE}/$F{fproduct_CONVFACT1})*$F{fstock_QTYIN}.intValue()*0.1)]]></variableExpression>
+	</variable>
+	<variable name="totaljualppn_penerimaan" class="java.lang.Double" resetType="Group" resetGroup="WAREHOUSE" calculation="Sum">
+		<variableExpression><![CDATA[(($F{fproduct_SPRICE}/$F{fproduct_CONVFACT1})*$F{fstock_QTYIN}.intValue()) + (($F{fproduct_SPRICE}/$F{fproduct_CONVFACT1})*$F{fstock_QTYIN}.intValue()*0.1)]]></variableExpression>
+	</variable>
+	<variable name="totaljual_pengeluaran" class="java.lang.Double" resetType="Group" resetGroup="WAREHOUSE" calculation="Sum">
+		<variableExpression><![CDATA[($F{fproduct_SPRICE}/$F{fproduct_CONVFACT1})*$F{fstock_QTYOUT}.intValue()]]></variableExpression>
+	</variable>
+	<variable name="totalppn_pengeluaran" class="java.lang.Double" resetType="Group" resetGroup="WAREHOUSE" calculation="Sum">
+		<variableExpression><![CDATA[(($F{fproduct_SPRICE}/$F{fproduct_CONVFACT1})*$F{fstock_QTYOUT}.intValue()*0.1)]]></variableExpression>
+	</variable>
+	<variable name="totaljualppn_pengeluaran" class="java.lang.Double" resetType="Group" resetGroup="WAREHOUSE" calculation="Sum">
+		<variableExpression><![CDATA[(($F{fproduct_SPRICE}/$F{fproduct_CONVFACT1})*$F{fstock_QTYOUT}.intValue()) + (($F{fproduct_SPRICE}/$F{fproduct_CONVFACT1})*$F{fstock_QTYOUT}.intValue()*0.1)]]></variableExpression>
+	</variable>
+	<variable name="totaljual_saldoakhir" class="java.lang.Double" resetType="Group" resetGroup="WAREHOUSE" calculation="Sum">
+		<variableExpression><![CDATA[($F{fproduct_SPRICE}/$F{fproduct_CONVFACT1})*$F{fstock_SALDOAKHIR}.intValue()]]></variableExpression>
+	</variable>
+	<variable name="totalppn_saldoakhir" class="java.lang.Double" resetType="Group" resetGroup="WAREHOUSE" calculation="Sum">
+		<variableExpression><![CDATA[(($F{fproduct_SPRICE}/$F{fproduct_CONVFACT1})*$F{fstock_SALDOAKHIR}.intValue()*0.1)]]></variableExpression>
+	</variable>
+	<variable name="totaljualppn_saldoakhir" class="java.lang.Double" resetType="Group" resetGroup="WAREHOUSE" calculation="Sum">
+		<variableExpression><![CDATA[(($F{fproduct_SPRICE}/$F{fproduct_CONVFACT1})*$F{fstock_SALDOAKHIR}.intValue()) + (($F{fproduct_SPRICE}/$F{fproduct_CONVFACT1})*$F{fstock_SALDOAKHIR}.intValue()*0.1)]]></variableExpression>
+	</variable>
+	<group name="WAREHOUSE">
+		<groupExpression><![CDATA[$F{fwarehouse_ID}]]></groupExpression>
+		<groupHeader>
+			<band height="18">
+				<staticText>
+					<reportElement x="10" y="2" width="49" height="15" uuid="0213b627-d9ad-45bb-b3bf-df9aa0f5854d"/>
+					<textElement>
+						<font size="9" isBold="true" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[GUDANG: ]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="62" y="2" width="42" height="15" uuid="892a812f-a6d2-401c-b1a0-375015e12c5a"/>
+					<textElement>
+						<font isBold="true" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{fwarehouse_ID}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="105" y="2" width="100" height="15" uuid="80fd6b7a-a366-4798-ba54-a7d78b06dfe9"/>
+					<textElement>
+						<font isBold="true" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{fwarehouse_DESCRIPTION}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="65">
+				<line>
+					<reportElement x="2" y="3" width="551" height="1" uuid="112b1bf5-ae9b-4ba8-ab06-3d6c39b168e4"/>
+					<graphicElement>
+						<pen lineWidth="0.5"/>
+					</graphicElement>
+				</line>
+				<staticText>
+					<reportElement x="10" y="8" width="91" height="17" uuid="be2d133b-a71a-4840-9a00-7a1fcdd7f268"/>
+					<textElement>
+						<font size="9" isBold="true" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[H. JUAL DPP]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="10" y="47" width="62" height="17" uuid="78a438f4-c39d-4ba7-a7d3-e963f5dcc131"/>
+					<textElement>
+						<font size="9" isBold="true" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[DPP+PPN]]></text>
+				</staticText>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="502" y="9" width="70" height="15" uuid="5d3000e3-9d94-463d-89d6-4f2ee88af435"/>
+					<textElement textAlignment="Right">
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{totaljual_saldoakhir}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="502" y="46" width="70" height="15" uuid="3df9ca97-efb6-4410-9ac1-05a8e90e1498"/>
+					<textElement textAlignment="Right">
+						<font size="9" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{totaljualppn_saldoakhir}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="386" y="9" width="70" height="15" uuid="5c418a23-c4da-427a-8ed1-11ecaba25f3f"/>
+					<textElement textAlignment="Right">
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{totaljual_pengeluaran}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="386" y="46" width="70" height="15" uuid="8ea9894c-13a7-4074-a54c-4ee50cd6bb52"/>
+					<textElement textAlignment="Right">
+						<font size="9" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{totaljualppn_pengeluaran}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="313" y="9" width="70" height="15" uuid="408c637b-6839-4374-9bd2-63c7ad5f6296"/>
+					<textElement textAlignment="Right">
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{totaljual_penerimaan}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="313" y="46" width="70" height="15" uuid="af266bdd-8a89-4ed9-9106-a25cb6d7e0a4"/>
+					<textElement textAlignment="Right">
+						<font size="9" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{totaljualppn_penerimaan}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="242" y="9" width="70" height="15" uuid="c64b6e5a-d495-4b12-9e48-81c034e4affa"/>
+					<textElement textAlignment="Right">
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{totaljual_saldoawal}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="242" y="46" width="70" height="15" uuid="aaef84b9-2928-4fed-90f5-36b9c75a149d"/>
+					<textElement textAlignment="Right">
+						<font size="9" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{totaljualppn_saldoawal}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="242" y="26" width="70" height="15" uuid="91bf8086-d9c0-40b0-ab24-88ed4d1cd996"/>
+					<textElement textAlignment="Right">
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{totalppn_saldoawal}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="313" y="26" width="70" height="15" uuid="857ccb0e-4258-4444-8832-8053c3d86fd2"/>
+					<textElement textAlignment="Right">
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{totalppn_penerimaan}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="386" y="26" width="70" height="15" uuid="e29e4dcf-997d-4d48-9acf-c86ca4304b31"/>
+					<textElement textAlignment="Right">
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{totalppn_pengeluaran}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="502" y="26" width="70" height="15" uuid="918c0652-aca4-4942-9406-77c1c9529f8b"/>
+					<textElement textAlignment="Right">
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{totalppn_saldoakhir}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="10" y="28" width="91" height="17" uuid="e48c656a-e332-42de-a339-7317eb57d747"/>
+					<textElement>
+						<font size="9" isBold="true" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[PPN]]></text>
+				</staticText>
+			</band>
+		</groupFooter>
+	</group>
+	<group name="grup_product">
+		<groupExpression><![CDATA[$F{fproduct_ID}]]></groupExpression>
+		<groupHeader>
+			<band height="1"/>
+		</groupHeader>
+		<groupFooter>
+			<band height="12">
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="241" y="0" width="30" height="12" uuid="6d60a849-8f16-4507-b9cf-288a9c022bd6"/>
+					<textElement textAlignment="Right">
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{saldoawal1}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="271" y="0" width="20" height="12" uuid="ea6b8062-966d-4dc8-b609-56df23ee5c5e"/>
+					<textElement textAlignment="Right">
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{saldoawal2}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="291" y="0" width="20" height="12" uuid="1b8417ae-5af1-4f0e-823b-1f7165cb3662"/>
+					<textElement textAlignment="Right">
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{saldoawal3}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="314" y="0" width="30" height="12" uuid="58f86ec3-5c7f-4911-9364-9ab148e0ba53"/>
+					<textElement textAlignment="Right">
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{penerimaan1}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="344" y="0" width="20" height="12" uuid="27f3700f-1f8c-4351-9cc4-4caef35872b3"/>
+					<textElement textAlignment="Right">
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{penerimaan2}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="364" y="0" width="20" height="12" uuid="e2d3eaa8-68c3-4369-825d-a847f9d42fc6"/>
+					<textElement textAlignment="Right">
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{penerimaan3}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="385" y="0" width="30" height="12" uuid="16fe0180-a51f-4195-8f0d-aa54fc7e2c5c"/>
+					<textElement textAlignment="Right">
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{pengeluaran1}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="417" y="0" width="20" height="12" uuid="f31518c6-b182-4931-b341-bb62c4de83c6"/>
+					<textElement textAlignment="Right">
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{pengeluaran2}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="438" y="0" width="20" height="12" uuid="21e11030-28d1-4705-b7d9-43207cfe2dd0"/>
+					<textElement textAlignment="Right">
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{pengeluaran3}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="498" y="0" width="30" height="12" uuid="d856d378-d733-4ac1-ae38-6b557b39f008"/>
+					<textElement textAlignment="Right">
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{saldoakhir1}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="550" y="0" width="20" height="12" uuid="46820a60-0963-4d6e-8df3-fddc24a6655c"/>
+					<textElement textAlignment="Right">
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{saldoakhir3}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="529" y="0" width="20" height="12" uuid="fc3e4c4b-837d-4b77-ae19-b54ac41f54b0"/>
+					<textElement textAlignment="Right">
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{saldoakhir2}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="0" y="0" width="40" height="12" uuid="c61d3a0f-063d-481d-8da1-4a6c5cbac3ed"/>
+					<textElement>
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{fproduct_PCODE}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="40" y="0" width="160" height="12" uuid="a054a888-2efe-487b-873d-fd5436498815"/>
+					<textElement>
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{fproduct_PNAME}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="203" y="0" width="35" height="12" uuid="26135b61-a191-4c0b-92ff-7926f9f2ab3c"/>
+					<textElement>
+						<font size="8" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{fproduct_PACKAGING}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="193" y="0" width="248" height="20" uuid="25da781d-4f59-4d84-b63a-44ed0881f7b8"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[MUTASI STOK GUDANG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="193" y="22" width="61" height="15" uuid="32c75e27-4aa6-473d-85de-97ad858f3adb"/>
+				<textElement textAlignment="Right">
+					<font size="9" isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Tanggal: ]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="256" y="22" width="58" height="15" uuid="aab81d52-eea5-40e1-bd95-85b48073ff02"/>
+				<textElement>
+					<font size="9" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paramStockdateFrom}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="345" y="22" width="100" height="15" uuid="3ea0abd3-ca6d-4a69-8ef0-f0702244b4b3"/>
+				<textElement>
+					<font size="9" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paramStockdateTo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="315" y="22" width="29" height="15" uuid="c57267ee-1850-47a3-9ea2-95339064df47"/>
+				<textElement textAlignment="Center">
+					<font size="9" isBold="false" isItalic="true" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[S.D]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="471" y="-13" width="100" height="13" uuid="c86796df-0608-44f4-8b85-f6c72a242790"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="430" y="-13" width="41" height="13" uuid="eb4ce5f2-15da-41d4-a412-472dfc1f3797"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Printed]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="7" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="40" height="15" uuid="8a2b0b56-d67d-4a89-a5b6-d95871893d65"/>
+				<textElement>
+					<font isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Kode]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="0" width="160" height="15" uuid="0d6a5a14-d9c5-4988-98ac-8922b2651ada"/>
+				<textElement>
+					<font isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Nama Product]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="1" width="70" height="15" uuid="4b37dbbd-9768-4964-8c73-eeb82b77d079"/>
+				<textElement textAlignment="Right">
+					<font isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Saldo Awal]]></text>
+			</staticText>
+			<line>
+				<reportElement x="2" y="17" width="551" height="1" uuid="f6ac6491-d90e-4387-a72a-a16844d3e64d"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="312" y="1" width="70" height="15" uuid="9b214dcc-538e-4c27-8c2f-948862719aaa"/>
+				<textElement textAlignment="Right">
+					<font isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Penerimaan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="387" y="1" width="70" height="15" uuid="89502006-d0c9-42f6-917e-97e4b9443e2e"/>
+				<textElement textAlignment="Right">
+					<font isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Pengeluaran]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="1" width="70" height="15" uuid="42e11c7a-ab2a-48de-848c-9a7e2c5bf3ad"/>
+				<textElement textAlignment="Right">
+					<font isBold="false" pdfFontName="Times-Roman" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Saldo Akhir]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="1" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="10" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="24" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="25" splitType="Stretch"/>
+	</summary>
+</jasperReport>

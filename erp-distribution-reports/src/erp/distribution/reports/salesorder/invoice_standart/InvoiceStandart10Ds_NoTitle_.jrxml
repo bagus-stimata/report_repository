@@ -264,14 +264,14 @@
 					</graphicElement>
 				</line>
 				<staticText>
-					<reportElement x="31" y="104" width="220" height="13" uuid="3fcff16a-a1ad-4d04-ae4c-92b5a2b6e0b4"/>
+					<reportElement x="31" y="104" width="215" height="13" uuid="3fcff16a-a1ad-4d04-ae4c-92b5a2b6e0b4"/>
 					<textElement verticalAlignment="Middle">
 						<font fontName="Helvetica" size="9" isBold="true" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
 					</textElement>
 					<text><![CDATA[Nama Produk]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="414" y="104" width="55" height="13" uuid="966e51f9-dc32-4ff4-ae18-e5280c1f4c74"/>
+					<reportElement x="410" y="104" width="55" height="13" uuid="966e51f9-dc32-4ff4-ae18-e5280c1f4c74"/>
 					<textElement textAlignment="Right" verticalAlignment="Middle">
 						<font fontName="Helvetica" size="9" isBold="true" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
 					</textElement>
@@ -453,7 +453,7 @@
 					<text><![CDATA[No]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="251" y="104" width="88" height="13" uuid="82486755-f794-4b15-97ab-396c1a95a0ed"/>
+					<reportElement x="247" y="104" width="88" height="13" uuid="82486755-f794-4b15-97ab-396c1a95a0ed"/>
 					<textElement textAlignment="Right" verticalAlignment="Middle">
 						<font fontName="Helvetica" size="9" isBold="true" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
 					</textElement>
@@ -466,7 +466,7 @@
 					</graphicElement>
 				</line>
 				<staticText>
-					<reportElement x="340" y="104" width="74" height="13" uuid="570bc04a-15fa-4075-8260-e9ed03d434cc"/>
+					<reportElement x="336" y="104" width="74" height="13" uuid="570bc04a-15fa-4075-8260-e9ed03d434cc"/>
 					<textElement textAlignment="Right" verticalAlignment="Middle">
 						<font fontName="Helvetica" size="9" isBold="true" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
 					</textElement>
@@ -500,6 +500,13 @@
 					</textElement>
 					<textFieldExpression><![CDATA[$F{string7}]]></textFieldExpression>
 				</textField>
+				<staticText>
+					<reportElement x="472" y="104" width="52" height="13" uuid="30768eb4-5861-44c3-9e48-d1c01b1669cf"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Helvetica" size="9" isBold="true" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Disc]]></text>
+				</staticText>
 			</band>
 		</groupHeader>
 		<groupFooter>
@@ -740,14 +747,14 @@
 	<detail>
 		<band height="12" splitType="Stretch">
 			<textField isStretchWithOverflow="true">
-				<reportElement x="31" y="0" width="220" height="12" uuid="fd14e8c9-db9f-4e57-9fd0-9361fb9f2741"/>
+				<reportElement x="31" y="0" width="215" height="12" uuid="fd14e8c9-db9f-4e57-9fd0-9361fb9f2741"/>
 				<textElement verticalAlignment="Top">
 					<font fontName="Ecofont Vera Sans" size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{string13}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0;-#,##0">
-				<reportElement x="414" y="0" width="55" height="12" uuid="0931c5ca-2206-4305-a9be-e7497002f11d"/>
+				<reportElement x="410" y="0" width="55" height="12" uuid="0931c5ca-2206-4305-a9be-e7497002f11d"/>
 				<textElement textAlignment="Right" verticalAlignment="Top">
 					<font fontName="Ecofont Vera Sans" size="9"/>
 				</textElement>
@@ -761,8 +768,8 @@
 				<textFieldExpression><![CDATA[$F{double10}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement x="482" y="0" width="40" height="12" uuid="493136d1-ead6-429b-ad4a-57ee01f928ae"/>
-				<textElement verticalAlignment="Top">
+				<reportElement x="472" y="0" width="52" height="12" uuid="493136d1-ead6-429b-ad4a-57ee01f928ae"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
 					<font fontName="Ecofont Vera Sans" size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{string16}]]></textFieldExpression>
@@ -775,14 +782,14 @@
 				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" pattern="###0">
-				<reportElement x="251" y="0" width="88" height="12" uuid="365a9532-97cc-4398-ba3e-0ea4f91bb8d6"/>
+				<reportElement x="247" y="0" width="88" height="12" uuid="365a9532-97cc-4398-ba3e-0ea4f91bb8d6"/>
 				<textElement textAlignment="Right" verticalAlignment="Top">
 					<font fontName="Ecofont Vera Sans" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{bol1}.equals(true)?"":$F{string14}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" pattern="###0">
-				<reportElement x="340" y="0" width="75" height="12" uuid="9fc5da46-22ca-4b68-a2e9-7395773e194b"/>
+				<reportElement x="336" y="0" width="75" height="12" uuid="9fc5da46-22ca-4b68-a2e9-7395773e194b"/>
 				<textElement textAlignment="Right" verticalAlignment="Top">
 					<font fontName="Ecofont Vera Sans" size="9" pdfFontName="Helvetica" isPdfEmbedded="true"/>
 				</textElement>

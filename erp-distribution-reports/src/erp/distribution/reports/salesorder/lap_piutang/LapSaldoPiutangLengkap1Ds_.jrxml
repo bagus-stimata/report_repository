@@ -197,6 +197,12 @@
 	<variable name="double6_2" class="java.lang.Double" resetType="Group" resetGroup="GRUP2" calculation="Sum">
 		<variableExpression><![CDATA[$F{double6}]]></variableExpression>
 	</variable>
+	<variable name="double7_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double7}]]></variableExpression>
+	</variable>
+	<variable name="double7_2" class="java.lang.Double" resetType="Group" resetGroup="GRUP2" calculation="Sum">
+		<variableExpression><![CDATA[$F{double7}]]></variableExpression>
+	</variable>
 	<group name="GRUP3">
 		<groupExpression><![CDATA[$F{grup3}]]></groupExpression>
 	</group>
@@ -297,7 +303,7 @@
 					<textElement textAlignment="Right">
 						<font fontName="Ecofont Vera Sans" size="9"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$V{double6_2}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$V{double6_2}+$V{double7_2}]]></textFieldExpression>
 				</textField>
 				<line>
 					<reportElement x="0" y="1" width="830" height="1" uuid="9a141a1a-ecbb-4a46-ae22-7123709e579a"/>
@@ -446,7 +452,7 @@
 					<textElement textAlignment="Right">
 						<font fontName="Ecofont Vera Sans" size="9"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$V{double6_1}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$V{double6_1}+$V{double7_1}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" pattern="#,##0;(#,##0)">
 					<reportElement x="400" y="4" width="70" height="13" uuid="f75fcada-fd84-49cd-8fe0-c82c10c8738b"/>
@@ -595,7 +601,7 @@
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="Ecofont Vera Sans" size="9"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{double6}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{double6} + $F{double7}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>

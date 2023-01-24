@@ -704,7 +704,7 @@
 					</graphicElement>
 				</line>
 				<textField>
-					<reportElement x="19" y="118" width="182" height="12" uuid="395b7939-3d6d-45c9-9ac4-517253467b20"/>
+					<reportElement x="359" y="118" width="126" height="12" uuid="395b7939-3d6d-45c9-9ac4-517253467b20"/>
 					<textElement verticalAlignment="Middle">
 						<font fontName="Helvetica" size="7"/>
 					</textElement>
@@ -767,19 +767,12 @@
 					<textFieldExpression><![CDATA[$F{double13}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true">
-					<reportElement x="72" y="15" width="229" height="25" uuid="1eefc28b-f73c-4840-9989-96adcc0e92a9"/>
+					<reportElement x="16" y="118" width="311" height="12" uuid="1eefc28b-f73c-4840-9989-96adcc0e92a9"/>
 					<textElement verticalAlignment="Top">
 						<font fontName="Ecofont Vera Sans" size="8"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{string19}]]></textFieldExpression>
 				</textField>
-				<staticText>
-					<reportElement x="25" y="15" width="47" height="14" uuid="206c75e6-2bec-4ed5-bcf0-75ca48c93197"/>
-					<textElement>
-						<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
-					</textElement>
-					<text><![CDATA[Comment]]></text>
-				</staticText>
 				<staticText>
 					<reportElement x="225" y="43" width="102" height="14" uuid="ad70417a-4a94-4869-8b07-0862bf12ee8f"/>
 					<textElement textAlignment="Center">

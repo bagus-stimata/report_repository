@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="612" pageHeight="396" columnWidth="612" leftMargin="0" rightMargin="0" topMargin="4" bottomMargin="1" uuid="2b844478-2ace-4161-8ed3-9deb424e3f60">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="string1" class="java.lang.String">
+		<fieldDescription><![CDATA[string1]]></fieldDescription>
+	</field>
+	<field name="string10" class="java.lang.String">
+		<fieldDescription><![CDATA[string10]]></fieldDescription>
+	</field>
+	<field name="grup5" class="java.lang.String">
+		<fieldDescription><![CDATA[grup5]]></fieldDescription>
+	</field>
+	<field name="bol3" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[bol3]]></fieldDescription>
+	</field>
+	<field name="string3" class="java.lang.String">
+		<fieldDescription><![CDATA[string3]]></fieldDescription>
+	</field>
+	<field name="string9" class="java.lang.String">
+		<fieldDescription><![CDATA[string9]]></fieldDescription>
+	</field>
+	<field name="double10" class="java.lang.Double">
+		<fieldDescription><![CDATA[double10]]></fieldDescription>
+	</field>
+	<field name="int6" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int6]]></fieldDescription>
+	</field>
+	<field name="double11" class="java.lang.Double">
+		<fieldDescription><![CDATA[double11]]></fieldDescription>
+	</field>
+	<field name="string13" class="java.lang.String">
+		<fieldDescription><![CDATA[string13]]></fieldDescription>
+	</field>
+	<field name="bol4" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[bol4]]></fieldDescription>
+	</field>
+	<field name="grup1" class="java.lang.String">
+		<fieldDescription><![CDATA[grup1]]></fieldDescription>
+	</field>
+	<field name="bol1" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[bol1]]></fieldDescription>
+	</field>
+	<field name="string7" class="java.lang.String">
+		<fieldDescription><![CDATA[string7]]></fieldDescription>
+	</field>
+	<field name="string18" class="java.lang.String">
+		<fieldDescription><![CDATA[string18]]></fieldDescription>
+	</field>
+	<field name="int7" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int7]]></fieldDescription>
+	</field>
+	<field name="grup4" class="java.lang.String">
+		<fieldDescription><![CDATA[grup4]]></fieldDescription>
+	</field>
+	<field name="int4" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int4]]></fieldDescription>
+	</field>
+	<field name="double19" class="java.lang.Double">
+		<fieldDescription><![CDATA[double19]]></fieldDescription>
+	</field>
+	<field name="double2" class="java.lang.Double">
+		<fieldDescription><![CDATA[double2]]></fieldDescription>
+	</field>
+	<field name="double12" class="java.lang.Double">
+		<fieldDescription><![CDATA[double12]]></fieldDescription>
+	</field>
+	<field name="date4" class="java.util.Date">
+		<fieldDescription><![CDATA[date4]]></fieldDescription>
+	</field>
+	<field name="string6" class="java.lang.String">
+		<fieldDescription><![CDATA[string6]]></fieldDescription>
+	</field>
+	<field name="string16" class="java.lang.String">
+		<fieldDescription><![CDATA[string16]]></fieldDescription>
+	</field>
+	<field name="int8" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int8]]></fieldDescription>
+	</field>
+	<field name="double7" class="java.lang.Double">
+		<fieldDescription><![CDATA[double7]]></fieldDescription>
+	</field>
+	<field name="double14" class="java.lang.Double">
+		<fieldDescription><![CDATA[double14]]></fieldDescription>
+	</field>
+	<field name="string2" class="java.lang.String">
+		<fieldDescription><![CDATA[string2]]></fieldDescription>
+	</field>
+	<field name="string11" class="java.lang.String">
+		<fieldDescription><![CDATA[string11]]></fieldDescription>
+	</field>
+	<field name="id" class="java.lang.Long">
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="grup3" class="java.lang.String">
+		<fieldDescription><![CDATA[grup3]]></fieldDescription>
+	</field>
+	<field name="double13" class="java.lang.Double">
+		<fieldDescription><![CDATA[double13]]></fieldDescription>
+	</field>
+	<field name="string17" class="java.lang.String">
+		<fieldDescription><![CDATA[string17]]></fieldDescription>
+	</field>
+	<field name="string15" class="java.lang.String">
+		<fieldDescription><![CDATA[string15]]></fieldDescription>
+	</field>
+	<field name="date1" class="java.util.Date">
+		<fieldDescription><![CDATA[date1]]></fieldDescription>
+	</field>
+	<field name="int5" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int5]]></fieldDescription>
+	</field>
+	<field name="grup2" class="java.lang.String">
+		<fieldDescription><![CDATA[grup2]]></fieldDescription>
+	</field>
+	<field name="string20" class="java.lang.String">
+		<fieldDescription><![CDATA[string20]]></fieldDescription>
+	</field>
+	<field name="double8" class="java.lang.Double">
+		<fieldDescription><![CDATA[double8]]></fieldDescription>
+	</field>
+	<field name="date3" class="java.util.Date">
+		<fieldDescription><![CDATA[date3]]></fieldDescription>
+	</field>
+	<field name="double16" class="java.lang.Double">
+		<fieldDescription><![CDATA[double16]]></fieldDescription>
+	</field>
+	<field name="int9" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int9]]></fieldDescription>
+	</field>
+	<field name="bol2" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[bol2]]></fieldDescription>
+	</field>
+	<field name="double9" class="java.lang.Double">
+		<fieldDescription><![CDATA[double9]]></fieldDescription>
+	</field>
+	<field name="double6" class="java.lang.Double">
+		<fieldDescription><![CDATA[double6]]></fieldDescription>
+	</field>
+	<field name="double15" class="java.lang.Double">
+		<fieldDescription><![CDATA[double15]]></fieldDescription>
+	</field>
+	<field name="int2" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int2]]></fieldDescription>
+	</field>
+	<field name="date2" class="java.util.Date">
+		<fieldDescription><![CDATA[date2]]></fieldDescription>
+	</field>
+	<field name="double17" class="java.lang.Double">
+		<fieldDescription><![CDATA[double17]]></fieldDescription>
+	</field>
+	<field name="int10" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int10]]></fieldDescription>
+	</field>
+	<field name="double3" class="java.lang.Double">
+		<fieldDescription><![CDATA[double3]]></fieldDescription>
+	</field>
+	<field name="date5" class="java.util.Date">
+		<fieldDescription><![CDATA[date5]]></fieldDescription>
+	</field>
+	<field name="int1" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int1]]></fieldDescription>
+	</field>
+	<field name="double20" class="java.lang.Double">
+		<fieldDescription><![CDATA[double20]]></fieldDescription>
+	</field>
+	<field name="double1" class="java.lang.Double">
+		<fieldDescription><![CDATA[double1]]></fieldDescription>
+	</field>
+	<field name="string4" class="java.lang.String">
+		<fieldDescription><![CDATA[string4]]></fieldDescription>
+	</field>
+	<field name="int3" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int3]]></fieldDescription>
+	</field>
+	<field name="double5" class="java.lang.Double">
+		<fieldDescription><![CDATA[double5]]></fieldDescription>
+	</field>
+	<field name="string8" class="java.lang.String">
+		<fieldDescription><![CDATA[string8]]></fieldDescription>
+	</field>
+	<field name="string14" class="java.lang.String">
+		<fieldDescription><![CDATA[string14]]></fieldDescription>
+	</field>
+	<field name="bol5" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[bol5]]></fieldDescription>
+	</field>
+	<field name="double4" class="java.lang.Double">
+		<fieldDescription><![CDATA[double4]]></fieldDescription>
+	</field>
+	<field name="double18" class="java.lang.Double">
+		<fieldDescription><![CDATA[double18]]></fieldDescription>
+	</field>
+	<field name="string19" class="java.lang.String">
+		<fieldDescription><![CDATA[string19]]></fieldDescription>
+	</field>
+	<field name="string5" class="java.lang.String">
+		<fieldDescription><![CDATA[string5]]></fieldDescription>
+	</field>
+	<field name="string12" class="java.lang.String">
+		<fieldDescription><![CDATA[string12]]></fieldDescription>
+	</field>
+	<field name="string21" class="java.lang.String"/>
+	<field name="string22" class="java.lang.String"/>
+	<field name="string23" class="java.lang.String"/>
+	<field name="int15" class="java.lang.Integer"/>
+	<field name="string24" class="java.lang.String"/>
+	<field name="string25" class="java.lang.String"/>
+	<field name="int11" class="java.lang.Integer"/>
+	<variable name="double2_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double2}]]></variableExpression>
+	</variable>
+	<variable name="double4_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double4}]]></variableExpression>
+	</variable>
+	<variable name="double6_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double6}]]></variableExpression>
+	</variable>
+	<variable name="double10_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double10}]]></variableExpression>
+	</variable>
+	<variable name="double11_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double11}]]></variableExpression>
+	</variable>
+	<variable name="double12_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double12}]]></variableExpression>
+	</variable>
+	<variable name="double13_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double13}]]></variableExpression>
+	</variable>
+	<variable name="double14_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double14}]]></variableExpression>
+	</variable>
+	<variable name="double15_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double15}]]></variableExpression>
+	</variable>
+	<variable name="double16_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double16}]]></variableExpression>
+	</variable>
+	<variable name="double17_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double17}]]></variableExpression>
+	</variable>
+	<variable name="int15_1" class="java.lang.Integer" resetType="Group" resetGroup="GRUP1" incrementType="Page" calculation="Count">
+		<variableExpression><![CDATA[$F{int15}]]></variableExpression>
+	</variable>
+	<variable name="variable1" class="java.lang.Integer" resetType="Group" resetGroup="GRUP1" incrementType="Report" calculation="Count">
+		<variableExpression><![CDATA[1]]></variableExpression>
+	</variable>
+	<variable name="double19_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double19}]]></variableExpression>
+	</variable>
+	<variable name="double20_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
+		<variableExpression><![CDATA[$F{double20}]]></variableExpression>
+	</variable>
+	<group name="GRUP1" isResetPageNumber="true" isReprintHeaderOnEachPage="true" footerPosition="ForceAtBottom">
+		<groupExpression><![CDATA[$F{grup1}]]></groupExpression>
+		<groupHeader>
+			<band height="79">
+				<break>
+					<reportElement x="0" y="-2" width="100" height="1" uuid="75efde1c-32b1-4bbf-bde0-35664f053673"/>
+				</break>
+				<line>
+					<reportElement x="9" y="64" width="590" height="1" uuid="688f94f0-0c28-4003-899b-bee70a0dbac1"/>
+					<graphicElement>
+						<pen lineWidth="0.3" lineStyle="Solid"/>
+					</graphicElement>
+				</line>
+				<staticText>
+					<reportElement x="29" y="65" width="250" height="13" uuid="3fcff16a-a1ad-4d04-ae4c-92b5a2b6e0b4"/>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Helvetica" size="9" isBold="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Product Name]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="411" y="42" width="13" height="13" uuid="c2fe53a2-2678-4deb-a85c-fc11701dc763"/>
+					<textElement>
+						<font fontName="Helvetica" size="9" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="355" y="42" width="55" height="13" uuid="bdec9cc0-45e9-455d-8715-27aa02ea9f82"/>
+					<textElement>
+						<font fontName="Helvetica" size="9" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Date]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="411" y="30" width="13" height="14" uuid="32985059-c1e8-4845-ba42-0383cf424086"/>
+					<textElement>
+						<font fontName="Helvetica" size="9" isBold="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="355" y="30" width="55" height="14" uuid="10f7da60-a027-4de1-a205-1918043f027e"/>
+					<textElement>
+						<font fontName="Helvetica" size="9" isBold="false" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Nomor]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="355" y="2" width="215" height="20" uuid="fbe004f4-6894-4f63-95d3-57f67fa615b2"/>
+					<textElement>
+						<font fontName="Helvetica" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{string1}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="18" y="1" width="330" height="15" uuid="dcff1e0e-e27f-4ddf-a9a4-9c8fb0f7c822"/>
+					<textElement>
+						<font fontName="Helvetica" size="9" isBold="true" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{string2}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="424" y="30" width="117" height="14" uuid="9b06e53f-a7f4-44b8-8bf5-0537ce54cdfc"/>
+					<textElement>
+						<font fontName="Ecofont Vera Sans" size="10" isBold="true" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{string11}]]></textFieldExpression>
+				</textField>
+				<textField pattern="dd-MMM-yyyy">
+					<reportElement x="424" y="42" width="117" height="13" uuid="6d3f12ad-b197-4fc7-a679-60b923f9b172"/>
+					<textElement>
+						<font fontName="Ecofont Vera Sans" size="9" isBold="false" pdfFontName="Helvetica" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{date4}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="9" y="65" width="18" height="13" uuid="b69344ff-60db-42bf-a4d2-a08b1045900c"/>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Helvetica" size="9" isBold="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[No]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="283" y="65" width="90" height="13" uuid="82486755-f794-4b15-97ab-396c1a95a0ed"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Helvetica" size="9" isBold="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Quantity]]></text>
+				</staticText>
+				<line>
+					<reportElement x="8" y="78" width="590" height="1" uuid="2fa997fb-ab1e-4254-ab8b-c21c9469e23a"/>
+					<graphicElement>
+						<pen lineWidth="0.3" lineStyle="Solid"/>
+					</graphicElement>
+				</line>
+				<staticText>
+					<reportElement x="18" y="30" width="44" height="12" uuid="dae54459-c2af-431d-ba5e-e1ea657bf25d"/>
+					<textElement>
+						<font fontName="Helvetica" size="9" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Pemohon]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="63" y="45" width="262" height="12" uuid="72b3e2db-cd0a-4707-a144-61e18220131d"/>
+					<textElement>
+						<font fontName="Helvetica" size="10" isBold="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{string21}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="63" y="30" width="262" height="12" uuid="c0d3b7ee-7ed8-4e41-856a-e66fd8f4a682"/>
+					<textElement>
+						<font fontName="Helvetica" size="10" isBold="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{string22}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="411" y="65" width="82" height="13" uuid="05d844ec-d79e-4c6b-ae84-50360efdb5cd"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Helvetica" size="9" isBold="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Keterangan]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="87">
+				<line>
+					<reportElement x="10" y="0" width="586" height="1" uuid="9e8f48a5-c115-4519-a920-7e01f87a0f80"/>
+					<graphicElement>
+						<pen lineWidth="0.3" lineStyle="Solid"/>
+					</graphicElement>
+				</line>
+				<staticText>
+					<reportElement x="148" y="54" width="110" height="17" uuid="5342d21d-0244-4440-be67-7e9baca8b5a4"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Helvetica" size="8" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[............................................]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="27" y="54" width="110" height="17" uuid="6233dc25-8b73-4525-90f5-63197b24ad20"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Helvetica" size="8" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[............................................]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="148" y="13" width="110" height="14" uuid="f44f75d9-95b8-4bca-8b4a-2e2cec227b1e"/>
+					<textElement textAlignment="Center">
+						<font fontName="Helvetica" size="8" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Pemohon]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="27" y="13" width="110" height="14" uuid="94b09b84-44dd-451a-8d97-5269b0e3dee9"/>
+					<textElement textAlignment="Center">
+						<font fontName="Helvetica" size="8" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Termohon]]></text>
+				</staticText>
+				<line>
+					<reportElement x="332" y="0" width="2" height="71" uuid="56467297-8a87-4b3c-910c-315b190baea5"/>
+					<graphicElement>
+						<pen lineWidth="0.3" lineStyle="Solid"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="10" y="71" width="586" height="1" uuid="f89b5c2b-8202-4c47-986f-e06e98482062"/>
+					<graphicElement>
+						<pen lineWidth="0.3" lineStyle="Solid"/>
+					</graphicElement>
+				</line>
+				<textField>
+					<reportElement x="17" y="72" width="182" height="12" uuid="395b7939-3d6d-45c9-9ac4-517253467b20"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Helvetica" size="7"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{string20}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="348" y="26" width="244" height="28" uuid="1eefc28b-f73c-4840-9989-96adcc0e92a9"/>
+					<textElement verticalAlignment="Top">
+						<font fontName="Ecofont Vera Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{string19}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="348" y="12" width="126" height="14" uuid="206c75e6-2bec-4ed5-bcf0-75ca48c93197"/>
+					<textElement>
+						<font fontName="Ecofont Vera Sans" size="8" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Comments or Special Instructions:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="481" y="73" width="60" height="13" uuid="0073bf4d-8837-43eb-9e18-de887fc13507"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="Helvetica" size="8" pdfFontName="Helvetica" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Page]]></text>
+				</staticText>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="546" y="73" width="36" height="13" uuid="acf92887-afa1-44eb-9e1c-7e89e8bfc403"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Ecofont Vera Sans" size="9" pdfFontName="Helvetica"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<pageHeader>
+		<band height="5"/>
+	</pageHeader>
+	<detail>
+		<band height="12" splitType="Stretch">
+			<textField isStretchWithOverflow="true">
+				<reportElement x="29" y="0" width="250" height="12" uuid="fd14e8c9-db9f-4e57-9fd0-9361fb9f2741"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ecofont Vera Sans" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{string13}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="9" y="0" width="18" height="12" uuid="7ab66743-9a66-4658-9d25-411cc79082d2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ecofont Vera Sans" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="###0">
+				<reportElement x="283" y="0" width="90" height="12" uuid="365a9532-97cc-4398-ba3e-0ea4f91bb8d6"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Ecofont Vera Sans" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{string14}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="17">
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}<$F{int15}]]></printWhenExpression>
+			<textField pattern="#,##0;(#,##0)">
+				<reportElement x="477" y="3" width="100" height="13" uuid="4f6bf71d-6d76-4d83-88fb-63ff214a459f"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Helvetica" size="9" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{double17_1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="365" y="3" width="60" height="13" uuid="1a32a802-6a7e-48b5-96fd-96b6a2cd4c6c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Helvetica" size="9" pdfFontName="Helvetica" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Subtotal]]></text>
+			</staticText>
+			<line>
+				<reportElement x="9" y="1" width="586" height="1" uuid="a53b4b1d-9c2c-4887-9b0c-136b1d49f3cb"/>
+				<graphicElement>
+					<pen lineWidth="0.3" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band/>
+	</pageFooter>
+</jasperReport>

@@ -507,7 +507,7 @@
 					<textElement verticalAlignment="Middle">
 						<font fontName="Helvetica" size="9" isPdfEmbedded="true"/>
 					</textElement>
-					<text><![CDATA[PPN 10.00%]]></text>
+					<text><![CDATA[PPN]]></text>
 				</staticText>
 				<staticText>
 					<reportElement x="402" y="13" width="12" height="13" uuid="eae75374-d774-429f-b2ce-84edc4d7b74b"/>

@@ -211,6 +211,15 @@
 	<field name="string24" class="java.lang.String"/>
 	<field name="string25" class="java.lang.String"/>
 	<field name="int11" class="java.lang.Integer"/>
+	<field name="int26" class="java.lang.Integer">
+		<fieldDescription><![CDATA[int26]]></fieldDescription>
+	</field>
+	<field name="string27" class="java.lang.String">
+		<fieldDescription><![CDATA[string27]]></fieldDescription>
+	</field>
+	<field name="string35" class="java.lang.String">
+		<fieldDescription><![CDATA[string35]]></fieldDescription>
+	</field>
 	<variable name="double2_1" class="java.lang.Double" resetType="Group" resetGroup="GRUP1" calculation="Sum">
 		<variableExpression><![CDATA[$F{double2}]]></variableExpression>
 	</variable>
@@ -573,11 +582,11 @@
 					<textFieldExpression><![CDATA[$V{double15_1}]]></textFieldExpression>
 				</textField>
 				<staticText>
-					<reportElement x="343" y="42" width="60" height="13" uuid="35ef526d-378f-43cf-82ea-5a8ccae0c035"/>
+					<reportElement x="343" y="42" width="23" height="13" uuid="35ef526d-378f-43cf-82ea-5a8ccae0c035"/>
 					<textElement verticalAlignment="Middle">
 						<font fontName="Helvetica" size="9" isPdfEmbedded="true"/>
 					</textElement>
-					<text><![CDATA[PPN 10.00%]]></text>
+					<text><![CDATA[PPN]]></text>
 				</staticText>
 				<staticText>
 					<reportElement x="402" y="42" width="12" height="13" uuid="eae75374-d774-429f-b2ce-84edc4d7b74b"/>
@@ -773,6 +782,20 @@
 					</textElement>
 					<text><![CDATA[+Disc Rp]]></text>
 				</staticText>
+				<textField>
+					<reportElement x="9" y="109" width="122" height="12" uuid="27ba36d0-b90b-4f96-ad12-c1e0d09418ea"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Helvetica" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{string27}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0;(#,##0)">
+					<reportElement x="365" y="42" width="34" height="13" uuid="fbc1e00a-8aa1-41f8-9b90-5145874683be"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Helvetica" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{string35}]]></textFieldExpression>
+				</textField>
 			</band>
 		</groupFooter>
 	</group>
